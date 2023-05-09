@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "telega-test"
+version = "0.1.0"
+description = ""
+authors = ["emmanuil <emmanuilya@gmail.com>"]
+readme = "README.md"
+packages = [{include = "telega_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = {url = "https://github.com/aiogram/aiogram/archive/refs/heads/dev-3.x.zip"}
+pydantic = {extras = ["dotenv"], version = "^1.10.6"}
+mypy = "^1.2.0"
+pylint = "^2.17.2"
+alembic = "^1.10.4"
+psycopg = "^3.1.9"
+asyncpg = "^0.27.0"
+psycopg2 = "^2.9.6"
+sqlalchemy = "^2.0.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
