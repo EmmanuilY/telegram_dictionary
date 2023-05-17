@@ -10,8 +10,6 @@ class Settings(BaseSettings):
     PASSWORD: str = "postgres"
     DATABASE: str = "postgres"
     HOST: str = "postgres"
-    PASSWORD_USER1: str = "333"
-    EMAIL_USER1: str = "444"
     BOT_TOKEN: str = 'SecretStr'
 
     class Config:

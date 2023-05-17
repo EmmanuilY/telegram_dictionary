@@ -5,6 +5,7 @@ from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message, ReplyKeyboardRemove
 from keyboards.simple_row import make_row_keyboard
 from model.db import DB
+from loguru import logger
 
 import re
 
@@ -12,18 +13,16 @@ db = DB()
 
 router = Router()
 
-# Эти значения далее будут подставляться в итоговый текст, отсюда
-# такая на первый взгляд странная форма прилагательных
+
 available_term_types = ["term", "english_word"]
-available_drink_sizes = ["Маленькую", "Среднюю", "Большую"]
+
 
 
 class AddTerms(StatesGroup):
     choosing_term_type = State()
     add_terms = State()
 
-def escape_special_characters(text: str) -> str:
-    return re.sub(r"(-|\(|\)|`)", r"\\\1", text)
+
 
 @router.message(Command("add_terms"))
 async def cmd_add_terms(message: Message, state: FSMContext):
@@ -31,10 +30,8 @@ async def cmd_add_terms(message: Message, state: FSMContext):
         text="Выберите тип изучаемого объекта",
         reply_markup=make_row_keyboard(available_term_types)
     )
-    # Устанавливаем пользователю состояние "выбирает название"
+    # Устанавливаем пользователю состояние "выбирает тип"
     await state.set_state(AddTerms.choosing_term_type)
-
-# Этап выбора блюда #
 
 
 @router.message(AddTerms.choosing_term_type, F.text.in_(available_term_types))
@@ -48,13 +45,12 @@ async def term_type_chosen(message: Message, state: FSMContext):
 @router.message(AddTerms.add_terms)
 async def add_new_term(message: Message, state: FSMContext):
     user_data = await state.get_data()
-    term_definition_pattern = r'^(\w+)\s*:\s*(.+)$'
-    term_and_definition = escape_special_characters(message.text)
-    match = re.match(term_definition_pattern, term_and_definition)
+    term_definition_pattern = r'^([\w\s]+)\s*:\s*(.+)$'
+    match = re.match(term_definition_pattern, message.text)
     if match:
         term, definition = match.groups()
-
         answer = await db.add_term(term=term.lower(), definition=definition.lower(),type= user_data['chosen_type'], telegram_id=str(message.from_user.id))
+        logger.info(f' добавили {term} с определением {definition} , пользователь')
         await message.answer(
             text=f"Полный {answer}\n"
                  f"Хотите еще добавить?",
@@ -70,7 +66,7 @@ async def add_new_term(message: Message, state: FSMContext):
 
 
 @router.message(AddTerms.add_terms)
-async def drink_size_chosen_incorrectly(message: Message):
+async def term_added_incorrectly(message: Message):
     await message.answer(
         text="Вы нарушили шаблон\n\n"
              "Пожалуйста, введите заново термин и определение",

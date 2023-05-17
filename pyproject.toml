@@ -17,6 +17,8 @@ psycopg = "^3.1.9"
 asyncpg = "^0.27.0"
 psycopg2 = "^2.9.6"
 sqlalchemy = "^2.0.12"
+loguru = "^0.7.0"
+attrs = "^23.1.0"
 
 
 [build-system]

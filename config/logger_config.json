@@ -1,0 +1,7 @@
+{
+  "handlers": [
+    {"sink": "logs.log", "format": "{time:YYYY-MM-DD at HH:mm:ss} | {level} | {message}"}
+  ],
+  "extra": {"user_id": null},
+  "level": "DEBUG"
+}

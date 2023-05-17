@@ -1,7 +1,8 @@
 from contextlib import asynccontextmanager
 from config.config import settings
-
+from loguru import logger
 import asyncpg
+
 
 
 class DB:
@@ -136,6 +137,54 @@ class DB:
 
             # Преобразование списка кортежей в словарь
             return f' top {terms}'
+
+        except Exception as e:
+            return f'{e}'
+
+    async def get_terms_progress(self, telegram_id:str) -> dict | str:
+        try:
+
+            terms = await self._fetch(
+                """
+               SELECT learning, COUNT(*) 
+               FROM user_terms_progress u JOIN users u2 on u.user_id=u2.user_id
+               WHERE telegram_id = $1 
+               group by learning;
+
+                """,
+                telegram_id
+            )
+            logger.debug(f'{terms}')
+            # Преобразование списка кортежей в словарь
+            progress = {"learning": 0, "repeat": 0, "learned": 0}
+            # Обновление словаря данными из запроса
+            progress.update(dict(terms))
+            logger.debug(f'{progress}')
+            return progress
+
+        except Exception as e:
+            return f'{e}'
+
+    async def get_terms_learning(self, telegram_id:str, progress:str, type:str,) -> dict | str:
+        try:
+
+            terms = await self._fetch(
+                """
+              SELECT term, definition
+              FROM terms t JOIN user_terms_progress ut ON t.term_id=ut.term_id 
+              JOIN users u ON u.user_id = ut.user_id
+              WHERE telegram_id = $1 AND learning = $2 AND type=$3;
+
+                """,
+                telegram_id,progress, type
+            )
+            logger.debug(f'{terms}')
+            # Преобразование списка кортежей в словарь
+            progress = {'type':type , 'progress' : progress}
+            # Обновление словаря данными из запроса
+            progress.update(dict(terms))
+            logger.debug(f'{progress}')
+            return progress
 
         except Exception as e:
             return f'{e}'

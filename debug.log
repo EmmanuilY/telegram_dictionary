@@ -1,0 +1,1012 @@
+2023-05-16T02:38:07.776419+0300 INFO Запускаем бота
+2023-05-16T02:43:33.506462+0300 INFO Запускаем бота
+2023-05-16T02:47:24.833656+0300 INFO Запускаем бота
+2023-05-16T02:48:09.793053+0300 INFO Запускаем бота
+2023-05-16T02:48:44.397801+0300 INFO Запускаем бота
+2023-05-16T10:52:53.722327+0300 INFO Запускаем бота
+2023-05-16T13:03:54.631672+0300 INFO Запускаем бота
+2023-05-16T13:03:58.171907+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T13:23:36.993550+0300 INFO Запускаем бота
+2023-05-16T13:28:43.627662+0300 INFO Запускаем бота
+2023-05-16T13:28:51.781644+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T13:30:20.427912+0300 INFO  добавили salary с определением зарплата , пользователь
+2023-05-16T13:32:03.779211+0300 INFO Запускаем бота
+2023-05-16T13:33:35.792497+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T13:33:44.864931+0300 INFO  добавили hi mark  с определением baza , пользователь
+2023-05-16T13:35:32.898711+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T13:35:43.348834+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T19:44:00.832265+0300 INFO Запускаем бота
+2023-05-16T20:35:28.039945+0300 INFO Запускаем бота
+2023-05-16T20:35:28.387739+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:02:38.258830+0300 INFO Запускаем бота
+2023-05-16T21:02:43.687447+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:05:39.225709+0300 INFO Запускаем бота
+2023-05-16T21:05:41.966357+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:08:52.487723+0300 INFO Запускаем бота
+2023-05-16T21:08:56.770590+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:09:00.061573+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой\\-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:09:05.143951+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой\\-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:09:49.482013+0300 INFO Запускаем бота
+2023-05-16T21:09:52.144495+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:09:53.981453+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой\\-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:09:55.879923+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой\\-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:09:56.217346+0300 ERROR Telegram server says Bad Request: can't parse entities: Character '-' is reserved and must be escaped with the preceding '\', слово парокизм и определение сильный приступ, припадок; внезапное обострение какой\\-либо болезни выдали ошибку при словаре {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой\\-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-16T21:11:24.805555+0300 INFO Запускаем бота
+2023-05-16T21:11:33.935208+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:11:36.785406+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:11:39.010135+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:34:40.244917+0300 INFO Запускаем бота
+2023-05-16T21:34:46.215029+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:34:52.357983+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:34:54.923403+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:44:46.436055+0300 INFO Запускаем бота
+2023-05-16T21:44:53.073149+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:44:56.288312+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:44:59.151984+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:47:36.936965+0300 INFO Запускаем бота
+2023-05-16T21:47:40.201890+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:47:42.043031+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:47:43.571005+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:48:04.443500+0300 ERROR An error has been caught in function 'second_part', process 'MainProcess' (28828), thread 'MainThread' (20728):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 31, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001CE61CF29E0>
+    │       └ <function run at 0x000001CE5D908700>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x000001CE61CAFBC0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000001CE5F93FA30>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001CE5FA0C160>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001CE5F94D510>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001CE5F8C0310>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65054648, message=Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.ti...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000001CE61CAB370>
+                     │    └ <function Dispatcher.feed_update at 0x000001CE61A8E0E0>
+                     └ <Dispatcher '0x1ce61ca9750'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001CE61A8CC10>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001CE61CAB7C0>
+                     └ <Dispatcher '0x1ce61ca9750'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054648, message=Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.ti...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000001CE61CAB580>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054648, message=Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.ti...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000001CE61CAB550>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054648, message=Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.ti...
+                 └ <function TelegramEventObserver.trigger at 0x000001CE61D069E0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65054648, message=Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.ti...
+                 └ <function CallableMixin.call at 0x000001CE61D06680>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x1ce61ca9750'>>, Update(update_id=65054648, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000001CE61A8D750>
+                 └ <Dispatcher '0x1ce61ca9750'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001CE61D072E0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001CE61A8CC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001CE61CA96F0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001CE61A8D7E0>
+                 └ <Dispatcher '0x1ce61ca9750'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000001CE61A8D750>
+                     └ <Router '0x1ce61cc2980'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001CE61D07400>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001CE61A8CC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001CE61CC29B0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001CE61A8D7E0>
+                 └ <Router '0x1ce61cc2980'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                     │        └ <function TelegramEventObserver.trigger at 0x000001CE61A8CCA0>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001CE61CC29B0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001CE61CAB370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 └ <function CallableMixin.call at 0x000001CE61D07910>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function second_part at 0x000001CE61C8BE20>, Message(message_id=2733, date=datetime.datetime(2023, 5, 16, ...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 172, in second_part
+    await send_term_and_options(message, state, "definitions", "words", LearnTerms.third_step)
+          │                     │        │                              │          └ <State 'LearnTerms:third_step'>
+          │                     │        │                              └ <class 'handlers.learn_words.LearnTerms'>
+          │                     │        └ <aiogram.fsm.context.FSMContext object at 0x000001CE61C91780>
+          │                     └ Message(message_id=2733, date=datetime.datetime(2023, 5, 16, 18, 48, 4, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+          └ <function send_term_and_options at 0x000001CE61C8BB50>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 128, in send_term_and_options
+    correct_option = terms[term]
+                     │     └ 'что-либо(делающий)'
+                     └ {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'паро...
+
+KeyError: 'что-либо(делающий)'
+2023-05-16T21:54:01.453663+0300 INFO Запускаем бота
+2023-05-16T21:54:07.090593+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:54:09.029583+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:54:10.928543+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:54:13.231522+0300 ERROR An error has been caught in function 'first_learn_part', process 'MainProcess' (22892), thread 'MainThread' (30364):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 31, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x00000129007C2B00>
+    │       └ <function run at 0x000001297C3B8700>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x000001290077FC30>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000001297E3EFA30>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001297E4AC160>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001297E3FD510>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001297E370310>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65054653, message=Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000001290077B370>
+                     │    └ <function Dispatcher.feed_update at 0x000001290057E0E0>
+                     └ <Dispatcher '0x12900779720'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001290057CC10>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001290077B7C0>
+                     └ <Dispatcher '0x12900779720'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054653, message=Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000001290077B580>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054653, message=Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000001290077B550>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054653, message=Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x00000129007D67A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65054653, message=Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x00000129007D6B00>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x12900779720'>>, Update(update_id=65054653, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000001290057D750>
+                 └ <Dispatcher '0x12900779720'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x00000129007D7400>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001290057CC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000129007796C0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001290057D7E0>
+                 └ <Dispatcher '0x12900779720'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000001290057D750>
+                     └ <Router '0x12900792980'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x00000129007D7520>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001290057CC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000129007929B0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001290057D7E0>
+                 └ <Router '0x12900792980'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x000001290057CCA0>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000129007929B0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001290077B370>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x00000129007D7A30>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function first_learn_part at 0x000001290075BF40>, Message(message_id=2753, date=datetime.datetime(2023, 5,...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 155, in first_learn_part
+    await send_term_and_options(message, state, "words", "definitions", LearnTerms.second_step)
+          │                     │        │                              │          └ <State 'LearnTerms:second_step'>
+          │                     │        │                              └ <class 'handlers.learn_words.LearnTerms'>
+          │                     │        └ <aiogram.fsm.context.FSMContext object at 0x0000012900779390>
+          │                     └ Message(message_id=2753, date=datetime.datetime(2023, 5, 16, 18, 54, 13, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function send_term_and_options at 0x000001290075BD90>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 126, in send_term_and_options
+    logger.info(f'Тема: {term_list}, опциональные: {options_key}', {user_data[term_key]})
+    │      │                                                        │         └ 'words'
+    │      │                                                        └ {'user': <handlers.classes.LearningSession object at 0x0000012900778040>, 'terms': {'kuk': 'что-либо(делающий)', 'аффектация'...
+    │      └ <function Logger.info at 0x0000012900606B90>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='debug.log')]>
+
+TypeError: unhashable type: 'list'
+2023-05-16T21:54:41.904728+0300 INFO Запускаем бота
+2023-05-16T21:54:48.232110+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:54:52.135905+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:54:53.960580+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:54:55.987614+0300 ERROR An error has been caught in function 'first_learn_part', process 'MainProcess' (25700), thread 'MainThread' (8876):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 31, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x00000239749AAB90>
+    │       └ <function run at 0x0000023970588700>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x0000023974967B50>
+           │    └ <function BaseEventLoop.run_until_complete at 0x00000239725FFA30>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x00000239726CC160>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002397260D510>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000023972580310>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65054659, message=Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x00000239749A75E0>
+                     │    └ <function Dispatcher.feed_update at 0x000002397474E0E0>
+                     └ <Dispatcher '0x239749a5cf0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000002397474CC10>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000239749A7190>
+                     └ <Dispatcher '0x239749a5cf0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054659, message=Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x00000239749A73D0>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054659, message=Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x00000239749A7400>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054659, message=Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x00000239749BE830>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65054659, message=Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x00000239749BEB90>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x239749a5cf0'>>, Update(update_id=65054659, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000002397474D750>
+                 └ <Dispatcher '0x239749a5cf0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x00000239749BF490>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000002397474CC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000239749A5D50>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000002397474D7E0>
+                 └ <Dispatcher '0x239749a5cf0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000002397474D750>
+                     └ <Router '0x23974951600'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x00000239749BF5B0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000002397474CC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000239749517E0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000002397474D7E0>
+                 └ <Router '0x23974951600'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x000002397474CCA0>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x00000239749517E0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x00000239749A75E0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x00000239749BFEB0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function first_learn_part at 0x000002397494BE20>, Message(message_id=2774, date=datetime.datetime(2023, 5,...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 155, in first_learn_part
+    await send_term_and_options(message, state, "words", "definitions", LearnTerms.second_step)
+          │                     │        │                              │          └ <State 'LearnTerms:second_step'>
+          │                     │        │                              └ <class 'handlers.learn_words.LearnTerms'>
+          │                     │        └ <aiogram.fsm.context.FSMContext object at 0x00000239749E6CB0>
+          │                     └ Message(message_id=2774, date=datetime.datetime(2023, 5, 16, 18, 54, 56, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function send_term_and_options at 0x000002397494BC70>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 126, in send_term_and_options
+    logger.info(f'Тема: {term_list}, опциональные: {options_key}', {user_data[term_key]})
+    │      │                                                        │         └ 'words'
+    │      │                                                        └ {'user': <handlers.classes.LearningSession object at 0x00000239749A5C30>, 'terms': {'kuk': 'что-либо(делающий)', 'аффектация'...
+    │      └ <function Logger.info at 0x00000239747D6B90>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='debug.log')]>
+
+TypeError: unhashable type: 'list'
+2023-05-16T21:55:42.890766+0300 INFO Запускаем бота
+2023-05-16T21:55:47.010871+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:55:50.294677+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:55:52.123898+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:55:54.078402+0300 ERROR An error has been caught in function 'first_learn_part', process 'MainProcess' (24476), thread 'MainThread' (29648):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 31, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002810CE52DD0>
+    │       └ <function run at 0x0000028108A08700>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x000002810CE0FC30>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000002810AA9FA30>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002810AB6C160>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002810AAAD510>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002810AA20310>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65054665, message=Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>
+                     │    └ <function Dispatcher.feed_update at 0x000002810CBEE0E0>
+                     └ <Dispatcher '0x2810ce09420'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000002810CBECC10>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000002810CE0B520>
+                     └ <Dispatcher '0x2810ce09420'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054665, message=Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000002810CE0B2E0>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054665, message=Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000002810CE0B2B0>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054665, message=Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x000002810CE66A70>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65054665, message=Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x000002810CE66DD0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x2810ce09420'>>, Update(update_id=65054665, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000002810CBED750>
+                 └ <Dispatcher '0x2810ce09420'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000002810CE676D0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000002810CBECC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000002810CE097E0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000002810CBED7E0>
+                 └ <Dispatcher '0x2810ce09420'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000002810CBED750>
+                     └ <Router '0x2810ce22920'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000002810CE677F0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000002810CBECC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000002810CE22950>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000002810CBED7E0>
+                 └ <Router '0x2810ce22920'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x000002810CBECCA0>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000002810CE22950>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000002810CE0B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x000002810CE67BE0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function first_learn_part at 0x000002810CE28280>, Message(message_id=2795, date=datetime.datetime(2023, 5,...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 155, in first_learn_part
+    await send_term_and_options(message, state, "words", "definitions", LearnTerms.second_step)
+          │                     │        │                              │          └ <State 'LearnTerms:second_step'>
+          │                     │        │                              └ <class 'handlers.learn_words.LearnTerms'>
+          │                     │        └ <aiogram.fsm.context.FSMContext object at 0x000002810CDF2350>
+          │                     └ Message(message_id=2795, date=datetime.datetime(2023, 5, 16, 18, 55, 54, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function send_term_and_options at 0x000002810CDEBD90>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 126, in send_term_and_options
+    logger.info(f'Тема: {term_list}, опциональные: {options_key}', {user_data[term_key]})
+    │      │                                                        │         └ 'words'
+    │      │                                                        └ {'user': <handlers.classes.LearningSession object at 0x000002810CE0A8F0>, 'terms': {'kuk': 'что-либо(делающий)', 'аффектация'...
+    │      └ <function Logger.info at 0x000002810CC76B90>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='debug.log')]>
+
+TypeError: unhashable type: 'list'
+2023-05-16T21:57:53.682418+0300 INFO Запускаем бота
+2023-05-16T21:57:57.597978+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T21:58:00.083203+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T21:58:01.965567+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T21:58:04.110969+0300 INFO Тема: ['kuk', 'аффектация', 'парокизм', 'импозантный'], опциональные: definitions
+2023-05-16T21:58:07.417518+0300 INFO Тема: ['аффектация', 'парокизм', 'импозантный'], опциональные: definitions
+2023-05-16T21:58:10.888217+0300 INFO Тема: ['парокизм', 'импозантный'], опциональные: definitions
+2023-05-16T21:58:13.244600+0300 INFO Тема: ['импозантный'], опциональные: definitions
+2023-05-16T21:58:19.289067+0300 INFO Тема: ['что-либо(делающий)', 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'производящий впечатление, внушительный, представительный'], опциональные: words
+2023-05-16T21:58:19.291070+0300 ERROR An error has been caught in function 'second_part', process 'MainProcess' (24116), thread 'MainThread' (7572):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 31, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001FF8FA62DD0>
+    │       └ <function run at 0x000001FF8B6D8700>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x000001FF8FA1FC30>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000001FF8D70FA30>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001FF8D7CC160>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001FF8D71D510>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001FF8D690310>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65054675, message=Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>
+                     │    └ <function Dispatcher.feed_update at 0x000001FF8F7FE0E0>
+                     └ <Dispatcher '0x1ff8fa19540'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001FF8F7FCC10>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FF8FA1B520>
+                     └ <Dispatcher '0x1ff8fa19540'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054675, message=Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000001FF8FA1B2E0>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054675, message=Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000001FF8FA1B2B0>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65054675, message=Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x000001FF8FA76DD0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65054675, message=Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x000001FF8FA76A70>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x1ff8fa19540'>>, Update(update_id=65054675, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000001FF8F7FD750>
+                 └ <Dispatcher '0x1ff8fa19540'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001FF8FA776D0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001FF8F7FCC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FF8FA19900>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001FF8F7FD7E0>
+                 └ <Dispatcher '0x1ff8fa19540'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000001FF8F7FD750>
+                     └ <Router '0x1ff8fa32a10'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001FF8FA777F0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001FF8F7FCC10>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FF8FA32A40>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001FF8F7FD7E0>
+                 └ <Router '0x1ff8fa32a10'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x000001FF8F7FCCA0>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001FF8FA32A40>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001FF8FA1B0D0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x000001FF8FA77910>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function second_part at 0x000001FF8FA383A0>, Message(message_id=2830, date=datetime.datetime(2023, 5, 16, ...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 172, in second_part
+    await send_term_and_options(message, state, "definitions", "words", LearnTerms.third_step)
+          │                     │        │                              │          └ <State 'LearnTerms:third_step'>
+          │                     │        │                              └ <class 'handlers.learn_words.LearnTerms'>
+          │                     │        └ <aiogram.fsm.context.FSMContext object at 0x000001FF8FA186A0>
+          │                     └ Message(message_id=2830, date=datetime.datetime(2023, 5, 16, 18, 58, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function send_term_and_options at 0x000001FF8F9FBD90>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\learn_words.py", line 128, in send_term_and_options
+    correct_option = terms[term]
+                     │     └ 'что-либо(делающий)'
+                     └ {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'паро...
+
+KeyError: 'что-либо(делающий)'
+2023-05-16T22:08:11.897328+0300 INFO Запускаем бота
+2023-05-16T22:08:20.054201+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T22:08:23.780433+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T22:08:25.674344+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-16T22:10:16.314455+0300 INFO Запускаем бота
+2023-05-16T22:10:46.146612+0300 INFO Запускаем бота
+2023-05-16T22:10:53.672020+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-16T22:10:56.524495+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-16T22:10:58.143485+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-17T00:24:01.838148+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T00:24:05.585807+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T00:24:07.695630+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-17T00:43:44.836419+0300 INFO Запускаем бота
+2023-05-17T00:43:52.180603+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T00:43:54.233243+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T00:43:55.717671+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-17T00:46:01.539521+0300 INFO Запускаем бота
+2023-05-17T00:46:05.324476+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T00:46:07.355002+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T00:46:08.685152+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-17T00:46:37.495438+0300 DEBUG <State 'LearnTerms:finish'> что-либо(делающий)
+2023-05-17T00:48:02.656458+0300 INFO Запускаем бота
+2023-05-17T00:48:12.916672+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T00:48:14.790408+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T00:48:16.236915+0300 INFO {'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'} 536806818
+2023-05-17T00:48:38.775816+0300 DEBUG <State 'LearnTerms:finish'> что-либо(делающий)
+2023-05-17T01:23:18.979137+0300 INFO Запускаем бота
+2023-05-17T01:23:21.597894+0300 INFO {} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T01:23:21.721891+0300 DEBUG недостаточно слов типа term у 536806818, вот список термнов : {}
+2023-05-17T01:23:28.962947+0300 INFO {} 536806818
+2023-05-17T01:31:01.303789+0300 DEBUG [] words definitions
+2023-05-17T01:31:12.327859+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T01:31:17.103657+0300 INFO {'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T01:31:19.679928+0300 INFO {'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'} 536806818
+2023-05-17T01:31:22.709617+0300 DEBUG ['hi', 'write', 'code', 'issue'] words definitions
+2023-05-17T01:31:24.990382+0300 DEBUG ['write', 'code', 'issue'] words definitions
+2023-05-17T01:31:27.379891+0300 DEBUG ['code', 'issue'] words definitions
+2023-05-17T01:31:29.812625+0300 DEBUG ['issue'] words definitions
+2023-05-17T01:31:31.504833+0300 DEBUG [] words definitions
+2023-05-17T01:31:32.834061+0300 DEBUG ['привет', 'писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:31:34.500878+0300 DEBUG ['писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:31:36.497609+0300 DEBUG ['кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:31:38.566623+0300 DEBUG ['вопрос, задача'] definitions words
+2023-05-17T01:31:41.060772+0300 DEBUG [] definitions words
+2023-05-17T01:31:44.347568+0300 DEBUG ['привет', 'писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:31:44.464181+0300 DEBUG <State 'LearnTerms:finish'> привет
+2023-05-17T01:31:48.554166+0300 DEBUG [] words definitions
+2023-05-17T01:37:01.273178+0300 INFO Запускаем бота
+2023-05-17T01:37:05.036173+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T01:37:08.268431+0300 INFO {'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T01:37:09.799289+0300 INFO {'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'} 536806818
+2023-05-17T01:37:11.313468+0300 DEBUG ['hi', 'write', 'code', 'issue'] words definitions
+2023-05-17T01:37:14.345034+0300 DEBUG ['write', 'code', 'issue'] words definitions
+2023-05-17T01:37:17.389389+0300 DEBUG ['code', 'issue'] words definitions
+2023-05-17T01:37:18.686640+0300 DEBUG ['issue'] words definitions
+2023-05-17T01:37:20.116898+0300 DEBUG [] words definitions
+2023-05-17T01:37:21.420708+0300 DEBUG ['привет', 'писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:37:24.062073+0300 DEBUG ['писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:37:25.582181+0300 DEBUG ['кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:37:27.514085+0300 DEBUG ['вопрос, задача'] definitions words
+2023-05-17T01:37:29.492562+0300 DEBUG [] definitions words
+2023-05-17T01:37:31.055151+0300 DEBUG ['привет', 'писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:37:31.139152+0300 DEBUG <State 'LearnTerms:finish'> привет
+2023-05-17T01:37:33.426970+0300 DEBUG ['писать', 'кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:37:33.509084+0300 DEBUG <State 'LearnTerms:finish'> писать
+2023-05-17T01:37:35.497962+0300 DEBUG ['кодить', 'вопрос, задача'] definitions words
+2023-05-17T01:37:35.593978+0300 DEBUG <State 'LearnTerms:finish'> кодить
+2023-05-17T01:37:38.812005+0300 DEBUG ['вопрос, задача'] definitions words
+2023-05-17T01:37:38.962054+0300 DEBUG <State 'LearnTerms:finish'> вопрос, задача
+2023-05-17T01:37:41.255156+0300 DEBUG [] definitions words
+2023-05-17T01:37:55.193548+0300 INFO {} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T01:37:55.281548+0300 DEBUG недостаточно слов типа term у 536806818, вот список термнов : {}
+2023-05-17T01:37:59.124552+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T01:38:09.008517+0300 INFO {} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-17T01:38:09.393565+0300 DEBUG недостаточно слов типа term у 536806818, вот список термнов : {}
+2023-05-17T01:38:11.210487+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T08:41:09.061359+0300 INFO Запускаем бота
+2023-05-17T08:41:16.170831+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T08:42:15.546855+0300 INFO Запускаем бота
+2023-05-17T08:42:18.029006+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T08:43:04.302798+0300 INFO Запускаем бота
+2023-05-17T08:43:35.503804+0300 INFO Запускаем бота
+2023-05-17T08:44:52.516327+0300 INFO Запускаем бота
+2023-05-17T08:45:32.039814+0300 INFO Запускаем бота
+2023-05-17T08:46:49.264643+0300 INFO Запускаем бота
+2023-05-17T08:46:52.573993+0300 DEBUG invalid input for query argument $1: 536806818 (expected str, got int)
+2023-05-17T08:47:36.572803+0300 INFO Запускаем бота
+2023-05-17T08:47:38.459141+0300 DEBUG SELECT 2
+2023-05-17T08:47:38.461139+0300 DEBUG dictionary update sequence element #0 has length 1; 2 is required
+2023-05-17T08:47:59.598462+0300 INFO Запускаем бота
+2023-05-17T08:48:01.384778+0300 DEBUG <Record learning='learning' count=5>
+2023-05-17T08:48:01.386778+0300 DEBUG {'learning': 'learning', 'repeat': 0, 'learned': 0, 'count': 5}
+2023-05-17T08:48:01.387779+0300 DEBUG {'learning': 'learning', 'repeat': 0, 'learned': 0, 'count': 5}
+2023-05-17T08:49:15.854302+0300 INFO Запускаем бота
+2023-05-17T08:49:20.323944+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T08:49:20.325943+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T08:49:20.327944+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T08:50:08.042311+0300 INFO Запускаем бота
+2023-05-17T08:50:09.434103+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T08:50:09.435103+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T08:50:09.436104+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T08:50:39.076369+0300 INFO Запускаем бота
+2023-05-17T08:50:40.100134+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T08:50:40.102134+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T08:50:40.103134+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:33:38.902185+0300 INFO Запускаем бота
+2023-05-17T09:33:45.907803+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T09:33:48.067182+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T09:33:48.069176+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:33:48.070177+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:34:34.938431+0300 INFO Запускаем бота
+2023-05-17T09:34:36.943071+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T09:34:38.553350+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T09:34:38.554351+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:34:38.555351+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:34:43.283634+0300 DEBUG <coroutine object DB.get_terms_learning at 0x0000027C4829F1B0>
+2023-05-17T09:34:54.317944+0300 INFO Запускаем бота
+2023-05-17T09:35:02.181919+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T09:35:04.570173+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T09:35:04.571174+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:35:04.572173+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:35:08.736118+0300 DEBUG [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>, <Record term='halk' definition='marvel'>, <Record term='nohalk' definition='dc'>, <Record term='антитеза' definition='противопоставление'>, <Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>, <Record term='логроллинг' definition='практика "торговли голосами" среди членов законодательных органов'>, <Record term='обскурантизм' definition='враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>, <Record term='реторта' definition='аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке'>, <Record term='сутяга' definition='человек, склонный к тяжбам, с готовностью затевающий судебные конфликты'>, <Record term='бонбоньерка' definition='красиво украшенная коробка для конфет'>, <Record term='kuk' definition='что-либо(делающий)'>, <Record term='аффектация' definition='неестественная, обычно преднамеренная возбуждённость в поведении, в речи'>, <Record term='парокизм' definition='сильный приступ, припадок; внезапное обострение какой-либо болезни'>, <Record term='импозантный' definition='производящий впечатление, внушительный, представительный'>]
+2023-05-17T09:35:08.738117+0300 DEBUG {'type': 'term', 'progress': 'repeat', 'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический', 'реторта': 'аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке', 'сутяга': 'человек, склонный к тяжбам, с готовностью затевающий судебные конфликты', 'бонбоньерка': 'красиво украшенная коробка для конфет', 'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-17T09:35:08.740117+0300 DEBUG {'type': 'term', 'progress': 'repeat', 'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический', 'реторта': 'аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке', 'сутяга': 'человек, склонный к тяжбам, с готовностью затевающий судебные конфликты', 'бонбоньерка': 'красиво украшенная коробка для конфет', 'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-17T09:38:15.066893+0300 INFO Запускаем бота
+2023-05-17T09:38:19.871389+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T09:38:21.917538+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T09:38:21.918883+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:38:21.919539+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:38:23.825006+0300 DEBUG [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>, <Record term='halk' definition='marvel'>, <Record term='nohalk' definition='dc'>, <Record term='антитеза' definition='противопоставление'>, <Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>, <Record term='логроллинг' definition='практика "торговли голосами" среди членов законодательных органов'>, <Record term='обскурантизм' definition='враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>, <Record term='реторта' definition='аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке'>, <Record term='сутяга' definition='человек, склонный к тяжбам, с готовностью затевающий судебные конфликты'>, <Record term='бонбоньерка' definition='красиво украшенная коробка для конфет'>, <Record term='kuk' definition='что-либо(делающий)'>, <Record term='аффектация' definition='неестественная, обычно преднамеренная возбуждённость в поведении, в речи'>, <Record term='парокизм' definition='сильный приступ, припадок; внезапное обострение какой-либо болезни'>, <Record term='импозантный' definition='производящий впечатление, внушительный, представительный'>]
+2023-05-17T09:38:23.827005+0300 DEBUG {'type': 'term', 'progress': 'repeat', 'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический', 'реторта': 'аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке', 'сутяга': 'человек, склонный к тяжбам, с готовностью затевающий судебные конфликты', 'бонбоньерка': 'красиво украшенная коробка для конфет', 'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-17T09:38:23.829005+0300 DEBUG {'type': 'term', 'progress': 'repeat', 'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический', 'реторта': 'аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке', 'сутяга': 'человек, склонный к тяжбам, с готовностью затевающий судебные конфликты', 'бонбоньерка': 'красиво украшенная коробка для конфет', 'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-17T09:38:38.864298+0300 DEBUG []
+2023-05-17T09:38:38.866297+0300 DEBUG {'type': 'term', 'progress': 'learning'}
+2023-05-17T09:38:38.867301+0300 DEBUG {'type': 'term', 'progress': 'learning'}
+2023-05-17T09:38:59.524970+0300 DEBUG []
+2023-05-17T09:38:59.525970+0300 DEBUG {'type': 'term', 'progress': 'learned'}
+2023-05-17T09:38:59.527972+0300 DEBUG {'type': 'term', 'progress': 'learned'}
+2023-05-17T09:39:08.007260+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T09:39:08.940911+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T09:39:08.941911+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:39:08.942912+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T09:39:13.510407+0300 DEBUG [<Record term='knitting' definition='вязание'>, <Record term='throbbing' definition='пульсация'>, <Record term='defy' definition='игнорировать'>, <Record term='salary' definition='зарплата'>, <Record term='hi mark ' definition='baza'>]
+2023-05-17T09:39:13.512405+0300 DEBUG {'type': 'english_word', 'progress': 'learning', 'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата', 'hi mark ': 'baza'}
+2023-05-17T09:39:13.513406+0300 DEBUG {'type': 'english_word', 'progress': 'learning', 'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата', 'hi mark ': 'baza'}
+2023-05-17T09:39:23.336958+0300 DEBUG [<Record term='hi' definition='привет'>, <Record term='write' definition='писать'>, <Record term='code' definition='кодить'>, <Record term='issue' definition='вопрос, задача'>]
+2023-05-17T09:39:23.338959+0300 DEBUG {'type': 'english_word', 'progress': 'repeat', 'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'}
+2023-05-17T09:39:23.340958+0300 DEBUG {'type': 'english_word', 'progress': 'repeat', 'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'}
+2023-05-17T09:39:26.464489+0300 DEBUG []
+2023-05-17T09:39:26.466494+0300 DEBUG {'type': 'english_word', 'progress': 'learned'}
+2023-05-17T09:39:26.467491+0300 DEBUG {'type': 'english_word', 'progress': 'learned'}

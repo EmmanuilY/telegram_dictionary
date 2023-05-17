@@ -1,4 +1,5 @@
 from aiogram import Router, F
+from aiogram.exceptions import TelegramBadRequest
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
@@ -7,14 +8,19 @@ from aiogram.types import Message, ReplyKeyboardRemove
 from keyboards.simple_row import make_row_keyboard
 
 from model.db import DB
-import random
+from handlers.classes import LearningSession
 
+from loguru import logger
+
+import random
+import re
+import time
+from functools import partial
 
 db = DB()
 router = Router()
 
-available_term_types =  ["term", "english_word"]
-
+available_term_types = ["term", "english_word"]
 
 
 class LearnTerms(StatesGroup):
@@ -29,7 +35,6 @@ class LearnTerms(StatesGroup):
     finish = State()
 
 
-
 @router.message(Command("learn_words"))
 async def learn_terms(message: Message, state: FSMContext):
     await message.answer(
@@ -37,36 +42,53 @@ async def learn_terms(message: Message, state: FSMContext):
         reply_markup=make_row_keyboard(available_term_types)
     )
     # Устанавливаем пользователю состояние "выбирает тип"
+    user = LearningSession(telegram_id=message.from_user.id)
+    await state.update_data(user=user)
     await state.set_state(LearnTerms.choosing_type_object)
 
 
 @router.message(LearnTerms.choosing_type_object, F.text.in_(available_term_types))
 async def type_chosen(message: Message, state: FSMContext):
-    await state.update_data(chosen_term_type=message.text.lower())
-    await message.answer(
-        text="Ниже слова"
-    )
+    user_data = await state.get_data()
+    # user = user_data.get("user")
     terms = await db.get_term(telegram_id=str(message.from_user.id), term_type=message.text.lower())
-    await state.update_data(terms=terms)
-
-    for word, definition in terms.items():
+    logger.info(f'{terms} - {message.from_user.id} - {message.from_user.username}')
+    if len(terms.keys()) < 4:
         await message.answer(
-            text=f"{word} - {definition}"
+            text=f"у вас недостаточно слов типа {message.text.lower()}, добавьте еще",
+            reply_markup=make_row_keyboard(['/start'])
         )
-    await message.answer(
-        text="Нужен замоповтор?",
-        reply_markup=make_row_keyboard(['Повтор для себя'])
-    )
-    await state.set_state(LearnTerms.pre_learn_terms)
+        logger.debug(
+            f'недостаточно слов типа {message.text.lower()} у {message.from_user.id}, вот список термнов : {terms}')
+        await state.clear()
+    else:
+        await state.update_data(terms=terms)
+        await message.answer(
+            text="Ниже слова"
+        )
+        for word, definition in terms.items():
+            await message.answer(
+                text=f"{word} - {definition}"
+            )
+
+        await message.answer(
+            text="Нужен cамоповтор?",
+            reply_markup=make_row_keyboard(['Повтор для себя'])
+        )
+        await state.set_state(LearnTerms.pre_learn_terms)
 
 
 @router.message(LearnTerms.choosing_type_object)
 async def type_chosen_incorrectly(message: Message):
     await message.answer(
-        text="Я не знаю типа.\n\n"
+        text="Я не знаю такого типа.\n\n"
              "Пожалуйста, выберите одно из названий из списка ниже:",
         reply_markup=make_row_keyboard(available_term_types)
     )
+
+
+async def escape_special_characters(text: str) -> str:
+    return re.sub(r"(-|\(|\)|`)", r"\\\1", text)
 
 
 @router.message(LearnTerms.pre_learn_terms, F.text.in_('Повтор для себя'))
@@ -76,10 +98,16 @@ async def pre_learn_part(message: Message, state: FSMContext):
     )
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
+    logger.info(f'{terms} {message.from_user.id}')
     for word, definition in terms.items():
-        await message.answer(
-            text=f"{word}     \-      ||{definition}||", parse_mode="MarkdownV2"
-        )
+        word = await escape_special_characters(word)
+        definition = await escape_special_characters(definition)
+        try:
+            await message.answer(
+                text=f"{word}     \-      ||{definition}||", parse_mode="MarkdownV2"
+            )
+        except TelegramBadRequest as e:
+            logger.error(f'{e}, слово {word} и определение {definition} выдали ошибку при словаре {terms}')
     await message.answer(
         text="Начать?",
         reply_markup=make_row_keyboard(['Начать'])
@@ -87,48 +115,57 @@ async def pre_learn_part(message: Message, state: FSMContext):
     await state.set_state(LearnTerms.first_step)
 
 
+@logger.catch()
+async def send_term_and_options(message: Message, state: FSMContext, term_key: str, options_key: str, next_state):
+    user_data = await state.get_data()
+    terms = user_data.get("terms", {})
+    term_list = user_data[term_key]
+    logger.debug(f'{term_list} {term_key} {options_key}')
+    if not term_list:
+        await message.answer(text="Этап завершен! Вы молодец!", reply_markup=make_row_keyboard(['перейти']))
+        await state.set_state(next_state)
+        return
+    term = term_list.pop(0)
+    correct_option = terms[term] if term_key == "words" else {v: k for k, v in terms.items()}[term]
+    other_options = [v for k, v in terms.items() if k != term] if term_key == "words" else [k for k, v in terms.items()
+                                                                                            if v != term]
+    options = random.sample([*other_options, correct_option], 4)
+    random.shuffle(options)
+    if next_state == LearnTerms.finish:
+        await message.answer(text=term)
+        logger.debug(f'{next_state} {term}')
+    else:
+        await message.answer(text=term, reply_markup=make_row_keyboard(options))
+    await state.update_data(chosen_term=term, correct_option=correct_option, **{term_key: term_list})
+
+
+@logger.catch()
+async def check_user_answer(message: Message, state: FSMContext, next_step_function):
+    user_data = await state.get_data()
+    correct_option = user_data["correct_option"]
+
+    if message.text == correct_option:
+        await message.answer(text="Правильно!")
+        await next_step_function()
+    else:
+        await message.answer(text="Неправильно! Попробуй еще раз.")
+
+
 @router.message(LearnTerms.first_step, F.text.in_('Начать'))
 async def first_learn_part(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать слово, а ты выбирай определение")
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
-    user_data["words"] = list(terms.keys())  # сохраняем список слов в пользовательских данных
+    user_data["words"] = list(terms.keys())
     await state.update_data(user_data)
-    await send_word_and_options(message, state)  # отправляем первое слово и определения
-    await state.set_state(LearnTerms.check_answer)  # переходим к состоянию проверки ответа
-
-
-async def send_word_and_options(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    words = user_data["words"]
-
-    if not words:  # если слова закончились, возвращаемся к первому шагу
-        await message.answer(text="перейти ко второму этапу?", reply_markup=make_row_keyboard(['перейти']))
-        await state.set_state(LearnTerms.second_step)
-        return
-
-    word = words.pop(0)  # берем первое слово и удаляем его из списка
-    terms = user_data.get("terms", {})
-    correct_definition = terms[word]
-    other_definitions = [v for k, v in terms.items() if k != word]
-
-    options = random.sample([*other_definitions, correct_definition], 4)  # выбираем 4 определения, включая правильное
-    random.shuffle(options)  # перемешиваем определения
-
-    await message.answer(text=word, reply_markup=make_row_keyboard(options))
-    await state.update_data(chosen_word=word, correct_definition=correct_definition, words=words)
+    await send_term_and_options(message, state, "words", "definitions", LearnTerms.second_step)
+    await state.set_state(LearnTerms.check_answer)
 
 
 @router.message(LearnTerms.check_answer)
-async def check_user_answer(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    correct_definition = user_data["correct_definition"]
-
-    if message.text == correct_definition:  # если ответ пользователя правильный
-        await message.answer(text="Правильно!")
-        await send_word_and_options(message, state)  # отправляем следующее слово и определения
-    else:
-        await message.answer(text="Неправильно! Попробуй еще раз.")  # пользователь может попробовать еще раз
+async def check_user_answer_first_step(message: Message, state: FSMContext):
+    next_step_function = partial(send_term_and_options, message, state, "words", "definitions", LearnTerms.second_step)
+    await check_user_answer(message, state, next_step_function)
 
 
 @router.message(LearnTerms.second_step, F.text.in_('перейти'))
@@ -136,85 +173,36 @@ async def second_part(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты выбирай слово")
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
-    user_data["definitions"] = list(terms.values())  # сохраняем список определений в пользовательских данных
+    user_data["definitions"] = list(terms.values())
     await state.update_data(user_data)
-    await send_definition_and_options(message, state)  # отправляем первое определение и слова
-    await state.set_state(LearnTerms.check_answer_second_step)  # переходим к состоянию проверки ответа на втором этапе
-
-
-async def send_definition_and_options(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    definitions = user_data["definitions"]
-
-    if not definitions:  # если определения закончились, завершаем второй этап
-        await message.answer(text="Второй этап завершен! Вы молодец!", reply_markup=make_row_keyboard(['перейти']))
-        await state.set_state(LearnTerms.third_step)
-        return
-    terms = user_data.get("terms", {})
-    definition = definitions.pop(0)  # берем первое определение и удаляем его из списка
-    correct_word = [k for k, v in terms.items() if v == definition][0]
-    other_words = [k for k, v in terms.items() if k != correct_word]
-
-    options = random.sample([*other_words, correct_word], 4)  # выбираем 4 слова, включая правильное
-    random.shuffle(options)  # перемешиваем слова
-
-    await message.answer(text=definition, reply_markup=make_row_keyboard(options))
-    await state.update_data(chosen_definition=definition, correct_word=correct_word, definitions=definitions)
+    await send_term_and_options(message, state, "definitions", "words", LearnTerms.third_step)
+    await state.set_state(LearnTerms.check_answer_second_step)
 
 
 @router.message(LearnTerms.check_answer_second_step)
 async def check_user_answer_second_step(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    correct_word = user_data["correct_word"]
-
-    if message.text == correct_word:  # если ответ пользователя правильный
-        await message.answer(text="Правильно!")
-        await send_definition_and_options(message, state)  # отправляем следующее определение и слова
-    else:
-        await message.answer(text="Неправильно! Попробуй еще раз.")  # пользователь может попробовать еще раз
+    next_step_function = partial(send_term_and_options, message, state, "definitions", "words", LearnTerms.third_step)
+    await check_user_answer(message, state, next_step_function)
 
 
-@router.message(LearnTerms.third_step,
-                F.text.in_('перейти'))  # измените текст, который пользователь отправляет для начала третьего этапа
+@router.message(LearnTerms.third_step, F.text.in_('перейти'))
 async def third_part(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты вводи правильное слово")
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
-    user_data["definitions"] = list(terms.values())  # сохраняем список определений в пользовательских данных
+    user_data["definitions"] = list(terms.values())
     await state.update_data(user_data)
-    await send_definition(message, state)  # отправляем первое определение
-    await state.set_state(LearnTerms.check_answer_third_step)  # переходим к состоянию проверки ответа на третьем этапе
-
-
-async def send_definition(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    definitions = user_data["definitions"]
-
-    if not definitions:  # если определения закончились, завершаем третий этап
-        await message.answer(text="Третий этап завершен! Вы молодец!", reply_markup=make_row_keyboard(['я молодец!']))
-        await state.set_state(LearnTerms.finish)
-        return
-    terms = user_data.get("terms", {})
-    definition = definitions.pop(0)  # берем первое определение и удаляем его из списка
-    correct_word = [k for k, v in terms.items() if v == definition][0]
-
-    await message.answer(text=definition)
-    await state.update_data(chosen_definition=definition, correct_word=correct_word, definitions=definitions)
+    await send_term_and_options(message, state, "definitions", "words", LearnTerms.finish)
+    await state.set_state(LearnTerms.check_answer_third_step)
 
 
 @router.message(LearnTerms.check_answer_third_step)
 async def check_user_answer_third_step(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    correct_word = user_data["correct_word"]
-
-    if message.text.lower() == correct_word.lower():  # если ответ пользователя правильный
-        await message.answer(text="Правильно!")
-        await send_definition(message, state)  # отправляем следующее определение
-    else:
-        await message.answer(text="Неправильно! Попробуй еще раз.")  # пользователь может попробовать еще раз
+    next_step_function = partial(send_term_and_options, message, state, "definitions", "words",  LearnTerms.finish)
+    await check_user_answer(message, state, next_step_function)
 
 
-@router.message(LearnTerms.finish, F.text.in_('я молодец!'))
+@router.message(LearnTerms.finish, F.text.in_('перейти'))
 async def finish(message: Message, state: FSMContext):
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
@@ -222,6 +210,7 @@ async def finish(message: Message, state: FSMContext):
     answer = await db.change_learn_type(telegram_id=str(message.from_user.id), terms=learn_terms)
 
     await message.answer(
-        text=  f"а этом изучение всех слов оконченно {answer}", reply_markup=make_row_keyboard(['/learn_words', '/add_terms'])
+        text=f"а этом изучение всех слов оконченно {answer}",
+        reply_markup=make_row_keyboard(['/learn_words', '/add_terms'])
     )
     await state.clear()
