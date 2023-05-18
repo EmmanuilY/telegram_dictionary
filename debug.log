@@ -1010,3 +1010,325 @@ KeyError: 'что-либо(делающий)'
 2023-05-17T09:39:26.464489+0300 DEBUG []
 2023-05-17T09:39:26.466494+0300 DEBUG {'type': 'english_word', 'progress': 'learned'}
 2023-05-17T09:39:26.467491+0300 DEBUG {'type': 'english_word', 'progress': 'learned'}
+2023-05-17T11:29:49.808890+0300 INFO Запускаем бота
+2023-05-17T21:43:32.816344+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T21:43:49.597528+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T21:43:49.598529+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T21:43:49.599527+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T21:44:22.605544+0300 DEBUG []
+2023-05-17T21:44:22.606543+0300 DEBUG {'type': 'term', 'progress': 'learned'}
+2023-05-17T21:44:22.607543+0300 DEBUG {'type': 'term', 'progress': 'learned'}
+2023-05-17T21:44:26.537733+0300 DEBUG [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>, <Record term='halk' definition='marvel'>, <Record term='nohalk' definition='dc'>, <Record term='антитеза' definition='противопоставление'>, <Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>, <Record term='логроллинг' definition='практика "торговли голосами" среди членов законодательных органов'>, <Record term='обскурантизм' definition='враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>, <Record term='реторта' definition='аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке'>, <Record term='сутяга' definition='человек, склонный к тяжбам, с готовностью затевающий судебные конфликты'>, <Record term='бонбоньерка' definition='красиво украшенная коробка для конфет'>, <Record term='kuk' definition='что-либо(делающий)'>, <Record term='аффектация' definition='неестественная, обычно преднамеренная возбуждённость в поведении, в речи'>, <Record term='парокизм' definition='сильный приступ, припадок; внезапное обострение какой-либо болезни'>, <Record term='импозантный' definition='производящий впечатление, внушительный, представительный'>]
+2023-05-17T21:44:26.539733+0300 DEBUG {'type': 'term', 'progress': 'repeat', 'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический', 'реторта': 'аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке', 'сутяга': 'человек, склонный к тяжбам, с готовностью затевающий судебные конфликты', 'бонбоньерка': 'красиво украшенная коробка для конфет', 'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-17T21:44:26.541735+0300 DEBUG {'type': 'term', 'progress': 'repeat', 'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический', 'реторта': 'аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке', 'сутяга': 'человек, склонный к тяжбам, с готовностью затевающий судебные конфликты', 'бонбоньерка': 'красиво украшенная коробка для конфет', 'kuk': 'что-либо(делающий)', 'аффектация': 'неестественная, обычно преднамеренная возбуждённость в поведении, в речи', 'парокизм': 'сильный приступ, припадок; внезапное обострение какой-либо болезни', 'импозантный': 'производящий впечатление, внушительный, представительный'}
+2023-05-17T21:44:33.595293+0300 DEBUG []
+2023-05-17T21:44:33.596293+0300 DEBUG {'type': 'term', 'progress': 'learning'}
+2023-05-17T21:44:33.597293+0300 DEBUG {'type': 'term', 'progress': 'learning'}
+2023-05-17T21:44:46.098943+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-17T21:44:48.320384+0300 DEBUG [<Record learning='learning' count=5>, <Record learning='repeat' count=25>]
+2023-05-17T21:44:48.321385+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T21:44:48.322385+0300 DEBUG {'learning': 5, 'repeat': 25, 'learned': 0}
+2023-05-17T21:44:52.756315+0300 DEBUG [<Record term='hi' definition='привет'>, <Record term='write' definition='писать'>, <Record term='code' definition='кодить'>, <Record term='issue' definition='вопрос, задача'>]
+2023-05-17T21:44:52.757314+0300 DEBUG {'type': 'english_word', 'progress': 'repeat', 'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'}
+2023-05-17T21:44:52.758314+0300 DEBUG {'type': 'english_word', 'progress': 'repeat', 'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'}
+2023-05-18T18:26:51.454091+0300 DEBUG [<Record term='knitting' definition='вязание'>, <Record term='throbbing' definition='пульсация'>, <Record term='defy' definition='игнорировать'>, <Record term='salary' definition='зарплата'>, <Record term='hi mark ' definition='baza'>]
+2023-05-18T18:26:51.458123+0300 DEBUG {'type': 'english_word', 'progress': 'learning', 'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата', 'hi mark ': 'baza'}
+2023-05-18T18:26:51.461894+0300 DEBUG {'type': 'english_word', 'progress': 'learning', 'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата', 'hi mark ': 'baza'}
+2023-05-18T18:27:16.303007+0300 DEBUG [<Record term='hi' definition='привет'>, <Record term='write' definition='писать'>, <Record term='code' definition='кодить'>, <Record term='issue' definition='вопрос, задача'>]
+2023-05-18T18:27:16.304005+0300 DEBUG {'type': 'english_word', 'progress': 'repeat', 'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'}
+2023-05-18T18:27:16.306004+0300 DEBUG {'type': 'english_word', 'progress': 'repeat', 'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача'}
+2023-05-18T18:29:48.831207+0300 INFO Запускаем бота
+2023-05-18T18:29:50.514542+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T18:30:10.404876+0300 INFO Запускаем бота
+2023-05-18T18:30:32.683713+0300 INFO Запускаем бота
+2023-05-18T18:30:45.976696+0300 INFO Запускаем бота
+2023-05-18T18:30:48.558676+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T18:30:49.901047+0300 ERROR Ошибчока the server expects 0 arguments for this query, 1 was passed
+HINT:  Check the query against the passed list of arguments.  Note that parameters are supported only in SELECT, INSERT, UPDATE, DELETE, and VALUES statements, and will *not* work in statements  like CREATE VIEW or DECLARE CURSOR.
+2023-05-18T18:31:32.854613+0300 INFO Запускаем бота
+2023-05-18T18:31:35.298198+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T18:31:36.712028+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T18:52:28.215420+0300 INFO Запускаем бота
+2023-05-18T18:52:37.428318+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T18:52:39.640488+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:05:03.467994+0300 INFO Запускаем бота
+2023-05-18T19:05:10.442126+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:05:15.037075+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:05:16.956922+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:07:36.046238+0300 INFO Запускаем бота
+2023-05-18T19:07:39.248163+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:07:42.338368+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:07:44.176785+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:09:09.913165+0300 INFO Запускаем бота
+2023-05-18T19:09:12.870150+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:09:14.783066+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:09:54.070178+0300 INFO Запускаем бота
+2023-05-18T19:09:55.845266+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:09:57.394349+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:09:59.133408+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:10:37.512289+0300 INFO Запускаем бота
+2023-05-18T19:10:42.078283+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:10:43.901109+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:10:45.058493+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:12:10.751922+0300 INFO Запускаем бота
+2023-05-18T19:12:12.773800+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:12:19.332802+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:12:20.576593+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:12:21.958539+0300 DEBUG Выбрано 6, [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>] term 536806818 
+2023-05-18T19:12:21.959538+0300 INFO [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>] - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T19:13:58.172448+0300 INFO Запускаем бота
+2023-05-18T19:14:00.697420+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:14:02.560524+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:14:04.226373+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:14:05.772469+0300 DEBUG Выбрано 6, [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>] term 536806818 
+2023-05-18T19:14:05.773469+0300 INFO {'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T19:14:12.375825+0300 DEBUG ['pep', 'term', 'p', 'эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:14:19.098116+0300 DEBUG ['term', 'p', 'эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:15:25.251977+0300 DEBUG ['p', 'эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:15:34.089315+0300 DEBUG ['эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:15:36.578071+0300 DEBUG ['Копигольд', 'privet'] words definitions
+2023-05-18T19:16:05.375201+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:29:00.643169+0300 INFO Запускаем бота
+2023-05-18T19:29:07.406980+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:29:09.396891+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:29:10.989964+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:29:13.349890+0300 DEBUG Выбрано 6, [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>] term 536806818 
+2023-05-18T19:29:13.350890+0300 INFO {'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T19:29:16.280809+0300 DEBUG ['pep', 'term', 'p', 'эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:29:22.501789+0300 DEBUG ['term', 'p', 'эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:29:25.388107+0300 DEBUG ['p', 'эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:29:28.290873+0300 DEBUG ['эргодический', 'Копигольд', 'privet'] words definitions
+2023-05-18T19:31:01.612241+0300 INFO Запускаем бота
+2023-05-18T19:31:06.848611+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:31:09.007054+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:31:10.603152+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:31:12.548703+0300 DEBUG Выбрано 10, [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>, <Record term='halk' definition='marvel'>, <Record term='nohalk' definition='dc'>, <Record term='антитеза' definition='противопоставление'>] term 536806818 
+2023-05-18T19:31:12.550243+0300 INFO {'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T19:31:16.302199+0300 DEBUG ['pep', 'term', 'p', 'эргодический', 'Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:31:16.303812+0300 DEBUG ['g', 'dc', 'it', 'pep']
+2023-05-18T19:32:05.108958+0300 INFO Запускаем бота
+2023-05-18T19:32:07.882848+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:32:11.825882+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:32:12.808881+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:32:14.622404+0300 DEBUG Выбрано 10, [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>, <Record term='halk' definition='marvel'>, <Record term='nohalk' definition='dc'>, <Record term='антитеза' definition='противопоставление'>] term 536806818 
+2023-05-18T19:32:14.623403+0300 INFO {'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T19:32:17.960362+0300 DEBUG ['pep', 'term', 'p', 'эргодический', 'Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:32:17.961363+0300 DEBUG pup правильный ответ, ['dc', 'marvel', 'g', 'pep']
+2023-05-18T19:35:34.833313+0300 INFO Запускаем бота
+2023-05-18T19:35:43.682455+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T19:35:46.117153+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T19:35:47.615226+0300 DEBUG [<Record number_of_repetitions=1 count=20>, <Record number_of_repetitions=2 count=1>]  536806818
+2023-05-18T19:35:52.788906+0300 DEBUG Выбрано 10, [<Record term='pep' definition='pup'>, <Record term='term' definition='pep'>, <Record term='p' definition='g'>, <Record term='эргодический' definition='случайный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>, <Record term='halk' definition='marvel'>, <Record term='nohalk' definition='dc'>, <Record term='антитеза' definition='противопоставление'>] term 536806818 
+2023-05-18T19:35:52.790539+0300 INFO {'pep': 'pup', 'term': 'pep', 'p': 'g', 'эргодический': 'случайный', 'Копигольд': 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'privet': 'poka', 'pop': 'it', 'halk': 'marvel', 'nohalk': 'dc', 'антитеза': 'противопоставление'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T19:35:55.631453+0300 DEBUG ['pep', 'term', 'p', 'эргодический', 'Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:35:55.632451+0300 DEBUG pup правильный ответ, ['pup', 'случайный', 'g', 'marvel']
+2023-05-18T19:35:58.715459+0300 DEBUG ['term', 'p', 'эргодический', 'Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:35:58.716459+0300 DEBUG pep правильный ответ, ['pep', 'pup', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka']
+2023-05-18T19:36:03.046782+0300 DEBUG ['p', 'эргодический', 'Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:03.047783+0300 DEBUG g правильный ответ, ['g', 'marvel', 'pep', 'dc']
+2023-05-18T19:36:05.047759+0300 DEBUG ['эргодический', 'Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:05.048760+0300 DEBUG случайный правильный ответ, ['случайный', 'pep', 'poka', 'противопоставление']
+2023-05-18T19:36:07.323739+0300 DEBUG ['Копигольд', 'privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:07.325736+0300 DEBUG форма феодальной зависимости крестьян от дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма правильный ответ, ['форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'dc', 'pup', 'it']
+2023-05-18T19:36:09.647220+0300 DEBUG ['privet', 'pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:09.648221+0300 DEBUG poka правильный ответ, ['poka', 'marvel', 'pep', 'it']
+2023-05-18T19:36:12.337675+0300 DEBUG ['pop', 'halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:12.338676+0300 DEBUG it правильный ответ, ['it', 'pup', 'случайный', 'marvel']
+2023-05-18T19:36:17.925826+0300 DEBUG ['halk', 'nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:17.926829+0300 DEBUG marvel правильный ответ, ['marvel', 'противопоставление', 'it', 'dc']
+2023-05-18T19:36:20.896034+0300 DEBUG ['nohalk', 'антитеза'] words definitions
+2023-05-18T19:36:20.897036+0300 DEBUG dc правильный ответ, ['dc', 'g', 'противопоставление', 'pup']
+2023-05-18T19:36:23.700516+0300 DEBUG ['антитеза'] words definitions
+2023-05-18T19:36:23.701514+0300 DEBUG противопоставление правильный ответ, ['противопоставление', 'marvel', 'g', 'случайный']
+2023-05-18T19:36:26.464436+0300 DEBUG [] words definitions
+2023-05-18T19:36:28.177525+0300 DEBUG ['pup', 'pep', 'g', 'случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:28.178526+0300 DEBUG pep правильный ответ, ['pep', 'nohalk', 'антитеза', 'эргодический']
+2023-05-18T19:36:32.300312+0300 DEBUG ['pep', 'g', 'случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:32.302312+0300 DEBUG term правильный ответ, ['term', 'антитеза', 'nohalk', 'Копигольд']
+2023-05-18T19:36:35.440447+0300 DEBUG ['g', 'случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:35.441445+0300 DEBUG p правильный ответ, ['p', 'pep', 'nohalk', 'privet']
+2023-05-18T19:36:37.450577+0300 DEBUG ['случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:37.451577+0300 DEBUG эргодический правильный ответ, ['эргодический', 'p', 'Копигольд', 'halk']
+2023-05-18T19:36:39.253818+0300 DEBUG ['форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:39.254817+0300 DEBUG Копигольд правильный ответ, ['Копигольд', 'pep', 'p', 'privet']
+2023-05-18T19:36:41.788338+0300 DEBUG ['poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:41.789339+0300 DEBUG privet правильный ответ, ['privet', 'антитеза', 'term', 'pep']
+2023-05-18T19:36:44.664171+0300 DEBUG ['it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:36:44.665171+0300 DEBUG pop правильный ответ, ['pop', 'term', 'эргодический', 'p']
+2023-05-18T19:37:08.918722+0300 DEBUG ['marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:37:08.919721+0300 DEBUG halk правильный ответ, ['halk', 'pep', 'pop', 'антитеза']
+2023-05-18T19:37:11.423270+0300 DEBUG ['dc', 'противопоставление'] definitions words
+2023-05-18T19:37:11.424272+0300 DEBUG nohalk правильный ответ, ['nohalk', 'pep', 'p', 'pop']
+2023-05-18T19:37:13.484346+0300 DEBUG ['противопоставление'] definitions words
+2023-05-18T19:37:13.485344+0300 DEBUG антитеза правильный ответ, ['антитеза', 'halk', 'Копигольд', 'privet']
+2023-05-18T19:37:16.285522+0300 DEBUG [] definitions words
+2023-05-18T19:37:18.011368+0300 DEBUG ['pup', 'pep', 'g', 'случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:37:18.013368+0300 DEBUG pep правильный ответ, ['pep', 'Копигольд', 'halk', 'pop']
+2023-05-18T19:37:18.150785+0300 DEBUG <State 'RepeatTerms:finish'> pup
+2023-05-18T19:37:21.903448+0300 DEBUG ['pep', 'g', 'случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:37:21.904249+0300 DEBUG term правильный ответ, ['term', 'Копигольд', 'nohalk', 'антитеза']
+2023-05-18T19:37:22.016873+0300 DEBUG <State 'RepeatTerms:finish'> pep
+2023-05-18T19:37:26.670350+0300 DEBUG ['g', 'случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:37:26.671348+0300 DEBUG p правильный ответ, ['p', 'nohalk', 'Копигольд', 'halk']
+2023-05-18T19:37:26.776404+0300 DEBUG <State 'RepeatTerms:finish'> g
+2023-05-18T19:37:29.162314+0300 DEBUG ['случайный', 'форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:37:29.163314+0300 DEBUG эргодический правильный ответ, ['эргодический', 'pep', 'антитеза', 'p']
+2023-05-18T19:37:29.277788+0300 DEBUG <State 'RepeatTerms:finish'> случайный
+2023-05-18T19:37:52.049845+0300 DEBUG ['форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма', 'poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:37:52.051855+0300 DEBUG Копигольд правильный ответ, ['Копигольд', 'halk', 'privet', 'pep']
+2023-05-18T19:37:52.155112+0300 DEBUG <State 'RepeatTerms:finish'> форма феодальной зависимости крестьян от дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма
+2023-05-18T19:38:14.971682+0300 DEBUG ['poka', 'it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:38:14.972682+0300 DEBUG privet правильный ответ, ['privet', 'nohalk', 'halk', 'pep']
+2023-05-18T19:38:15.125889+0300 DEBUG <State 'RepeatTerms:finish'> poka
+2023-05-18T19:39:16.597081+0300 DEBUG ['it', 'marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:39:16.598081+0300 DEBUG pop правильный ответ, ['pop', 'pep', 'Копигольд', 'nohalk']
+2023-05-18T19:39:16.695317+0300 DEBUG <State 'RepeatTerms:finish'> it
+2023-05-18T19:39:19.210648+0300 DEBUG ['marvel', 'dc', 'противопоставление'] definitions words
+2023-05-18T19:39:19.211658+0300 DEBUG halk правильный ответ, ['halk', 'эргодический', 'антитеза', 'pep']
+2023-05-18T19:39:19.412971+0300 DEBUG <State 'RepeatTerms:finish'> marvel
+2023-05-18T19:39:23.789927+0300 DEBUG ['dc', 'противопоставление'] definitions words
+2023-05-18T19:39:23.790927+0300 DEBUG nohalk правильный ответ, ['nohalk', 'pop', 'halk', 'Копигольд']
+2023-05-18T19:39:23.906061+0300 DEBUG <State 'RepeatTerms:finish'> dc
+2023-05-18T19:39:27.423914+0300 DEBUG ['противопоставление'] definitions words
+2023-05-18T19:39:27.424921+0300 DEBUG антитеза правильный ответ, ['антитеза', 'term', 'pop', 'halk']
+2023-05-18T19:39:27.554399+0300 DEBUG <State 'RepeatTerms:finish'> противопоставление
+2023-05-18T19:39:31.711813+0300 DEBUG [] definitions words
+2023-05-18T19:50:04.199424+0300 INFO Запускаем бота
+2023-05-18T19:50:10.338821+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T23:29:01.098082+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата'} 536806818
+2023-05-18T23:29:20.182803+0300 DEBUG ['knitting', 'throbbing', 'defy', 'salary'] words definitions
+2023-05-18T23:29:23.303923+0300 DEBUG ['throbbing', 'defy', 'salary'] words definitions
+2023-05-18T23:29:25.770896+0300 DEBUG ['defy', 'salary'] words definitions
+2023-05-18T23:29:28.619229+0300 DEBUG ['salary'] words definitions
+2023-05-18T23:29:30.309928+0300 DEBUG [] words definitions
+2023-05-18T23:29:31.817458+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:29:34.993305+0300 DEBUG ['пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:29:37.096245+0300 DEBUG ['игнорировать', 'зарплата'] definitions words
+2023-05-18T23:29:39.305746+0300 DEBUG ['зарплата'] definitions words
+2023-05-18T23:29:41.821421+0300 DEBUG [] definitions words
+2023-05-18T23:29:44.640705+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:29:44.738628+0300 DEBUG <State 'LearnTerms:finish'> вязание
+2023-05-18T23:29:52.512183+0300 DEBUG ['пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:29:52.597864+0300 DEBUG <State 'LearnTerms:finish'> пульсация
+2023-05-18T23:29:57.241474+0300 DEBUG ['игнорировать', 'зарплата'] definitions words
+2023-05-18T23:29:57.390157+0300 DEBUG <State 'LearnTerms:finish'> игнорировать
+2023-05-18T23:30:00.192522+0300 DEBUG ['зарплата'] definitions words
+2023-05-18T23:30:00.279340+0300 DEBUG <State 'LearnTerms:finish'> зарплата
+2023-05-18T23:30:02.599508+0300 DEBUG [] definitions words
+2023-05-18T23:32:49.676991+0300 INFO Запускаем бота
+2023-05-18T23:32:53.097492+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:32:54.687377+0300 DEBUG [<Record type='english_word' count=4>, <Record type='term' count=21>]  536806818
+2023-05-18T23:32:58.786404+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:33:50.272874+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T23:33:52.654256+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'salary': 'зарплата'} 536806818
+2023-05-18T23:33:55.023854+0300 DEBUG ['knitting', 'throbbing', 'defy', 'salary'] words definitions
+2023-05-18T23:33:57.486685+0300 DEBUG ['throbbing', 'defy', 'salary'] words definitions
+2023-05-18T23:33:59.321898+0300 DEBUG ['defy', 'salary'] words definitions
+2023-05-18T23:34:02.291560+0300 DEBUG ['salary'] words definitions
+2023-05-18T23:34:04.016866+0300 DEBUG [] words definitions
+2023-05-18T23:34:05.635361+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:34:11.964118+0300 DEBUG ['пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:34:13.828740+0300 DEBUG ['игнорировать', 'зарплата'] definitions words
+2023-05-18T23:34:15.659418+0300 DEBUG ['зарплата'] definitions words
+2023-05-18T23:34:17.375781+0300 DEBUG [] definitions words
+2023-05-18T23:34:18.522757+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:34:18.620914+0300 DEBUG <State 'LearnTerms:finish'> вязание
+2023-05-18T23:34:24.461572+0300 DEBUG ['пульсация', 'игнорировать', 'зарплата'] definitions words
+2023-05-18T23:34:24.570981+0300 DEBUG <State 'LearnTerms:finish'> пульсация
+2023-05-18T23:34:28.724766+0300 DEBUG ['игнорировать', 'зарплата'] definitions words
+2023-05-18T23:34:28.809774+0300 DEBUG <State 'LearnTerms:finish'> игнорировать
+2023-05-18T23:34:32.338679+0300 DEBUG ['зарплата'] definitions words
+2023-05-18T23:34:32.440582+0300 DEBUG <State 'LearnTerms:finish'> зарплата
+2023-05-18T23:34:34.205767+0300 DEBUG [] definitions words
+2023-05-18T23:40:09.108994+0300 INFO Запускаем бота
+2023-05-18T23:40:14.321926+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:40:16.050643+0300 DEBUG [<Record type='english_word' count=5>, <Record type='term' count=21>]  536806818
+2023-05-18T23:40:20.693032+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:40:24.463828+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'hi mark ': 'baza'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T23:40:47.696939+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'hi mark ': 'baza'} 536806818
+2023-05-18T23:41:08.465570+0300 DEBUG ['knitting', 'throbbing', 'defy', 'hi mark '] words definitions
+2023-05-18T23:41:12.178161+0300 DEBUG ['throbbing', 'defy', 'hi mark '] words definitions
+2023-05-18T23:41:18.592815+0300 DEBUG ['defy', 'hi mark '] words definitions
+2023-05-18T23:41:20.928435+0300 DEBUG ['hi mark '] words definitions
+2023-05-18T23:41:22.936913+0300 DEBUG [] words definitions
+2023-05-18T23:41:24.098602+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'baza'] definitions words
+2023-05-18T23:41:26.327227+0300 DEBUG ['пульсация', 'игнорировать', 'baza'] definitions words
+2023-05-18T23:41:28.529629+0300 DEBUG ['игнорировать', 'baza'] definitions words
+2023-05-18T23:41:30.237356+0300 DEBUG ['baza'] definitions words
+2023-05-18T23:43:05.547369+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:43:11.783957+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'hi mark': 'baza'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T23:43:13.578017+0300 INFO {'knitting': 'вязание', 'throbbing': 'пульсация', 'defy': 'игнорировать', 'hi mark': 'baza'} 536806818
+2023-05-18T23:43:14.847659+0300 DEBUG ['knitting', 'throbbing', 'defy', 'hi mark'] words definitions
+2023-05-18T23:43:16.878148+0300 DEBUG ['throbbing', 'defy', 'hi mark'] words definitions
+2023-05-18T23:43:19.440522+0300 DEBUG ['defy', 'hi mark'] words definitions
+2023-05-18T23:43:23.232152+0300 DEBUG ['hi mark'] words definitions
+2023-05-18T23:43:24.817932+0300 DEBUG [] words definitions
+2023-05-18T23:43:25.902069+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'baza'] definitions words
+2023-05-18T23:43:28.285486+0300 DEBUG ['пульсация', 'игнорировать', 'baza'] definitions words
+2023-05-18T23:43:30.478902+0300 DEBUG ['игнорировать', 'baza'] definitions words
+2023-05-18T23:43:33.979829+0300 DEBUG ['baza'] definitions words
+2023-05-18T23:43:35.605331+0300 DEBUG [] definitions words
+2023-05-18T23:43:37.918862+0300 DEBUG ['вязание', 'пульсация', 'игнорировать', 'baza'] definitions words
+2023-05-18T23:43:38.002867+0300 DEBUG <State 'LearnTerms:finish'> вязание
+2023-05-18T23:43:44.251268+0300 DEBUG ['пульсация', 'игнорировать', 'baza'] definitions words
+2023-05-18T23:43:44.334029+0300 DEBUG <State 'LearnTerms:finish'> пульсация
+2023-05-18T23:43:47.176168+0300 DEBUG ['игнорировать', 'baza'] definitions words
+2023-05-18T23:43:47.288470+0300 DEBUG <State 'LearnTerms:finish'> игнорировать
+2023-05-18T23:43:50.446184+0300 DEBUG ['baza'] definitions words
+2023-05-18T23:43:50.529864+0300 DEBUG <State 'LearnTerms:finish'> baza
+2023-05-18T23:43:53.000652+0300 DEBUG [] definitions words
+2023-05-18T23:44:00.967619+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:44:04.219532+0300 DEBUG [<Record type='english_word' count=9>, <Record type='term' count=21>]  536806818
+2023-05-18T23:44:05.390063+0300 DEBUG [<Record number_of_repetitions=1 count=9>]  536806818
+2023-05-18T23:44:08.030294+0300 DEBUG Выбрано 6, [<Record term='hi' definition='привет'>, <Record term='write' definition='писать'>, <Record term='code' definition='кодить'>, <Record term='issue' definition='вопрос, задача'>, <Record term='salary' definition='зарплата'>, <Record term='knitting' definition='вязание'>] english_word 536806818 
+2023-05-18T23:44:08.031291+0300 INFO {'hi': 'привет', 'write': 'писать', 'code': 'кодить', 'issue': 'вопрос, задача', 'salary': 'зарплата', 'knitting': 'вязание'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-05-18T23:44:16.809362+0300 DEBUG ['hi', 'write', 'code', 'issue', 'salary', 'knitting'] words definitions
+2023-05-18T23:44:16.810362+0300 DEBUG привет правильный ответ, ['привет', 'вопрос, задача', 'зарплата', 'кодить']
+2023-05-18T23:44:19.090071+0300 DEBUG ['write', 'code', 'issue', 'salary', 'knitting'] words definitions
+2023-05-18T23:44:19.092071+0300 DEBUG писать правильный ответ, ['писать', 'кодить', 'зарплата', 'привет']
+2023-05-18T23:44:20.925511+0300 DEBUG ['code', 'issue', 'salary', 'knitting'] words definitions
+2023-05-18T23:44:20.927511+0300 DEBUG кодить правильный ответ, ['кодить', 'писать', 'зарплата', 'привет']
+2023-05-18T23:44:23.100003+0300 DEBUG ['issue', 'salary', 'knitting'] words definitions
+2023-05-18T23:44:23.101011+0300 DEBUG вопрос, задача правильный ответ, ['вопрос, задача', 'зарплата', 'кодить', 'писать']
+2023-05-18T23:44:25.814980+0300 DEBUG ['salary', 'knitting'] words definitions
+2023-05-18T23:44:25.815979+0300 DEBUG зарплата правильный ответ, ['зарплата', 'кодить', 'вопрос, задача', 'вязание']
+2023-05-18T23:44:27.398493+0300 DEBUG ['knitting'] words definitions
+2023-05-18T23:44:27.399492+0300 DEBUG вязание правильный ответ, ['вязание', 'вопрос, задача', 'писать', 'зарплата']
+2023-05-18T23:44:31.133742+0300 DEBUG [] words definitions
+2023-05-18T23:44:32.585075+0300 DEBUG ['привет', 'писать', 'кодить', 'вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:32.586076+0300 DEBUG hi правильный ответ, ['hi', 'write', 'knitting', 'code']
+2023-05-18T23:44:34.331462+0300 DEBUG ['писать', 'кодить', 'вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:34.333463+0300 DEBUG write правильный ответ, ['write', 'hi', 'code', 'issue']
+2023-05-18T23:44:35.923739+0300 DEBUG ['кодить', 'вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:35.924738+0300 DEBUG code правильный ответ, ['code', 'issue', 'knitting', 'write']
+2023-05-18T23:44:38.103913+0300 DEBUG ['вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:38.104913+0300 DEBUG issue правильный ответ, ['issue', 'hi', 'code', 'salary']
+2023-05-18T23:44:40.398422+0300 DEBUG ['зарплата', 'вязание'] definitions words
+2023-05-18T23:44:40.399423+0300 DEBUG salary правильный ответ, ['salary', 'code', 'issue', 'write']
+2023-05-18T23:44:42.196785+0300 DEBUG ['вязание'] definitions words
+2023-05-18T23:44:42.197792+0300 DEBUG knitting правильный ответ, ['knitting', 'hi', 'issue', 'salary']
+2023-05-18T23:44:43.887930+0300 DEBUG [] definitions words
+2023-05-18T23:44:45.366345+0300 DEBUG ['привет', 'писать', 'кодить', 'вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:45.367346+0300 DEBUG hi правильный ответ, ['hi', 'knitting', 'code', 'salary']
+2023-05-18T23:44:45.457685+0300 DEBUG <State 'RepeatTerms:finish'> привет
+2023-05-18T23:44:50.534937+0300 DEBUG ['писать', 'кодить', 'вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:50.535705+0300 DEBUG write правильный ответ, ['write', 'issue', 'code', 'hi']
+2023-05-18T23:44:50.638509+0300 DEBUG <State 'RepeatTerms:finish'> писать
+2023-05-18T23:44:52.668676+0300 DEBUG ['кодить', 'вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:52.669676+0300 DEBUG code правильный ответ, ['code', 'knitting', 'hi', 'salary']
+2023-05-18T23:44:52.768339+0300 DEBUG <State 'RepeatTerms:finish'> кодить
+2023-05-18T23:44:54.401014+0300 DEBUG ['вопрос, задача', 'зарплата', 'вязание'] definitions words
+2023-05-18T23:44:54.402013+0300 DEBUG issue правильный ответ, ['issue', 'salary', 'hi', 'knitting']
+2023-05-18T23:44:54.544322+0300 DEBUG <State 'RepeatTerms:finish'> вопрос, задача
+2023-05-18T23:44:57.206818+0300 DEBUG ['зарплата', 'вязание'] definitions words
+2023-05-18T23:44:57.207818+0300 DEBUG salary правильный ответ, ['salary', 'knitting', 'code', 'write']
+2023-05-18T23:44:57.299511+0300 DEBUG <State 'RepeatTerms:finish'> зарплата
+2023-05-18T23:44:59.579480+0300 DEBUG ['вязание'] definitions words
+2023-05-18T23:44:59.580481+0300 DEBUG knitting правильный ответ, ['knitting', 'write', 'code', 'issue']
+2023-05-18T23:44:59.990621+0300 DEBUG <State 'RepeatTerms:finish'> вязание
+2023-05-18T23:45:03.439244+0300 DEBUG [] definitions words
+2023-05-18T23:46:34.218491+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-05-18T23:46:37.356158+0300 DEBUG [<Record type='english_word' count=9>, <Record type='term' count=21>]  536806818
+2023-05-18T23:46:46.335473+0300 DEBUG [<Record number_of_repetitions=1 count=11>, <Record number_of_repetitions=2 count=9>, <Record number_of_repetitions=3 count=1>]  536806818
+2023-05-18T23:47:08.150436+0300 DEBUG Выбрано 4, [<Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>, <Record term='логроллинг' definition='практика "торговли голосами" среди членов законодательных органов'>, <Record term='обскурантизм' definition='враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>] term 536806818 
+2023-05-18T23:47:08.151434+0300 INFO {'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'логроллинг': 'практика "торговли голосами" среди членов законодательных органов', 'обскурантизм': 'враждебное\xa0отношение\xa0к просвещению, к науке, к культурному прогрессу;\xa0мракобесие', 'предиктивный': 'связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'} - 536806818 - SPB_Emmanuil_Yankelevich

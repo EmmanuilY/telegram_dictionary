@@ -32,7 +32,7 @@ async def cmd_start(message: Message, state: FSMContext):
                          "Что вы хотите делать? \n"
                          "учить слова или добавить слова .",
 
-                    reply_markup=make_row_keyboard(['/learn_words', '/add_terms', '/check_progress'])
+                    reply_markup=make_row_keyboard(['/learn_words', '/add_terms', '/check_progress', '/repeat_terms'])
                 )
 
 

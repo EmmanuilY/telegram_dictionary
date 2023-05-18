@@ -120,19 +120,22 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def change_learn_type (self, telegram_id, terms: list,  change_learn='repeat') -> dict | str:
+    async def change_learn_type (self, telegram_id, terms: list) -> dict | str:
         try:
             terms = await self._execute(
                 """
                UPDATE user_terms_progress
-                SET number_of_repetitions = number_of_repetitions + 1, learning = $3
+                SET number_of_repetitions = number_of_repetitions + 1, learning = CASE
+                               WHEN number_of_repetitions < 7 THEN 'repeat'::step_of_learning
+                               ELSE 'learned'::step_of_learning
+                           END
                 FROM users, terms
                 WHERE user_terms_progress.user_id = users.user_id
                 AND user_terms_progress.term_id = terms.term_id
                 AND users.telegram_id = $1
                 AND terms.term = ANY($2::varchar[])
                 """,
-                telegram_id, terms, change_learn
+                telegram_id, terms
             )
 
             # Преобразование списка кортежей в словарь
@@ -187,4 +190,73 @@ class DB:
             return progress
 
         except Exception as e:
+            return f'{e}'
+
+    async def get_count_repeat_terms(self, telegram_id: str ) -> dict | str:
+        try:
+
+            terms_count = await self._fetch(
+                """
+           SELECT type, COUNT(*) 
+               FROM user_terms_progress u JOIN users u2 on u.user_id=u2.user_id join terms t on u.term_id=t.term_id
+               WHERE  telegram_id = $1 and learning = 'repeat' group by type
+
+                """,
+                telegram_id,
+            )
+            logger.debug(f'{terms_count}  {telegram_id}')
+
+            # Обновление словаря данными из запроса
+
+            return terms_count
+
+        except Exception as e:
+            logger.error(f'Ошибчока {e}')
+            return f'{e}'
+
+    async def get_count_repeat_terms_types(self, telegram_id: str, term_type: str ) -> dict | str:
+        try:
+
+            terms_type_count = await self._fetch(
+                """
+               SELECT number_of_repetitions, COUNT(*) 
+               FROM user_terms_progress u JOIN users u2 on u.user_id=u2.user_id join terms t on u.term_id=t.term_id
+               WHERE   telegram_id = $1 and learning = 'repeat' and type = $2 group by number_of_repetitions
+
+                """,
+                telegram_id, term_type
+            )
+            logger.debug(f'{terms_type_count}  {telegram_id}')
+
+            # Обновление словаря данными из запроса
+
+            return terms_type_count
+
+        except Exception as e:
+            logger.error(f'Ошибчока {e}')
+            return f'{e}'
+
+    async def get_repeat_terms(self, telegram_id: str, term_type: str, count:int ) -> dict | str:
+        try:
+
+            terms= await self._fetch(
+                """
+            SELECT t.term, t.definition
+                FROM terms t
+                JOIN user_terms_progress utp ON t.term_id = utp.term_id
+                JOIN USERS u on utp.user_id=u.user_id
+                WHERE u.telegram_id =$1 AND t.type = $2 AND utp.learning = 'repeat'
+                LIMIT $3
+
+                """,
+                telegram_id, term_type, count
+            )
+            logger.debug(f'Выбрано {count}, {terms} {term_type} {telegram_id} ')
+            terms_dict = {term: definition for term, definition in terms}
+
+
+            return terms_dict
+
+        except Exception as e:
+            logger.error(f'Ошибчока {e}')
             return f'{e}'
