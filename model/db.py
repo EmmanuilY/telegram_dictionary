@@ -4,7 +4,6 @@ from loguru import logger
 import asyncpg
 
 
-
 class DB:
     def __init__(self):
         self.connection = None
@@ -121,7 +120,7 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def change_learn_type (self, telegram_id, terms: list) -> dict | str:
+    async def change_learn_type(self, telegram_id, terms: list) -> dict | str:
         try:
             terms = await self._execute(
                 """
@@ -145,7 +144,7 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def get_terms_progress(self, telegram_id:str) -> dict | str:
+    async def get_terms_progress(self, telegram_id: str) -> dict | str:
         try:
 
             terms = await self._fetch(
@@ -169,7 +168,7 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def get_terms_learning(self, telegram_id:str, progress:str, type:str,) -> dict | str:
+    async def get_terms_learning(self, telegram_id: str, progress: str, type: str, ) -> dict | str:
         try:
 
             terms = await self._fetch(
@@ -180,11 +179,11 @@ class DB:
               WHERE telegram_id = $1 AND learning = $2 AND type=$3;
 
                 """,
-                telegram_id,progress, type
+                telegram_id, progress, type
             )
             logger.debug(f'{terms}')
             # Преобразование списка кортежей в словарь
-            progress = {'type':type , 'progress' : progress}
+            progress = {'type': type, 'progress': progress}
             # Обновление словаря данными из запроса
             progress.update(dict(terms))
             logger.debug(f'{progress}')
@@ -193,7 +192,7 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def get_count_repeat_terms(self, telegram_id: str, learning: str ) -> dict | str:
+    async def get_count_repeat_terms(self, telegram_id: str, learning: str) -> dict | str:
         try:
 
             terms_count = await self._fetch(
@@ -237,10 +236,10 @@ class DB:
             logger.error(f'Ошибчока {e}')
             return f'{e}'
 
-    async def get_repeat_terms(self, telegram_id: str, term_type: str, count:int, learning: str ) -> dict | str | tuple:
+    async def get_words(self, user_id, type_of_words, number_of_words,  type_of_learning) -> dict | str | tuple:
         try:
 
-            terms= await self._fetch(
+            terms = await self._fetch(
                 """
             SELECT t.term, t.definition
                 FROM terms t
@@ -251,7 +250,7 @@ class DB:
                 LIMIT $3
 
                 """,
-                telegram_id, term_type, count, learning
+                user_id, type_of_words, number_of_words, type_of_learning
             )
             logger.debug(f'Выбрано {count}, {terms} {term_type} {telegram_id} ')
             terms_dict = {term: definition for term, definition in terms}
@@ -262,7 +261,6 @@ class DB:
         except Exception as e:
             logger.error(f'Ошибчока {e}')
             return f'{e}'
-
 
     async def repeat_learned_words(self, telegram_id, terms: list) -> dict | str:
         try:

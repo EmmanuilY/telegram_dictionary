@@ -23,7 +23,3 @@ F
 Wmodel/database_migrations/alembic/versions/f99faacc1ee0_create_user_and_terms_tables.py,5\e\5e42c2140e67e754e64330bc413a762c14b61dbb
 <
 bot_logs.log,7\a\7a3d7465debe9c8ecab8acc69a03abf41a454a55
-9
-	debug.log,a\2\a29fab13139e329b70356dce2ac2a179d69d4c23
-P
- handlers/repeat_learned_words.py,a\9\a99a1528ff988fcf9e6cc05d9639053b5f153ea1
