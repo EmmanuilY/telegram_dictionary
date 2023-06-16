@@ -14,6 +14,7 @@ db = DB()
 @router.message(Command("start"))
 async def cmd_start(message: Message, state: FSMContext):
     await state.clear()
+
     logger.info(f"Мне написали : {message.from_user.id} {message.from_user.username}")
     registration = await db.add_user(str(message.from_user.id), str(message.from_user.first_name))
     match registration:
@@ -32,7 +33,7 @@ async def cmd_start(message: Message, state: FSMContext):
                          "Что вы хотите делать? \n"
                          "учить слова или добавить слова .",
 
-                    reply_markup=make_row_keyboard(['/learn_words', '/add_terms', '/check_progress', '/repeat_terms'])
+                    reply_markup=make_row_keyboard(['/learn_words', '/add_terms', '/check_progress', '/repeat_terms', '/repeat_learn_terms'])
                 )
 
 

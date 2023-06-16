@@ -140,8 +140,11 @@ async def send_term_and_options(message: Message, state: FSMContext, term_key: s
 async def check_user_answer(message: Message, state: FSMContext, next_step_function):
     user_data = await state.get_data()
     correct_option = user_data["correct_option"]
+    if len(message.text) > 10 and message.text[:-3].strip().lower() in correct_option.strip().lower():
+        await message.answer(text="Правильно!")
+        await next_step_function()
 
-    if message.text == correct_option:
+    elif message.text.strip().lower() == correct_option.strip().lower():
         await message.answer(text="Правильно!")
         await next_step_function()
     else:

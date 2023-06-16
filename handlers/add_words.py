@@ -45,24 +45,46 @@ async def term_type_chosen(message: Message, state: FSMContext):
 @router.message(AddTerms.add_terms)
 async def add_new_term(message: Message, state: FSMContext):
     user_data = await state.get_data()
-    term_definition_pattern = r'^([\w\s]+)\s*:\s*(.+)$'
-    match = re.match(term_definition_pattern, message.text)
-    if match:
-        term, definition = match.groups()
-        answer = await db.add_term(term=term.lower(), definition=definition.lower(),type= user_data['chosen_type'], telegram_id=str(message.from_user.id))
-        logger.info(f' добавили {term} с определением {definition} , пользователь')
+    term_definition_pattern = r'^[\d\.\)\s]*([\w\s]+)\s*:\s*(.+)$'  # Обновленный шаблон
+
+    # Разделение входящего сообщения на отдельные строки
+    term_lines = message.text.split('\n')
+
+    terms_to_add = []
+    errors_found = False
+
+    for line in term_lines:
+        # Проверяем на наличие нескольких ":"
+        colons = re.findall(":", line)
+        if len(colons) > 1:
+            await message.answer(
+                text=f"Слишком много двоеточий ':' в строке '{line}'. Введите термин и определение в формате 'термин : определение'."
+            )
+            errors_found = True
+            break
+
+        match = re.match(term_definition_pattern, line)
+        if match:
+            term, definition = match.groups()
+            terms_to_add.append((term.lower().strip(), definition.lower().strip()))
+        else:
+            # Логика при несоответствии шаблону
+            await message.answer(
+                text=f"Неверный формат в строке '{line}'. Введите термин и определение в формате 'термин : определение'."
+            )
+            errors_found = True
+            break
+
+    if not errors_found:
+        for term, definition in terms_to_add:
+            answer = await db.add_term(term=term, definition=definition, type= user_data['chosen_type'], telegram_id=str(message.from_user.id))
+            logger.info(f' добавили {term} с определением {definition} , пользователь')
+
         await message.answer(
-            text=f"Полный {answer}\n"
-                 f"Хотите еще добавить?",
+            text="Все термины успешно добавлены. Хотите еще добавить?",
             reply_markup=ReplyKeyboardRemove()
         )
 
-
-    else:
-        # Логика при несоответствии шаблону
-        await message.answer(
-            text="Неверный формат. Введите термин и определение в формате 'термин : определение'."
-        )
 
 
 @router.message(AddTerms.add_terms)
