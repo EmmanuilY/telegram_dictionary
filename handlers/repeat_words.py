@@ -86,7 +86,7 @@ async def type_chosen(message: Message, state: FSMContext):
     user_data = await state.get_data()
     await state.update_data(repeat_option=message.text)
     term_type = user_data.get('term_type')
-    terms = await db.get_repeat_terms(telegram_id=str(message.from_user.id), term_type=term_type, count = int(message.text), learning='repeat')
+    terms = await db.get_words(user_id=str(message.from_user.id), type_of_words=term_type, number_of_words = int(message.text), type_of_learning='repeat')
     logger.info(f'{terms} - {message.from_user.id} - {message.from_user.username}')
     if len(terms.keys()) < int(message.text):
         await message.answer(

@@ -19,17 +19,9 @@ from functools import partial
 db = DB()
 router = Router()
 
-available_term_types = ["word", "english_word"]
-repeat_count = ["4", "6", "8", "10"]
-answer_slovarik = {
-    1: 'одно',
-    2: 'два',
-    3: 'три',
-    4: 'четыре',
-    5: 'пять',
-    6: 'шесть',
-    7: 'семь'
-}
+AVAILABLE_WORD_TYPES = ["word", "english_word"]
+NUMBER_OF_WORDS = ["4", "6", "8", "10"]
+
 
 
 class LearnWords(StatesGroup):
@@ -49,35 +41,35 @@ class LearnWords(StatesGroup):
 async def choose_type_of_words(message: Message, state: FSMContext):
     await message.answer(
         text="Выберите, что будем учить:",
-        reply_markup=make_row_keyboard(available_term_types)
+        reply_markup=make_row_keyboard(AVAILABLE_WORD_TYPES)
     )
 
     await state.set_state(LearnWords.choosing_type_of_words)
 
 
-@router.message(LearnWords.choosing_type_of_words, F.text.in_(available_term_types))
+@router.message(LearnWords.choosing_type_of_words, F.text.in_(AVAILABLE_WORD_TYPES))
 async def type_chosen(message: Message, state: FSMContext):
     await state.update_data(type_of_words=message.text.lower())
     await message.answer(
         text="Выберите, сколько слов будем повторять:",
-        reply_markup=make_row_keyboard(repeat_count)
+        reply_markup=make_row_keyboard(NUMBER_OF_WORDS)
     )
 
     await state.set_state(LearnWords.choosing_number_of_words)
 
 
-@router.message(LearnWords.choosing_number_of_words, F.text.in_(repeat_count))
-async def type_chosen(message: Message, state: FSMContext):
+@router.message(LearnWords.choosing_number_of_words, F.text.in_(NUMBER_OF_WORDS))
+async def number_chosen(message: Message, state: FSMContext):
     user_data = await state.get_data()
     type_of_words = user_data.get('type_of_words')
-    number_of_words = int(message.text)
+    number_of_user_words = int(message.text.lower())
     user_id = str(message.from_user.id)
-    learn_process = LearningWords(user_id=user_id, type_of_words=type_of_words,
-                                  number_of_words=number_of_words, type_of_learning='learning')
-    words = await learn_process.get_words()
+    words = await db.get_words(user_id=user_id, type_of_words=type_of_words,
+                                  number_of_words=number_of_user_words, type_of_learning='learning')
+
     logger.info(f'{words} - {message.from_user.id} - {message.from_user.username}')
 
-    if len(words.keys()) < number_of_words:
+    if len(words.keys()) < number_of_user_words:
         await message.answer(
             text=f"у вас недостаточно слов типа {message.text.lower()}, добавьте еще",
             reply_markup=make_row_keyboard(['/start'])
@@ -86,8 +78,8 @@ async def type_chosen(message: Message, state: FSMContext):
             f'недостаточно слов типа {message.text.lower()} у {message.from_user.id}, вот список термнов : {words}')
         await state.clear()
     else:
-        learn_process.words = words
-        await state.update_data(learn_process=learn_process)
+
+        await state.update_data(terms=words)
         await message.answer(text="Ниже слова")
         for word, definition in words.items():
             await message.answer(text=f"{word} - {definition}")
@@ -104,7 +96,7 @@ async def type_chosen_incorrectly(message: Message):
     await message.answer(
         text="Я не знаю такого типа.\n\n"
              "Пожалуйста, выберите одно из названий из списка ниже:",
-        reply_markup=make_row_keyboard(available_term_types)
+        reply_markup=make_row_keyboard(AVAILABLE_WORD_TYPES)
     )
 
 
@@ -118,8 +110,7 @@ async def pre_learn_part(message: Message, state: FSMContext):
         text="Ниже слова................................................................................................"
     )
     user_data = await state.get_data()
-    learn_process = user_data.get("learn_process")
-    words = learn_process.words
+    words = user_data.get("terms")
     logger.info(f'{words} {message.from_user.id}')
     for word, definition in words.items():
         word = await escape_special_characters(word)
@@ -140,25 +131,29 @@ async def pre_learn_part(message: Message, state: FSMContext):
 @logger.catch()
 async def send_term_and_options(message: Message, state: FSMContext, term_key: str, options_key: str, next_state):
     user_data = await state.get_data()
-    words = user_data.get("words", {})
+    terms = user_data.get("terms", {})
     term_list = user_data[term_key]
+    random.shuffle(term_list)
     logger.debug(f'{term_list} {term_key} {options_key}')
     if not term_list:
         await message.answer(text="Этап завершен! Вы молодец!", reply_markup=make_row_keyboard(['перейти']))
         await state.set_state(next_state)
         return
-    word = term_list.pop(0)
-    correct_option = words[word] if term_key == "words" else {v: k for k, v in words.items()}[word]
-    other_options = [v for k, v in words.items() if k != word] if term_key == "words" else [k for k, v in words.items()
-                                                                                            if v != word]
-    options = random.sample([*other_options, correct_option], 4)
+    term = term_list.pop(0)
+    correct_option = terms[term] if term_key == "words" else {v: k for k, v in terms.items()}[term]
+    other_options = [v for k, v in terms.items() if k != term] if term_key == "words" else [k for k, v in terms.items()
+                                                                                            if v != term]
+    random_options = random.sample(other_options, 3)
+    options = [correct_option, *random_options]
+    logger.debug(f'{correct_option} правильный ответ, {options}')
     random.shuffle(options)
     if next_state == LearnWords.finish:
-        await message.answer(text=word)
-        logger.debug(f'{next_state} {word}')
+        await message.answer(text=term,ReplyKeyboardRemove=True )
+        logger.debug(f'{next_state} {term}')
     else:
-        await message.answer(text=word, reply_markup=make_row_keyboard(options))
-    await state.update_data(chosen_term=word, correct_option=correct_option, **{term_key: term_list})
+        await message.answer(text=term, reply_markup=make_row_keyboard(options))
+    await state.update_data(chosen_term=term, correct_option=correct_option, **{term_key: term_list})
+
 
 
 @logger.catch()
@@ -180,8 +175,8 @@ async def check_user_answer(message: Message, state: FSMContext, next_step_funct
 async def first_learn_part(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать слово, а ты выбирай определение")
     user_data = await state.get_data()
-    words = user_data.get("words", {})
-    user_data["words"] = list(words.keys())
+    terms = user_data.get("terms", {})
+    user_data["words"] = list(terms.keys())
     await state.update_data(user_data)
     await send_term_and_options(message, state, "words", "definitions", LearnWords.second_step)
     await state.set_state(LearnWords.check_answer)
@@ -192,13 +187,12 @@ async def check_user_answer_first_step(message: Message, state: FSMContext):
     next_step_function = partial(send_term_and_options, message, state, "words", "definitions", LearnWords.second_step)
     await check_user_answer(message, state, next_step_function)
 
-
 @router.message(LearnWords.second_step, F.text.in_('перейти'))
 async def second_part(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты выбирай слово")
     user_data = await state.get_data()
-    words = user_data.get("words", {})
-    user_data["definitions"] = list(words.values())
+    terms = user_data.get("terms", {})
+    user_data["definitions"] = list(terms.values())
     await state.update_data(user_data)
     await send_term_and_options(message, state, "definitions", "words", LearnWords.third_step)
     await state.set_state(LearnWords.check_answer_second_step)
@@ -214,8 +208,8 @@ async def check_user_answer_second_step(message: Message, state: FSMContext):
 async def third_part(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты вводи правильное слово")
     user_data = await state.get_data()
-    words = user_data.get("words", {})
-    user_data["definitions"] = list(words.values())
+    terms = user_data.get("terms", {})
+    user_data["definitions"] = list(terms.values())
     await state.update_data(user_data)
     await send_term_and_options(message, state, "definitions", "words", LearnWords.finish)
     await state.set_state(LearnWords.check_answer_third_step)
@@ -230,8 +224,8 @@ async def check_user_answer_third_step(message: Message, state: FSMContext):
 @router.message(LearnWords.finish, F.text.in_('перейти'))
 async def finish(message: Message, state: FSMContext):
     user_data = await state.get_data()
-    words = user_data.get("words", {})
-    learn_terms = list(words.keys())
+    terms = user_data.get("terms", {})
+    learn_terms = list(terms.keys())
     answer = await db.change_learn_type(telegram_id=str(message.from_user.id), words=learn_terms)
 
     await message.answer(

@@ -239,7 +239,7 @@ class DB:
     async def get_words(self, user_id, type_of_words, number_of_words,  type_of_learning) -> dict | str | tuple:
         try:
 
-            terms = await self._fetch(
+            words = await self._fetch(
                 """
             SELECT t.term, t.definition
                 FROM terms t
@@ -252,11 +252,10 @@ class DB:
                 """,
                 user_id, type_of_words, number_of_words, type_of_learning
             )
-            logger.debug(f'Выбрано {count}, {terms} {term_type} {telegram_id} ')
-            terms_dict = {term: definition for term, definition in terms}
-            term_tuple = ([term, definition] for term, definition in terms)
+            logger.debug(f'Выбрано {user_id}, {words} {type_of_words} {user_id} ')
+            words_dict = {word: definition for word, definition in words}
 
-            return terms_dict
+            return words_dict
 
         except Exception as e:
             logger.error(f'Ошибчока {e}')
