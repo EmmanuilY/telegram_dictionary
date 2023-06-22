@@ -6364,3 +6364,1256 @@ TypeError: send_term_and_options() takes 4 positional arguments but 5 were given
 2023-06-22T00:26:08.584609+0300 DEBUG get_words_or_definitions_based_on_term_key {'prejudiced': 'предвзято', 'stuck': 'застрявший', 'heat wave': 'сильная жара', 'twee': 'свист'} heat wave words определение сильная жара остальныеопределения ['предвзято', 'застрявший', 'свист']
 2023-06-22T00:26:08.585610+0300 DEBUG procces term list сильная жара ['предвзято', 'застрявший', 'свист']
 2023-06-22T00:26:08.586610+0300 DEBUG  shuffle_and_display_options else first_step heat wave
+2023-06-22T15:44:55.709424+0300 INFO Запускаем бота
+2023-06-22T15:58:59.717006+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T15:59:01.786984+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T15:59:06.535965+0300 DEBUG [<Record number_of_repetitions=1 count=1>, <Record number_of_repetitions=2 count=1>, <Record number_of_repetitions=3 count=5>, <Record number_of_repetitions=5 count=6>, <Record number_of_repetitions=6 count=6>, <Record number_of_repetitions=7 count=3>]  536806818
+2023-06-22T17:18:18.869347+0300 INFO Запускаем бота
+2023-06-22T17:18:26.351446+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T17:18:30.026409+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T17:18:35.072197+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='purr' definition='мурлыкать'>, <Record term='knitting' definition='вязание'>, <Record term='issue' definition='вопрос, задача'>] english_word 536806818 
+2023-06-22T17:21:17.511278+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'words': [], 'current_state': 'first_step'} words
+2023-06-22T18:08:20.699617+0300 ERROR An error has been caught in function 'check_user_answer_first_step', process 'MainProcess' (22152), thread 'MainThread' (21092):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 29, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001DEC384FA30>
+    │       └ <function run at 0x000001DEBF420670>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x000001DEC3807A00>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000001DEC145F9A0>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001DEC15300D0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001DEC1471480>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001DEC13E0280>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65056661, message=Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.ti...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000001DEC3808E20>
+                     │    └ <function Dispatcher.feed_update at 0x000001DEC35B6050>
+                     └ <Dispatcher '0x1dec380a710'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001DEC35B4B80>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001DEC3809270>
+                     └ <Dispatcher '0x1dec380a710'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056661, message=Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.ti...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000001DEC3809030>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056661, message=Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.ti...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000001DEC3809000>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056661, message=Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.ti...
+                 └ <function TelegramEventObserver.trigger at 0x000001DEC3857A30>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65056661, message=Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.ti...
+                 └ <function CallableMixin.call at 0x000001DEC38576D0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x1dec380a710'>>, Update(update_id=65056661, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000001DEC35B56C0>
+                 └ <Dispatcher '0x1dec380a710'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001DEC389CF70>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001DEC35B4B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001DEC380A6B0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001DEC35B5750>
+                 └ <Dispatcher '0x1dec380a710'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000001DEC35B56C0>
+                     └ <Router '0x1dec3824070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001DEC389C820>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001DEC35B4B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001DEC38240A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001DEC35B5750>
+                 └ <Router '0x1dec3824070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                     │        └ <function TelegramEventObserver.trigger at 0x000001DEC35B4C10>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001DEC38240A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001DEC3808E20>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+                 └ <function CallableMixin.call at 0x000001DEC389CE50>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function check_user_answer_first_step at 0x000001DEC380C310>, Message(message_id=8835, date=datetime.datet...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 235, in check_user_answer_first_step
+    await check_user_answer(message, state, next_step_function)
+          │                 │        │      └ functools.partial(<function send_term_and_definitions at 0x000001DEC37DBB50>, Message(message_id=8835, date=datetime.datetime...
+          │                 │        └ <aiogram.fsm.context.FSMContext object at 0x000001DEC3801DE0>
+          │                 └ Message(message_id=8835, date=datetime.datetime(2023, 6, 22, 15, 8, 20, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818...
+          └ <function check_user_answer at 0x000001DEC380C160>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 206, in check_user_answer
+    correct_option = user_data["correct_option"]
+                     └ {'chosen_type': 'english_word', 'words': [], 'current_state': 'first_step'}
+
+KeyError: 'correct_option'
+2023-06-22T18:12:04.702241+0300 INFO Запускаем бота
+2023-06-22T18:12:07.291380+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:12:10.547674+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:12:13.957592+0300 DEBUG Выбрано 536806818, [<Record term='drip drop' definition='капля за каплей'>, <Record term='treasure' definition='сокровище'>, <Record term='issue' definition='вопрос, задача'>, <Record term='undo' definition='отменить'>] english_word 536806818 
+2023-06-22T18:12:15.582557+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'words': [], 'current_state': 'first_step'} words
+2023-06-22T18:12:33.019611+0300 ERROR An error has been caught in function 'check_user_answer_first_step', process 'MainProcess' (22424), thread 'MainThread' (20912):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 29, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000018744F93AC0>
+    │       └ <function run at 0x0000018740B10670>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x0000018744F77B50>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000018742B9F9A0>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000018742C700D0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000018742BB1480>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000018742B20280>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65056667, message=Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>
+                     │    └ <function Dispatcher.feed_update at 0x0000018744CF6050>
+                     └ <Dispatcher '0x18744f4d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000018744CF4B80>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018744F4EF20>
+                     └ <Dispatcher '0x18744f4d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056667, message=Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000018744F4ECE0>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056667, message=Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000018744F4ECB0>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056667, message=Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x0000018744F9BAC0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65056667, message=Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x0000018744F9B760>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x18744f4d900'>>, Update(update_id=65056667, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x0000018744CF56C0>
+                 └ <Dispatcher '0x18744f4d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000018744FDC430>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000018744CF4B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018744F4D960>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000018744CF5750>
+                 └ <Dispatcher '0x18744f4d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x0000018744CF56C0>
+                     └ <Router '0x18744f60070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000018744FDC550>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000018744CF4B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018744F600A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000018744CF5750>
+                 └ <Router '0x18744f60070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000018744CF4C10>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018744F600A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018744F4EAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x0000018744FDD120>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function check_user_answer_first_step at 0x0000018744F443A0>, Message(message_id=8854, date=datetime.datet...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 235, in check_user_answer_first_step
+    await check_user_answer(message, state, next_step_function)
+          │                 │        │      └ functools.partial(<function send_term_and_definitions at 0x0000018744F1BBE0>, Message(message_id=8854, date=datetime.datetime...
+          │                 │        └ <aiogram.fsm.context.FSMContext object at 0x0000018744F48520>
+          │                 └ Message(message_id=8854, date=datetime.datetime(2023, 6, 22, 15, 12, 32, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function check_user_answer at 0x0000018744F441F0>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 206, in check_user_answer
+    correct_answer = user_data["correct_answer"]
+                     └ {'chosen_type': 'english_word', 'words': [], 'current_state': 'first_step'}
+
+KeyError: 'correct_answer'
+2023-06-22T18:16:06.235525+0300 INFO Запускаем бота
+2023-06-22T18:16:08.980614+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:16:10.443178+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:16:13.881500+0300 DEBUG Выбрано 536806818, [<Record term='drip drop' definition='капля за каплей'>, <Record term='pursue' definition='гнаться'>, <Record term='prejudiced' definition='предвзято'>, <Record term='tainted' definition='испорченный'>] english_word 536806818 
+2023-06-22T18:16:19.940296+0300 ERROR An error has been caught in function 'check_user_answer_first_step', process 'MainProcess' (21992), thread 'MainThread' (21208):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 29, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000020B66E33AC0>
+    │       └ <function run at 0x0000020B62A00670>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x0000020B66E17BC0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000020B64A3F9A0>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000020B64B100D0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000020B64A51480>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000020B649C0280>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65056673, message=Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>
+                     │    └ <function Dispatcher.feed_update at 0x0000020B66B96050>
+                     └ <Dispatcher '0x20b66ded900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000020B66B94B80>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000020B66DEEF20>
+                     └ <Dispatcher '0x20b66ded900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056673, message=Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000020B66DEECE0>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056673, message=Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000020B66DEECB0>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056673, message=Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x0000020B66E3BAC0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65056673, message=Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x0000020B66E3B760>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x20b66ded900'>>, Update(update_id=65056673, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x0000020B66B956C0>
+                 └ <Dispatcher '0x20b66ded900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000020B66E7C430>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000020B66B94B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000020B66DED960>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000020B66B95750>
+                 └ <Dispatcher '0x20b66ded900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x0000020B66B956C0>
+                     └ <Router '0x20b66e00070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000020B66E7C550>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000020B66B94B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000020B66E000A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000020B66B95750>
+                 └ <Router '0x20b66e00070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000020B66B94C10>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000020B66E000A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000020B66DEEAD0>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x0000020B66E7CDC0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function check_user_answer_first_step at 0x0000020B66DE43A0>, Message(message_id=8872, date=datetime.datet...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 234, in check_user_answer_first_step
+    await check_user_answer(message, state, next_step_function)
+          │                 │        │      └ functools.partial(<function send_term_and_definitions at 0x0000020B66DBBBE0>, Message(message_id=8872, date=datetime.datetime...
+          │                 │        └ <aiogram.fsm.context.FSMContext object at 0x0000020B66DEA440>
+          │                 └ Message(message_id=8872, date=datetime.datetime(2023, 6, 22, 15, 16, 19, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function check_user_answer at 0x0000020B66DE41F0>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 206, in check_user_answer
+    correct_answer = user_data["correct_answer"]
+                     └ {'chosen_type': 'english_word', 'words': [], 'current_state': 'first_step'}
+
+KeyError: 'correct_answer'
+2023-06-22T18:21:29.581658+0300 INFO Запускаем бота
+2023-06-22T18:21:31.722278+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:21:33.395234+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:21:36.887826+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='undo' definition='отменить'>, <Record term='treasure' definition='сокровище'>, <Record term='drip drop' definition='капля за каплей'>] english_word 536806818 
+2023-06-22T18:22:14.021011+0300 INFO Запускаем бота
+2023-06-22T18:22:15.678887+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:22:17.378312+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:22:20.558846+0300 DEBUG Выбрано 536806818, [<Record term='treasure' definition='сокровище'>, <Record term='salary' definition='зарплата'>, <Record term='pursue' definition='гнаться'>, <Record term='heat wave' definition='сильная жара'>] english_word 536806818 
+2023-06-22T18:22:55.717952+0300 INFO Запускаем бота
+2023-06-22T18:22:58.041448+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:23:01.465634+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:23:04.445390+0300 DEBUG Выбрано 536806818, [<Record term='write' definition='писать'>, <Record term='knitting' definition='вязание'>, <Record term='throbbing' definition='пульсация'>, <Record term='shimmer' definition='мерцание'>] english_word 536806818 
+2023-06-22T18:23:12.156323+0300 ERROR An error has been caught in function 'check_user_answer_first_step', process 'MainProcess' (18716), thread 'MainThread' (23524):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 29, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000018C638A3AC0>
+    │       └ <function run at 0x0000018C5F440670>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x0000018C63887BC0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000018C614AF9A0>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000018C615800D0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000018C614C1480>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000018C61430280>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=True>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=True>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65056689, message=Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.t...
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000018C6385EB90>
+                     │    └ <function Dispatcher.feed_update at 0x0000018C63606050>
+                     └ <Dispatcher '0x18c6385d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000018C63604B80>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018C6385EFE0>
+                     └ <Dispatcher '0x18c6385d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056689, message=Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000018C6385EDA0>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056689, message=Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.t...
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000018C6385ED70>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65056689, message=Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.t...
+                 └ <function TelegramEventObserver.trigger at 0x0000018C638AFAC0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65056689, message=Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.t...
+                 └ <function CallableMixin.call at 0x0000018C638AF760>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x18c6385d900'>>, Update(update_id=65056689, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x0000018C636056C0>
+                 └ <Dispatcher '0x18c6385d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000018C638EC430>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000018C63604B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018C6385D960>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000018C63605750>
+                 └ <Dispatcher '0x18c6385d900'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x0000018C636056C0>
+                     └ <Router '0x18c63870070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000018C638EC550>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000018C63604B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018C638700A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000018C63605750>
+                 └ <Router '0x18c63870070'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000018C63604C10>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000018C638700A0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000018C6385EB90>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+                 └ <function CallableMixin.call at 0x0000018C638ECB80>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<function check_user_answer_first_step at 0x0000018C638543A0>, Message(message_id=8924, date=datetime.datet...
+
+> File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 234, in check_user_answer_first_step
+    await check_user_answer(message, state, next_step_function)
+          │                 │        │      └ functools.partial(<function send_term_and_definitions at 0x0000018C6382BBE0>, Message(message_id=8924, date=datetime.datetime...
+          │                 │        └ <aiogram.fsm.context.FSMContext object at 0x0000018C6385A140>
+          │                 └ Message(message_id=8924, date=datetime.datetime(2023, 6, 22, 15, 23, 12, tzinfo=datetime.timezone.utc), chat=Chat(id=53680681...
+          └ <function check_user_answer at 0x0000018C638541F0>
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\handlers\repeat_words.py", line 206, in check_user_answer
+    correct_answer = user_data["correct_answer"]
+                     └ {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'knitting': 'вязание', 'throbbing': 'пульсация', 'shimmer': 'мер...
+
+KeyError: 'correct_answer'
+2023-06-22T18:25:27.035599+0300 INFO Запускаем бота
+2023-06-22T18:25:28.573125+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:25:30.274243+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:25:39.177438+0300 DEBUG Выбрано 536806818, [<Record term='shed' definition='сарай; проливать'>, <Record term='bizzare' definition='странный'>, <Record term='shimmer' definition='мерцание'>, <Record term='salary' definition='зарплата'>] english_word 536806818 
+2023-06-22T18:26:31.652313+0300 INFO Запускаем бота
+2023-06-22T18:26:33.075141+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T18:26:34.724109+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T18:26:37.942917+0300 DEBUG Выбрано 536806818, [<Record term='stuck' definition='застрявший'>, <Record term='throbbing' definition='пульсация'>, <Record term='heat wave' definition='сильная жара'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-22T18:26:39.364235+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['throbbing', 'heat wave', 'stuck', 'faking out']} words
+2023-06-22T18:26:39.365235+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['throbbing', 'heat wave', 'stuck', 'faking out']} 
+2023-06-22T18:26:39.366236+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'} throbbing words определение пульсация остальныеопределения ['застрявший', 'сильная жара', 'притворятся ; выводить из себя']
+2023-06-22T18:26:39.367474+0300 DEBUG procces term list пульсация ['застрявший', 'сильная жара', 'притворятся ; выводить из себя']
+2023-06-22T18:26:39.368472+0300 DEBUG  shuffle_and_display_options else first_step throbbing
+2023-06-22T18:26:44.342860+0300 DEBUG прислали пульсация
+2023-06-22T18:26:44.344417+0300 DEBUG а правильный пульсация
+2023-06-22T18:26:44.449535+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['heat wave', 'faking out', 'stuck'], 'chosen_term': 'throbbing', 'correct_answer': 'пульсация'} words
+2023-06-22T18:26:44.451533+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['heat wave', 'faking out', 'stuck'], 'chosen_term': 'throbbing', 'correct_answer': 'пульсация'} 
+2023-06-22T18:26:44.452535+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'} heat wave words определение сильная жара остальныеопределения ['застрявший', 'пульсация', 'притворятся ; выводить из себя']
+2023-06-22T18:26:44.452535+0300 DEBUG procces term list сильная жара ['застрявший', 'пульсация', 'притворятся ; выводить из себя']
+2023-06-22T18:26:44.454229+0300 DEBUG  shuffle_and_display_options else first_step heat wave
+2023-06-22T18:26:46.885553+0300 DEBUG прислали сильная жара
+2023-06-22T18:26:46.886553+0300 DEBUG а правильный сильная жара
+2023-06-22T18:26:46.972257+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['faking out', 'stuck'], 'chosen_term': 'heat wave', 'correct_answer': 'сильная жара'} words
+2023-06-22T18:26:46.974258+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['faking out', 'stuck'], 'chosen_term': 'heat wave', 'correct_answer': 'сильная жара'} 
+2023-06-22T18:26:46.975258+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'} faking out words определение притворятся ; выводить из себя остальныеопределения ['застрявший', 'пульсация', 'сильная жара']
+2023-06-22T18:26:46.975258+0300 DEBUG procces term list притворятся ; выводить из себя ['застрявший', 'пульсация', 'сильная жара']
+2023-06-22T18:26:46.976260+0300 DEBUG  shuffle_and_display_options else first_step faking out
+2023-06-22T18:27:01.246291+0300 DEBUG прислали притворятся ; выводить из себя
+2023-06-22T18:27:01.248856+0300 DEBUG а правильный притворятся ; выводить из себя
+2023-06-22T18:27:01.395579+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['stuck'], 'chosen_term': 'faking out', 'correct_answer': 'притворятся ; выводить из себя'} words
+2023-06-22T18:27:01.396579+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': ['stuck'], 'chosen_term': 'faking out', 'correct_answer': 'притворятся ; выводить из себя'} 
+2023-06-22T18:27:01.397844+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'} stuck words определение застрявший остальныеопределения ['пульсация', 'сильная жара', 'притворятся ; выводить из себя']
+2023-06-22T18:27:01.398844+0300 DEBUG procces term list застрявший ['пульсация', 'сильная жара', 'притворятся ; выводить из себя']
+2023-06-22T18:27:01.399843+0300 DEBUG  shuffle_and_display_options else first_step stuck
+2023-06-22T18:27:06.785586+0300 DEBUG прислали застрявший
+2023-06-22T18:27:06.786583+0300 DEBUG а правильный застрявший
+2023-06-22T18:27:06.881223+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': [], 'chosen_term': 'stuck', 'correct_answer': 'застрявший'} words
+2023-06-22T18:27:06.882223+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'first_step', 'words': [], 'chosen_term': 'stuck', 'correct_answer': 'застрявший'} 
+2023-06-22T18:27:07.796716+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'second_step', 'words': [], 'chosen_term': 'stuck', 'correct_answer': 'застрявший', 'definitions': ['притворятся ; выводить из себя', 'застрявший', 'пульсация', 'сильная жара']} definitions
+2023-06-22T18:27:07.798211+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'second_step', 'words': [], 'chosen_term': 'stuck', 'correct_answer': 'застрявший', 'definitions': ['притворятся ; выводить из себя', 'застрявший', 'пульсация', 'сильная жара']} 
+2023-06-22T18:27:07.799210+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'} притворятся ; выводить из себя definitions слово faking out осталдьные слова ['stuck', 'throbbing', 'heat wave']
+2023-06-22T18:27:07.800211+0300 DEBUG procces term list faking out ['stuck', 'throbbing', 'heat wave']
+2023-06-22T18:27:07.801211+0300 DEBUG  shuffle_and_display_options else second_step притворятся ; выводить из себя
+2023-06-22T18:27:09.430334+0300 DEBUG прислали faking out
+2023-06-22T18:27:09.431335+0300 DEBUG а правильный faking out
+2023-06-22T18:27:09.527554+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'second_step', 'words': [], 'chosen_term': 'притворятся ; выводить из себя', 'correct_answer': 'faking out', 'definitions': ['сильная жара', 'застрявший', 'пульсация']} definitions
+2023-06-22T18:27:09.529555+0300 DEBUG {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'}, 'current_state': 'second_step', 'words': [], 'chosen_term': 'притворятся ; выводить из себя', 'correct_answer': 'faking out', 'definitions': ['сильная жара', 'застрявший', 'пульсация']} 
+2023-06-22T18:27:09.530555+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'throbbing': 'пульсация', 'heat wave': 'сильная жара', 'faking out': 'притворятся ; выводить из себя'} сильная жара definitions слово heat wave осталдьные слова ['stuck', 'throbbing', 'faking out']
+2023-06-22T18:27:09.531556+0300 DEBUG procces term list heat wave ['stuck', 'throbbing', 'faking out']
+2023-06-22T18:27:09.532555+0300 DEBUG  shuffle_and_display_options else second_step сильная жара
+2023-06-22T19:13:03.792108+0300 INFO Запускаем бота
+2023-06-22T19:13:09.939038+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T19:13:11.929580+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T19:13:14.850432+0300 DEBUG Выбрано 536806818, [<Record term='stuck' definition='застрявший'>, <Record term='issue' definition='вопрос, задача'>, <Record term='tainted' definition='испорченный'>, <Record term='write' definition='писать'>] english_word 536806818 
+2023-06-22T19:13:16.486016+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'stuck': 'застрявший', 'issue': 'вопрос, задача', 'tainted': 'испорченный', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['stuck', 'tainted', 'write', 'issue'], 'definitions': ['застрявший', 'вопрос, задача', 'испорченный', 'писать'], 'term_key': 'words'} words
+2023-06-22T19:13:16.487016+0300 DEBUG get_words_or_definitions_based_on_term_key {'stuck': 'застрявший', 'issue': 'вопрос, задача', 'tainted': 'испорченный', 'write': 'писать'} stuck words определение застрявший остальныеопределения ['вопрос, задача', 'испорченный', 'писать']
+2023-06-22T19:13:16.488018+0300 DEBUG procces term list застрявший ['вопрос, задача', 'испорченный', 'писать']
+2023-06-22T19:13:16.489017+0300 DEBUG  shuffle_and_display_options else first_step stuck
+2023-06-22T19:15:34.158025+0300 INFO Запускаем бота
+2023-06-22T19:15:40.553740+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T19:15:42.596508+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T19:15:45.561530+0300 DEBUG Выбрано 536806818, [<Record term='undo' definition='отменить'>, <Record term='shimmer' definition='мерцание'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='prejudiced' definition='предвзято'>] english_word 536806818 
+2023-06-22T19:15:47.905707+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['prejudiced', 'shimmer', 'undo', 'drip drop'], 'definitions': ['отменить', 'мерцание', 'капля за каплей', 'предвзято'], 'term_key': 'words'} words
+2023-06-22T19:15:47.906708+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'} prejudiced words определение предвзято остальныеопределения ['отменить', 'мерцание', 'капля за каплей']
+2023-06-22T19:15:47.908709+0300 DEBUG procces term list предвзято ['отменить', 'мерцание', 'капля за каплей']
+2023-06-22T19:15:47.909707+0300 DEBUG  shuffle_and_display_options else first_step prejudiced
+2023-06-22T19:15:49.923753+0300 DEBUG прислали предвзято
+2023-06-22T19:15:49.925126+0300 DEBUG а правильный предвзято
+2023-06-22T19:15:50.147514+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['shimmer', 'drip drop', 'undo'], 'definitions': ['отменить', 'мерцание', 'капля за каплей', 'предвзято'], 'term_key': 'words', 'chosen_term': 'prejudiced', 'correct_answer': 'предвзято'} words
+2023-06-22T19:15:50.149516+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'} shimmer words определение мерцание остальныеопределения ['отменить', 'капля за каплей', 'предвзято']
+2023-06-22T19:15:50.150516+0300 DEBUG procces term list мерцание ['отменить', 'капля за каплей', 'предвзято']
+2023-06-22T19:15:50.151519+0300 DEBUG  shuffle_and_display_options else first_step shimmer
+2023-06-22T19:15:55.177450+0300 DEBUG прислали отменить
+2023-06-22T19:15:55.178450+0300 DEBUG а правильный мерцание
+2023-06-22T19:15:57.895449+0300 DEBUG прислали мерцание
+2023-06-22T19:15:57.896248+0300 DEBUG а правильный мерцание
+2023-06-22T19:15:58.051578+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['drip drop', 'undo'], 'definitions': ['отменить', 'мерцание', 'капля за каплей', 'предвзято'], 'term_key': 'words', 'chosen_term': 'shimmer', 'correct_answer': 'мерцание'} words
+2023-06-22T19:15:58.052577+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'} drip drop words определение капля за каплей остальныеопределения ['отменить', 'мерцание', 'предвзято']
+2023-06-22T19:15:58.053577+0300 DEBUG procces term list капля за каплей ['отменить', 'мерцание', 'предвзято']
+2023-06-22T19:15:58.055580+0300 DEBUG  shuffle_and_display_options else first_step drip drop
+2023-06-22T19:16:00.428675+0300 DEBUG прислали капля за каплей
+2023-06-22T19:16:00.430675+0300 DEBUG а правильный капля за каплей
+2023-06-22T19:16:00.532031+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['undo'], 'definitions': ['отменить', 'мерцание', 'капля за каплей', 'предвзято'], 'term_key': 'words', 'chosen_term': 'drip drop', 'correct_answer': 'капля за каплей'} words
+2023-06-22T19:16:00.533031+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'} undo words определение отменить остальныеопределения ['мерцание', 'капля за каплей', 'предвзято']
+2023-06-22T19:16:00.535030+0300 DEBUG procces term list отменить ['мерцание', 'капля за каплей', 'предвзято']
+2023-06-22T19:16:00.536029+0300 DEBUG  shuffle_and_display_options else first_step undo
+2023-06-22T19:16:02.667731+0300 DEBUG прислали отменить
+2023-06-22T19:16:02.668732+0300 DEBUG а правильный отменить
+2023-06-22T19:16:02.793524+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'shimmer': 'мерцание', 'drip drop': 'капля за каплей', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': [], 'definitions': ['отменить', 'мерцание', 'капля за каплей', 'предвзято'], 'term_key': 'words', 'chosen_term': 'undo', 'correct_answer': 'отменить'} words
+2023-06-22T19:18:54.436961+0300 INFO Запускаем бота
+2023-06-22T19:19:04.463491+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T19:19:05.858447+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T19:19:08.539677+0300 DEBUG Выбрано 536806818, [<Record term='treasure' definition='сокровище'>, <Record term='shed' definition='сарай; проливать'>, <Record term='shimmer' definition='мерцание'>, <Record term='tainted' definition='испорченный'>] english_word 536806818 
+2023-06-22T19:19:10.880801+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'first_step', 'words': ['tainted', 'shimmer', 'treasure', 'shed'], 'definitions': ['сокровище', 'сарай; проливать', 'мерцание', 'испорченный'], 'term_key': 'words'} words
+2023-06-22T19:19:10.882799+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} tainted words определение испорченный остальныеопределения ['сокровище', 'сарай; проливать', 'мерцание']
+2023-06-22T19:19:10.883800+0300 DEBUG procces term list испорченный ['сокровище', 'сарай; проливать', 'мерцание']
+2023-06-22T19:19:10.884802+0300 DEBUG  shuffle_and_display_options else first_step tainted
+2023-06-22T19:19:13.065195+0300 DEBUG прислали испорченный
+2023-06-22T19:19:13.066571+0300 DEBUG а правильный испорченный
+2023-06-22T19:19:13.160615+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'first_step', 'words': ['shed', 'shimmer', 'treasure'], 'definitions': ['сокровище', 'сарай; проливать', 'мерцание', 'испорченный'], 'term_key': 'words', 'chosen_term': 'tainted', 'correct_answer': 'испорченный'} words
+2023-06-22T19:19:13.161616+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} shed words определение сарай; проливать остальныеопределения ['сокровище', 'мерцание', 'испорченный']
+2023-06-22T19:19:13.162615+0300 DEBUG procces term list сарай; проливать ['сокровище', 'мерцание', 'испорченный']
+2023-06-22T19:19:13.163615+0300 DEBUG  shuffle_and_display_options else first_step shed
+2023-06-22T19:19:15.396142+0300 DEBUG прислали сарай; проливать
+2023-06-22T19:19:15.397144+0300 DEBUG а правильный сарай; проливать
+2023-06-22T19:19:15.608721+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'first_step', 'words': ['treasure', 'shimmer'], 'definitions': ['сокровище', 'сарай; проливать', 'мерцание', 'испорченный'], 'term_key': 'words', 'chosen_term': 'shed', 'correct_answer': 'сарай; проливать'} words
+2023-06-22T19:19:15.609720+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} treasure words определение сокровище остальныеопределения ['сарай; проливать', 'мерцание', 'испорченный']
+2023-06-22T19:19:15.611543+0300 DEBUG procces term list сокровище ['сарай; проливать', 'мерцание', 'испорченный']
+2023-06-22T19:19:15.612540+0300 DEBUG  shuffle_and_display_options else first_step treasure
+2023-06-22T19:19:18.459497+0300 DEBUG прислали сокровище
+2023-06-22T19:19:18.460497+0300 DEBUG а правильный сокровище
+2023-06-22T19:19:18.551569+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'first_step', 'words': ['shimmer'], 'definitions': ['сокровище', 'сарай; проливать', 'мерцание', 'испорченный'], 'term_key': 'words', 'chosen_term': 'treasure', 'correct_answer': 'сокровище'} words
+2023-06-22T19:19:18.552568+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} shimmer words определение мерцание остальныеопределения ['сокровище', 'сарай; проливать', 'испорченный']
+2023-06-22T19:19:18.553568+0300 DEBUG procces term list мерцание ['сокровище', 'сарай; проливать', 'испорченный']
+2023-06-22T19:19:18.554570+0300 DEBUG  shuffle_and_display_options else first_step shimmer
+2023-06-22T19:19:22.341122+0300 DEBUG прислали мерцание
+2023-06-22T19:19:22.342665+0300 DEBUG а правильный мерцание
+2023-06-22T19:19:22.563425+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'first_step', 'words': [], 'definitions': ['сокровище', 'сарай; проливать', 'мерцание', 'испорченный'], 'term_key': 'words', 'chosen_term': 'shimmer', 'correct_answer': 'мерцание'} words
+2023-06-22T19:19:24.397461+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'second_step', 'words': [], 'definitions': ['сарай; проливать', 'испорченный', 'сокровище', 'мерцание'], 'term_key': 'definitions', 'chosen_term': 'shimmer', 'correct_answer': 'мерцание'} definitions
+2023-06-22T19:19:24.398461+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} сарай; проливать definitions слово shed осталдьные слова ['treasure', 'shimmer', 'tainted']
+2023-06-22T19:19:24.400462+0300 DEBUG procces term list shed ['treasure', 'shimmer', 'tainted']
+2023-06-22T19:19:24.401461+0300 DEBUG  shuffle_and_display_options else second_step сарай; проливать
+2023-06-22T19:19:26.730543+0300 DEBUG прислали shed
+2023-06-22T19:19:26.731542+0300 DEBUG а правильный shed
+2023-06-22T19:19:26.831438+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'second_step', 'words': [], 'definitions': ['мерцание', 'сокровище', 'испорченный'], 'term_key': 'definitions', 'chosen_term': 'сарай; проливать', 'correct_answer': 'shed'} definitions
+2023-06-22T19:19:26.833436+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} мерцание definitions слово shimmer осталдьные слова ['treasure', 'shed', 'tainted']
+2023-06-22T19:19:26.835435+0300 DEBUG procces term list shimmer ['treasure', 'shed', 'tainted']
+2023-06-22T19:19:26.835435+0300 DEBUG  shuffle_and_display_options else second_step мерцание
+2023-06-22T19:19:28.689056+0300 DEBUG прислали shimmer
+2023-06-22T19:19:28.690056+0300 DEBUG а правильный shimmer
+2023-06-22T19:19:28.925633+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'second_step', 'words': [], 'definitions': ['сокровище', 'испорченный'], 'term_key': 'definitions', 'chosen_term': 'мерцание', 'correct_answer': 'shimmer'} definitions
+2023-06-22T19:19:28.926635+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} сокровище definitions слово treasure осталдьные слова ['shed', 'shimmer', 'tainted']
+2023-06-22T19:19:28.928638+0300 DEBUG procces term list treasure ['shed', 'shimmer', 'tainted']
+2023-06-22T19:19:28.929638+0300 DEBUG  shuffle_and_display_options else second_step сокровище
+2023-06-22T19:19:31.060622+0300 DEBUG прислали treasure
+2023-06-22T19:19:31.062706+0300 DEBUG а правильный treasure
+2023-06-22T19:19:31.173407+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'}, 'current_state': 'second_step', 'words': [], 'definitions': ['испорченный'], 'term_key': 'definitions', 'chosen_term': 'сокровище', 'correct_answer': 'treasure'} definitions
+2023-06-22T19:19:31.174406+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'shed': 'сарай; проливать', 'shimmer': 'мерцание', 'tainted': 'испорченный'} испорченный definitions слово tainted осталдьные слова ['treasure', 'shed', 'shimmer']
+2023-06-22T19:19:31.175407+0300 DEBUG procces term list tainted ['treasure', 'shed', 'shimmer']
+2023-06-22T19:19:31.176408+0300 DEBUG  shuffle_and_display_options else second_step испорченный
+2023-06-22T20:15:15.198682+0300 INFO Запускаем бота
+2023-06-22T20:15:19.750230+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:15:21.939070+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:25:17.952669+0300 INFO Запускаем бота
+2023-06-22T20:25:20.443862+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:25:23.870450+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:25:26.431696+0300 DEBUG ErrorEvent update=Update(update_id=65056740, message=Message(message_id=9082, date=datetime.datetime(2023, 6, 22, 17, 25, 26, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818, type='private', title=None, username='SPB_Emmanuil_Yankelevich', first_name='Эммануил', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=536806818, is_bot=False, first_name='Эммануил', last_name=None, username='SPB_Emmanuil_Yankelevich', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='english_word', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=KeyError()
+2023-06-22T20:30:00.429361+0300 INFO Запускаем бота
+2023-06-22T20:30:01.430251+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:30:02.621233+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:30:06.145493+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:30:09.930586+0300 DEBUG ErrorEvent 
+2023-06-22T20:45:57.118126+0300 INFO Запускаем бота
+2023-06-22T20:46:05.072042+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:46:06.770984+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:46:08.539489+0300 DEBUG 
+2023-06-22T20:47:01.275475+0300 INFO Запускаем бота
+2023-06-22T20:47:02.825847+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:47:04.333729+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:47:06.251539+0300 DEBUG 
+2023-06-22T20:47:06.252541+0300 DEBUG update=Update(update_id=65056750, message=Message(message_id=9103, date=datetime.datetime(2023, 6, 22, 17, 47, 6, tzinfo=datetime.timezone.utc), chat=Chat(id=536806818, type='private', title=None, username='SPB_Emmanuil_Yankelevich', first_name='Эммануил', last_name=None, is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=536806818, is_bot=False, first_name='Эммануил', last_name=None, username='SPB_Emmanuil_Yankelevich', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='english_word', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=KeyError()
+2023-06-22T20:47:44.878440+0300 INFO Запускаем бота
+2023-06-22T20:47:46.589668+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:47:48.318789+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:47:50.290579+0300 DEBUG 
+2023-06-22T20:47:50.292593+0300 DEBUG <class 'aiogram.types.error_event.ErrorEvent'>
+2023-06-22T20:50:37.465537+0300 INFO Запускаем бота
+2023-06-22T20:50:42.231793+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:50:43.545784+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:50:44.701361+0300 DEBUG 
+2023-06-22T20:50:44.702364+0300 DEBUG 
+2023-06-22T20:50:44.703363+0300 DEBUG term
+2023-06-22T20:51:04.904681+0300 INFO Запускаем бота
+2023-06-22T20:51:06.020522+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:51:07.246609+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:51:08.073725+0300 DEBUG 
+2023-06-22T20:51:08.075152+0300 DEBUG <class 'KeyError'>
+2023-06-22T20:51:08.076727+0300 DEBUG term
+2023-06-22T20:57:08.188573+0300 DEBUG 
+2023-06-22T20:57:08.189574+0300 DEBUG <class 'KeyError'>
+2023-06-22T20:57:08.190572+0300 DEBUG term
+2023-06-22T20:57:09.672700+0300 DEBUG 
+2023-06-22T20:57:09.674696+0300 DEBUG <class 'KeyError'>
+2023-06-22T20:57:09.675695+0300 DEBUG english_word
+2023-06-22T20:58:18.386504+0300 INFO Запускаем бота
+2023-06-22T20:58:19.922023+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T20:58:21.999022+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T20:58:23.453420+0300 ERROR KeyError: term  user_id: 536806818
+2023-06-22T20:58:27.185582+0300 ERROR KeyError: english_word  user_id: 536806818
+2023-06-22T21:34:34.899495+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T21:34:37.831730+0300 DEBUG [<Record type='english_word' count=22>, <Record type='term' count=24>]  536806818
+2023-06-22T21:34:40.213219+0300 ERROR KeyError: english_word  user_id: 536806818
+2023-06-22T21:34:49.693516+0300 INFO Запускаем бота
+2023-06-22T21:34:51.850566+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-22T21:34:56.628133+0300 DEBUG Выбрано 536806818, [<Record term='bizzare' definition='странный'>, <Record term='pursue' definition='гнаться'>, <Record term='undo' definition='отменить'>, <Record term='tainted' definition='испорченный'>, <Record term='shed' definition='сарай; проливать'>, <Record term='stuck' definition='застрявший'>, <Record term='write' definition='писать'>, <Record term='prejudiced' definition='предвзято'>] english_word 536806818 
+2023-06-22T21:35:00.237448+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'pursue': 'гнаться', 'undo': 'отменить', 'tainted': 'испорченный', 'shed': 'сарай; проливать', 'stuck': 'застрявший', 'write': 'писать', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['undo', 'prejudiced', 'shed', 'pursue', 'tainted', 'write', 'bizzare', 'stuck'], 'definitions': ['странный', 'гнаться', 'отменить', 'испорченный', 'сарай; проливать', 'застрявший', 'писать', 'предвзято'], 'term_key': 'words'} words
+2023-06-22T21:35:00.238448+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'pursue': 'гнаться', 'undo': 'отменить', 'tainted': 'испорченный', 'shed': 'сарай; проливать', 'stuck': 'застрявший', 'write': 'писать', 'prejudiced': 'предвзято'} undo words определение отменить остальныеопределения ['странный', 'гнаться', 'испорченный', 'сарай; проливать', 'застрявший', 'писать', 'предвзято']
+2023-06-22T21:35:00.239448+0300 DEBUG procces term list отменить ['странный', 'гнаться', 'испорченный', 'сарай; проливать', 'застрявший', 'писать', 'предвзято']
+2023-06-22T21:35:04.996501+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'pursue': 'гнаться', 'undo': 'отменить', 'tainted': 'испорченный', 'shed': 'сарай; проливать', 'stuck': 'застрявший', 'write': 'писать', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['tainted', 'shed', 'stuck', 'prejudiced', 'pursue', 'bizzare', 'write'], 'definitions': ['странный', 'гнаться', 'отменить', 'испорченный', 'сарай; проливать', 'застрявший', 'писать', 'предвзято'], 'term_key': 'words', 'chosen_term': 'undo', 'correct_answer': 'отменить'} words
+2023-06-22T21:35:04.997504+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'pursue': 'гнаться', 'undo': 'отменить', 'tainted': 'испорченный', 'shed': 'сарай; проливать', 'stuck': 'застрявший', 'write': 'писать', 'prejudiced': 'предвзято'} tainted words определение испорченный остальныеопределения ['странный', 'гнаться', 'отменить', 'сарай; проливать', 'застрявший', 'писать', 'предвзято']
+2023-06-22T21:35:04.998502+0300 DEBUG procces term list испорченный ['странный', 'гнаться', 'отменить', 'сарай; проливать', 'застрявший', 'писать', 'предвзято']
+2023-06-22T21:35:17.281795+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'pursue': 'гнаться', 'undo': 'отменить', 'tainted': 'испорченный', 'shed': 'сарай; проливать', 'stuck': 'застрявший', 'write': 'писать', 'prejudiced': 'предвзято'}, 'current_state': 'first_step', 'words': ['shed', 'bizzare', 'pursue', 'stuck', 'prejudiced', 'write'], 'definitions': ['странный', 'гнаться', 'отменить', 'испорченный', 'сарай; проливать', 'застрявший', 'писать', 'предвзято'], 'term_key': 'words', 'chosen_term': 'tainted', 'correct_answer': 'испорченный'} words
+2023-06-22T21:35:17.282790+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'pursue': 'гнаться', 'undo': 'отменить', 'tainted': 'испорченный', 'shed': 'сарай; проливать', 'stuck': 'застрявший', 'write': 'писать', 'prejudiced': 'предвзято'} shed words определение сарай; проливать остальныеопределения ['странный', 'гнаться', 'отменить', 'испорченный', 'застрявший', 'писать', 'предвзято']
+2023-06-22T21:35:17.284789+0300 DEBUG procces term list сарай; проливать ['странный', 'гнаться', 'отменить', 'испорченный', 'застрявший', 'писать', 'предвзято']
+2023-06-23T00:04:07.261959+0300 INFO Запускаем бота
+2023-06-23T00:04:09.960506+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:04:14.498448+0300 DEBUG Выбрано 536806818, [<Record term='undo' definition='отменить'>, <Record term='write' definition='писать'>, <Record term='hi mark' definition='baza'>, <Record term='heat wave' definition='сильная жара'>] english_word 536806818 
+2023-06-23T00:04:14.575449+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.576450+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.661014+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.663012+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.748073+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.749072+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.839568+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:14.840568+0300 INFO Function escape_special_characters executed in 0.0 seconds
+2023-06-23T00:04:15.677562+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:04:15.678563+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['heat wave', 'undo', 'hi mark', 'write'], 'definitions': ['отменить', 'писать', 'baza', 'сильная жара'], 'term_key': 'words'} words
+2023-06-23T00:04:15.679563+0300 INFO Function get_terms_and_list executed in 0.0009999275207519531 seconds
+2023-06-23T00:04:15.680563+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'} heat wave words определение сильная жара остальныеопределения ['отменить', 'писать', 'baza']
+2023-06-23T00:04:15.682563+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.002000570297241211 seconds
+2023-06-23T00:04:15.683730+0300 DEBUG procces term list сильная жара ['отменить', 'писать', 'baza']
+2023-06-23T00:04:15.684561+0300 INFO Function get_word_and_definitions executed in 0.003998756408691406 seconds
+2023-06-23T00:04:18.342765+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:04:18.343765+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['write', 'undo', 'hi mark'], 'definitions': ['отменить', 'писать', 'baza', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'heat wave', 'correct_answer': 'сильная жара'} words
+2023-06-23T00:04:18.344765+0300 INFO Function get_terms_and_list executed in 0.0010001659393310547 seconds
+2023-06-23T00:04:18.346768+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'} write words определение писать остальныеопределения ['отменить', 'baza', 'сильная жара']
+2023-06-23T00:04:18.347767+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0009987354278564453 seconds
+2023-06-23T00:04:18.348766+0300 DEBUG procces term list писать ['отменить', 'baza', 'сильная жара']
+2023-06-23T00:04:18.349766+0300 INFO Function get_word_and_definitions executed in 0.0029976367950439453 seconds
+2023-06-23T00:04:20.612597+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:04:20.614597+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['hi mark', 'undo'], 'definitions': ['отменить', 'писать', 'baza', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'write', 'correct_answer': 'писать'} words
+2023-06-23T00:04:20.615598+0300 INFO Function get_terms_and_list executed in 0.0010013580322265625 seconds
+2023-06-23T00:04:20.616598+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'} hi mark words определение baza остальныеопределения ['отменить', 'писать', 'сильная жара']
+2023-06-23T00:04:20.617600+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.001001596450805664 seconds
+2023-06-23T00:04:20.618599+0300 DEBUG procces term list baza ['отменить', 'писать', 'сильная жара']
+2023-06-23T00:04:20.620597+0300 INFO Function get_word_and_definitions executed in 0.003998994827270508 seconds
+2023-06-23T00:04:22.311016+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:04:22.313017+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['undo'], 'definitions': ['отменить', 'писать', 'baza', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'hi mark', 'correct_answer': 'baza'} words
+2023-06-23T00:04:22.314018+0300 INFO Function get_terms_and_list executed in 0.0010004043579101562 seconds
+2023-06-23T00:04:22.315019+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'} undo words определение отменить остальныеопределения ['писать', 'baza', 'сильная жара']
+2023-06-23T00:04:22.316017+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0009980201721191406 seconds
+2023-06-23T00:04:22.317018+0300 DEBUG procces term list отменить ['писать', 'baza', 'сильная жара']
+2023-06-23T00:04:22.318143+0300 INFO Function get_word_and_definitions executed in 0.0031244754791259766 seconds
+2023-06-23T00:04:24.146641+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:04:24.148644+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': [], 'definitions': ['отменить', 'писать', 'baza', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'undo', 'correct_answer': 'отменить'} words
+2023-06-23T00:04:24.149642+0300 INFO Function get_terms_and_list executed in 0.0009984970092773438 seconds
+2023-06-23T00:04:25.604178+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:04:25.605177+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'}, 'current_state': 'second_step', 'words': [], 'definitions': ['отменить', 'baza', 'писать', 'сильная жара'], 'term_key': 'definitions', 'chosen_term': 'undo', 'correct_answer': 'отменить'} definitions
+2023-06-23T00:04:25.607178+0300 INFO Function get_terms_and_list executed in 0.0020008087158203125 seconds
+2023-06-23T00:04:25.608178+0300 DEBUG get_words_or_definitions_based_on_term_key {'undo': 'отменить', 'write': 'писать', 'hi mark': 'baza', 'heat wave': 'сильная жара'} отменить definitions слово undo осталдьные слова ['write', 'hi mark', 'heat wave']
+2023-06-23T00:04:25.609178+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0010006427764892578 seconds
+2023-06-23T00:04:25.610179+0300 DEBUG procces term list undo ['write', 'hi mark', 'heat wave']
+2023-06-23T00:04:25.611178+0300 INFO Function get_word_and_definitions executed in 0.003000974655151367 seconds
+2023-06-23T00:06:23.346828+0300 INFO Запускаем бота
+2023-06-23T00:06:25.680241+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:06:31.037044+0300 DEBUG Выбрано 536806818, [<Record term='bizzare' definition='странный'>, <Record term='prejudiced' definition='предвзято'>, <Record term='issue' definition='вопрос, задача'>, <Record term='heat wave' definition='сильная жара'>] english_word 536806818 
+2023-06-23T00:06:33.707228+0300 INFO Function send_term_and_definitions executed in 7.999915396794677e-07 seconds
+2023-06-23T00:06:33.708228+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['issue', 'heat wave', 'prejudiced', 'bizzare'], 'definitions': ['странный', 'предвзято', 'вопрос, задача', 'сильная жара'], 'term_key': 'words'} words
+2023-06-23T00:06:33.709228+0300 INFO Function get_terms_and_list executed in 0.0009907000057864934 seconds
+2023-06-23T00:06:33.710228+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'} issue words определение вопрос, задача остальныеопределения ['странный', 'предвзято', 'сильная жара']
+2023-06-23T00:06:33.711229+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0011757000029319897 seconds
+2023-06-23T00:06:33.712228+0300 DEBUG procces term list вопрос, задача ['странный', 'предвзято', 'сильная жара']
+2023-06-23T00:06:33.713229+0300 INFO Function get_word_and_definitions executed in 0.0028922999917995185 seconds
+2023-06-23T00:06:37.493106+0300 INFO Function send_term_and_definitions executed in 9.00006853044033e-07 seconds
+2023-06-23T00:06:37.494107+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['heat wave', 'prejudiced', 'bizzare'], 'definitions': ['странный', 'предвзято', 'вопрос, задача', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'issue', 'correct_answer': 'вопрос, задача'} words
+2023-06-23T00:06:37.495106+0300 INFO Function get_terms_and_list executed in 0.0010782000026665628 seconds
+2023-06-23T00:06:37.496110+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'} heat wave words определение сильная жара остальныеопределения ['странный', 'предвзято', 'вопрос, задача']
+2023-06-23T00:06:37.497107+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0009475000115344301 seconds
+2023-06-23T00:06:37.498107+0300 DEBUG procces term list сильная жара ['странный', 'предвзято', 'вопрос, задача']
+2023-06-23T00:06:37.499107+0300 INFO Function get_word_and_definitions executed in 0.00287430000025779 seconds
+2023-06-23T00:06:39.514111+0300 INFO Function send_term_and_definitions executed in 1.300009898841381e-06 seconds
+2023-06-23T00:06:39.515111+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['prejudiced', 'bizzare'], 'definitions': ['странный', 'предвзято', 'вопрос, задача', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'heat wave', 'correct_answer': 'сильная жара'} words
+2023-06-23T00:06:39.516110+0300 INFO Function get_terms_and_list executed in 0.001450199997634627 seconds
+2023-06-23T00:06:39.518113+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'} prejudiced words определение предвзято остальныеопределения ['странный', 'вопрос, задача', 'сильная жара']
+2023-06-23T00:06:39.520114+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0016707000031601638 seconds
+2023-06-23T00:06:39.521113+0300 DEBUG procces term list предвзято ['странный', 'вопрос, задача', 'сильная жара']
+2023-06-23T00:06:39.522113+0300 INFO Function get_word_and_definitions executed in 0.004146700011915527 seconds
+2023-06-23T00:06:42.027111+0300 INFO Function send_term_and_definitions executed in 8.999923011288047e-07 seconds
+2023-06-23T00:06:42.028111+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': ['bizzare'], 'definitions': ['странный', 'предвзято', 'вопрос, задача', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'prejudiced', 'correct_answer': 'предвзято'} words
+2023-06-23T00:06:42.029114+0300 INFO Function get_terms_and_list executed in 0.0013888999965274706 seconds
+2023-06-23T00:06:42.031113+0300 DEBUG get_words_or_definitions_based_on_term_key {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'} bizzare words определение странный остальныеопределения ['предвзято', 'вопрос, задача', 'сильная жара']
+2023-06-23T00:06:42.033115+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0017666999920038506 seconds
+2023-06-23T00:06:42.034111+0300 DEBUG procces term list странный ['предвзято', 'вопрос, задача', 'сильная жара']
+2023-06-23T00:06:42.035113+0300 INFO Function get_word_and_definitions executed in 0.003913799999281764 seconds
+2023-06-23T00:06:43.735174+0300 INFO Function send_term_and_definitions executed in 8.999923011288047e-07 seconds
+2023-06-23T00:06:43.736173+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'bizzare': 'странный', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'heat wave': 'сильная жара'}, 'current_state': 'first_step', 'words': [], 'definitions': ['странный', 'предвзято', 'вопрос, задача', 'сильная жара'], 'term_key': 'words', 'chosen_term': 'bizzare', 'correct_answer': 'странный'} words
+2023-06-23T00:06:43.737203+0300 INFO Function get_terms_and_list executed in 0.001248100001248531 seconds
+2023-06-23T00:10:53.052003+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:10:59.443611+0300 DEBUG Выбрано 536806818, [<Record term='heat wave' definition='сильная жара'>, <Record term='knitting' definition='вязание'>, <Record term='write' definition='писать'>, <Record term='issue' definition='вопрос, задача'>, <Record term='purr' definition='мурлыкать'>, <Record term='salary' definition='зарплата'>] english_word 536806818 
+2023-06-23T00:11:01.376856+0300 INFO Function send_term_and_definitions executed in 6.999907782301307e-07 seconds
+2023-06-23T00:11:01.377857+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'heat wave': 'сильная жара', 'knitting': 'вязание', 'write': 'писать', 'issue': 'вопрос, задача', 'purr': 'мурлыкать', 'salary': 'зарплата'}, 'current_state': 'first_step', 'words': ['salary', 'knitting', 'issue', 'write', 'purr', 'heat wave'], 'definitions': ['сильная жара', 'вязание', 'писать', 'вопрос, задача', 'мурлыкать', 'зарплата'], 'term_key': 'words'} words
+2023-06-23T00:11:01.378857+0300 INFO Function get_terms_and_list executed in 0.0010390000097686425 seconds
+2023-06-23T00:11:01.380232+0300 DEBUG get_words_or_definitions_based_on_term_key {'heat wave': 'сильная жара', 'knitting': 'вязание', 'write': 'писать', 'issue': 'вопрос, задача', 'purr': 'мурлыкать', 'salary': 'зарплата'} salary words определение зарплата остальныеопределения ['сильная жара', 'вязание', 'писать', 'вопрос, задача', 'мурлыкать']
+2023-06-23T00:11:01.380856+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0009307000000262633 seconds
+2023-06-23T00:11:01.381856+0300 DEBUG procces term list зарплата ['сильная жара', 'вязание', 'писать', 'вопрос, задача', 'мурлыкать']
+2023-06-23T00:11:01.382856+0300 INFO Function get_word_and_definitions executed in 0.0027935999969486147 seconds
+2023-06-23T00:11:06.004186+0300 INFO Function send_term_and_definitions executed in 8.999923011288047e-07 seconds
+2023-06-23T00:11:06.005187+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'heat wave': 'сильная жара', 'knitting': 'вязание', 'write': 'писать', 'issue': 'вопрос, задача', 'purr': 'мурлыкать', 'salary': 'зарплата'}, 'current_state': 'first_step', 'words': ['write', 'knitting', 'issue', 'purr', 'heat wave'], 'definitions': ['сильная жара', 'вязание', 'писать', 'вопрос, задача', 'мурлыкать', 'зарплата'], 'term_key': 'words', 'chosen_term': 'salary', 'correct_answer': 'зарплата'} words
+2023-06-23T00:11:06.006188+0300 INFO Function get_terms_and_list executed in 0.0010661999986041337 seconds
+2023-06-23T00:11:06.006188+0300 DEBUG get_words_or_definitions_based_on_term_key {'heat wave': 'сильная жара', 'knitting': 'вязание', 'write': 'писать', 'issue': 'вопрос, задача', 'purr': 'мурлыкать', 'salary': 'зарплата'} write words определение писать остальныеопределения ['сильная жара', 'вязание', 'вопрос, задача', 'мурлыкать', 'зарплата']
+2023-06-23T00:11:06.007186+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0009333999914815649 seconds
+2023-06-23T00:11:06.008187+0300 DEBUG procces term list писать ['сильная жара', 'вязание', 'вопрос, задача', 'мурлыкать', 'зарплата']
+2023-06-23T00:11:06.009188+0300 INFO Function get_word_and_definitions executed in 0.0029033000027993694 seconds
+2023-06-23T00:11:25.090866+0300 INFO Function send_term_and_definitions executed in 7.999915396794677e-07 seconds
+2023-06-23T00:11:25.092867+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'heat wave': 'сильная жара', 'knitting': 'вязание', 'write': 'писать', 'issue': 'вопрос, задача', 'purr': 'мурлыкать', 'salary': 'зарплата'}, 'current_state': 'first_step', 'words': ['heat wave', 'issue', 'knitting', 'purr'], 'definitions': ['сильная жара', 'вязание', 'писать', 'вопрос, задача', 'мурлыкать', 'зарплата'], 'term_key': 'words', 'chosen_term': 'write', 'correct_answer': 'писать'} words
+2023-06-23T00:11:25.093870+0300 INFO Function get_terms_and_list executed in 0.0016318999987561256 seconds
+2023-06-23T00:11:25.095868+0300 DEBUG get_words_or_definitions_based_on_term_key {'heat wave': 'сильная жара', 'knitting': 'вязание', 'write': 'писать', 'issue': 'вопрос, задача', 'purr': 'мурлыкать', 'salary': 'зарплата'} heat wave words определение сильная жара остальныеопределения ['вязание', 'писать', 'вопрос, задача', 'мурлыкать', 'зарплата']
+2023-06-23T00:11:25.097870+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 0.0018213000003015622 seconds
+2023-06-23T00:11:25.098866+0300 DEBUG procces term list сильная жара ['вязание', 'писать', 'вопрос, задача', 'мурлыкать', 'зарплата']
+2023-06-23T00:11:25.099899+0300 INFO Function get_word_and_definitions executed in 0.0038696999981766567 seconds
+2023-06-23T00:13:56.193585+0300 INFO Запускаем бота
+2023-06-23T00:13:57.563385+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:14:02.328186+0300 DEBUG Выбрано 536806818, [<Record term='term' definition='pep'>, <Record term='пертубация' definition='внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение'>, <Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>, <Record term='импозантный' definition='производящий впечатление, внушительный, представительный'>] term 536806818 
+2023-06-23T00:14:03.858137+0300 INFO Function send_term_and_definitions executed in 9.999930625781417e-07 seconds
+2023-06-23T00:14:03.859140+0300 DEBUG get_terms_and_list {'chosen_type': 'term', 'terms': {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'}, 'current_state': 'first_step', 'words': ['пертубация', 'term', 'импозантный', 'фатум'], 'definitions': ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный'], 'term_key': 'words'} words
+2023-06-23T00:14:03.861137+0300 DEBUG get_words_or_definitions_based_on_term_key {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'} пертубация words определение внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение остальныеопределения ['pep', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный']
+2023-06-23T00:14:03.862137+0300 DEBUG procces term list внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение ['pep', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный']
+2023-06-23T00:14:07.331639+0300 INFO Function send_term_and_definitions executed in 1.100008375942707e-06 seconds
+2023-06-23T00:14:07.332638+0300 DEBUG get_terms_and_list {'chosen_type': 'term', 'terms': {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'}, 'current_state': 'first_step', 'words': ['term', 'импозантный', 'фатум'], 'definitions': ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный'], 'term_key': 'words', 'chosen_term': 'пертубация', 'correct_answer': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение'} words
+2023-06-23T00:14:07.333638+0300 DEBUG get_words_or_definitions_based_on_term_key {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'} term words определение pep остальныеопределения ['внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный']
+2023-06-23T00:14:07.335639+0300 DEBUG procces term list pep ['внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный']
+2023-06-23T00:14:31.510189+0300 INFO Function send_term_and_definitions executed in 9.999930625781417e-07 seconds
+2023-06-23T00:14:31.511190+0300 DEBUG get_terms_and_list {'chosen_type': 'term', 'terms': {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'}, 'current_state': 'first_step', 'words': ['фатум', 'импозантный'], 'definitions': ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный'], 'term_key': 'words', 'chosen_term': 'term', 'correct_answer': 'pep'} words
+2023-06-23T00:14:31.512189+0300 DEBUG get_words_or_definitions_based_on_term_key {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'} фатум words определение неотвратимая судьба, рок, доля остальныеопределения ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'производящий впечатление, внушительный, представительный']
+2023-06-23T00:14:31.513189+0300 DEBUG procces term list неотвратимая судьба, рок, доля ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'производящий впечатление, внушительный, представительный']
+2023-06-23T00:14:40.687600+0300 INFO Function send_term_and_definitions executed in 1.3999961083754897e-06 seconds
+2023-06-23T00:14:40.688600+0300 DEBUG get_terms_and_list {'chosen_type': 'term', 'terms': {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'}, 'current_state': 'first_step', 'words': ['импозантный'], 'definitions': ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный'], 'term_key': 'words', 'chosen_term': 'фатум', 'correct_answer': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля'} words
+2023-06-23T00:14:40.689599+0300 DEBUG get_words_or_definitions_based_on_term_key {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'} импозантный words определение производящий впечатление, внушительный, представительный остальныеопределения ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля']
+2023-06-23T00:14:40.690599+0300 DEBUG procces term list производящий впечатление, внушительный, представительный ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля']
+2023-06-23T00:14:46.477163+0300 INFO Function send_term_and_definitions executed in 8.999923011288047e-07 seconds
+2023-06-23T00:14:46.478164+0300 DEBUG get_terms_and_list {'chosen_type': 'term', 'terms': {'term': 'pep', 'пертубация': 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'фатум': 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'импозантный': 'производящий впечатление, внушительный, представительный'}, 'current_state': 'first_step', 'words': [], 'definitions': ['pep', 'внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение', 'неотвратимая\xa0судьба,\xa0рок,\xa0доля', 'производящий впечатление, внушительный, представительный'], 'term_key': 'words', 'chosen_term': 'импозантный', 'correct_answer': 'производящий впечатление, внушительный, представительный'} words
+2023-06-23T00:15:34.421511+0300 INFO Запускаем бота
+2023-06-23T00:15:36.916686+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:15:42.678995+0300 DEBUG Выбрано 536806818, [<Record term='pursue' definition='гнаться'>, <Record term='prejudiced' definition='предвзято'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='bloom' definition='цветение'>, <Record term='write' definition='писать'>, <Record term='bizzare' definition='странный'>] english_word 536806818 
+2023-06-23T00:15:45.276825+0300 INFO Function send_term_and_definitions executed in 9.00006853044033e-07 seconds
+2023-06-23T00:15:45.277825+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'pursue': 'гнаться', 'prejudiced': 'предвзято', 'drip drop': 'капля за каплей', 'bloom': 'цветение', 'write': 'писать', 'bizzare': 'странный'}, 'current_state': 'first_step', 'words': ['pursue', 'bloom', 'bizzare', 'prejudiced', 'write', 'drip drop'], 'definitions': ['гнаться', 'предвзято', 'капля за каплей', 'цветение', 'писать', 'странный'], 'term_key': 'words'} words
+2023-06-23T00:15:45.278825+0300 DEBUG get_words_or_definitions_based_on_term_key {'pursue': 'гнаться', 'prejudiced': 'предвзято', 'drip drop': 'капля за каплей', 'bloom': 'цветение', 'write': 'писать', 'bizzare': 'странный'} pursue words определение гнаться остальныеопределения ['предвзято', 'капля за каплей', 'цветение', 'писать', 'странный']
+2023-06-23T00:15:45.279826+0300 DEBUG procces term list гнаться ['предвзято', 'капля за каплей', 'цветение', 'писать', 'странный']
+2023-06-23T00:18:16.490331+0300 INFO Запускаем бота
+2023-06-23T00:18:20.053678+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:18:24.901813+0300 DEBUG Выбрано 536806818, [<Record term='treasure' definition='сокровище'>, <Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='bizzare' definition='странный'>, <Record term='twee' definition='свист'>] english_word 536806818 
+2023-06-23T00:18:26.542454+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:18:26.543456+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'faking out': 'притворятся ; выводить из себя', 'bizzare': 'странный', 'twee': 'свист'}, 'current_state': 'first_step', 'words': ['bizzare', 'twee', 'treasure', 'faking out'], 'definitions': ['сокровище', 'притворятся ; выводить из себя', 'странный', 'свист'], 'term_key': 'words'} words
+2023-06-23T00:18:26.544455+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'faking out': 'притворятся ; выводить из себя', 'bizzare': 'странный', 'twee': 'свист'} bizzare words определение странный остальныеопределения ['сокровище', 'притворятся ; выводить из себя', 'свист']
+2023-06-23T00:18:26.545456+0300 DEBUG procces term list странный ['сокровище', 'притворятся ; выводить из себя', 'свист']
+2023-06-23T00:18:33.357401+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:18:33.359402+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'treasure': 'сокровище', 'faking out': 'притворятся ; выводить из себя', 'bizzare': 'странный', 'twee': 'свист'}, 'current_state': 'first_step', 'words': ['treasure', 'faking out', 'twee'], 'definitions': ['сокровище', 'притворятся ; выводить из себя', 'странный', 'свист'], 'term_key': 'words', 'chosen_term': 'bizzare', 'correct_answer': 'странный'} words
+2023-06-23T00:18:33.360403+0300 DEBUG get_words_or_definitions_based_on_term_key {'treasure': 'сокровище', 'faking out': 'притворятся ; выводить из себя', 'bizzare': 'странный', 'twee': 'свист'} treasure words определение сокровище остальныеопределения ['притворятся ; выводить из себя', 'странный', 'свист']
+2023-06-23T00:18:33.361404+0300 DEBUG procces term list сокровище ['притворятся ; выводить из себя', 'странный', 'свист']
+2023-06-23T00:19:16.338489+0300 INFO Запускаем бота
+2023-06-23T00:19:20.005508+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:19:24.654464+0300 DEBUG Выбрано 536806818, [<Record term='shed' definition='сарай; проливать'>, <Record term='defy' definition='игнорировать'>, <Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='drip drop' definition='капля за каплей'>] english_word 536806818 
+2023-06-23T00:19:25.833043+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:19:25.834044+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'}, 'current_state': 'first_step', 'words': ['faking out', 'drip drop', 'defy', 'shed'], 'definitions': ['сарай; проливать', 'игнорировать', 'притворятся ; выводить из себя', 'капля за каплей'], 'term_key': 'words'} words
+2023-06-23T00:19:25.835047+0300 DEBUG get_words_or_definitions_based_on_term_key {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'} faking out words определение притворятся ; выводить из себя остальныеопределения ['сарай; проливать', 'игнорировать', 'капля за каплей']
+2023-06-23T00:19:25.836044+0300 DEBUG procces term list притворятся ; выводить из себя ['сарай; проливать', 'игнорировать', 'капля за каплей']
+2023-06-23T00:19:27.844493+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:19:27.845495+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'}, 'current_state': 'first_step', 'words': ['defy', 'drip drop', 'shed'], 'definitions': ['сарай; проливать', 'игнорировать', 'притворятся ; выводить из себя', 'капля за каплей'], 'term_key': 'words', 'chosen_term': 'faking out', 'correct_answer': 'притворятся ; выводить из себя'} words
+2023-06-23T00:19:27.847493+0300 DEBUG get_words_or_definitions_based_on_term_key {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'} defy words определение игнорировать остальныеопределения ['сарай; проливать', 'притворятся ; выводить из себя', 'капля за каплей']
+2023-06-23T00:19:27.848493+0300 DEBUG procces term list игнорировать ['сарай; проливать', 'притворятся ; выводить из себя', 'капля за каплей']
+2023-06-23T00:19:31.290631+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:19:31.291632+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'}, 'current_state': 'first_step', 'words': ['drip drop', 'shed'], 'definitions': ['сарай; проливать', 'игнорировать', 'притворятся ; выводить из себя', 'капля за каплей'], 'term_key': 'words', 'chosen_term': 'defy', 'correct_answer': 'игнорировать'} words
+2023-06-23T00:19:31.293633+0300 DEBUG get_words_or_definitions_based_on_term_key {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'} drip drop words определение капля за каплей остальныеопределения ['сарай; проливать', 'игнорировать', 'притворятся ; выводить из себя']
+2023-06-23T00:19:31.294632+0300 DEBUG procces term list капля за каплей ['сарай; проливать', 'игнорировать', 'притворятся ; выводить из себя']
+2023-06-23T00:19:37.795304+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:19:37.796302+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'}, 'current_state': 'first_step', 'words': ['shed'], 'definitions': ['сарай; проливать', 'игнорировать', 'притворятся ; выводить из себя', 'капля за каплей'], 'term_key': 'words', 'chosen_term': 'drip drop', 'correct_answer': 'капля за каплей'} words
+2023-06-23T00:19:37.797302+0300 DEBUG get_words_or_definitions_based_on_term_key {'shed': 'сарай; проливать', 'defy': 'игнорировать', 'faking out': 'притворятся ; выводить из себя', 'drip drop': 'капля за каплей'} shed words определение сарай; проливать остальныеопределения ['игнорировать', 'притворятся ; выводить из себя', 'капля за каплей']
+2023-06-23T00:19:37.798303+0300 DEBUG procces term list сарай; проливать ['игнорировать', 'притворятся ; выводить из себя', 'капля за каплей']
+2023-06-23T00:22:40.743525+0300 INFO Запускаем бота
+2023-06-23T00:22:43.348040+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:22:47.476168+0300 DEBUG Выбрано 536806818, [<Record term='issue' definition='вопрос, задача'>, <Record term='bloom' definition='цветение'>, <Record term='shimmer' definition='мерцание'>, <Record term='treasure' definition='сокровище'>] english_word 536806818 
+2023-06-23T00:22:48.742340+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:22:48.743341+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'issue': 'вопрос, задача', 'bloom': 'цветение', 'shimmer': 'мерцание', 'treasure': 'сокровище'}, 'current_state': 'first_step', 'words': ['issue', 'bloom', 'treasure', 'shimmer'], 'definitions': ['вопрос, задача', 'цветение', 'мерцание', 'сокровище'], 'term_key': 'words'} words
+2023-06-23T00:22:48.744339+0300 DEBUG get_words_or_definitions_based_on_term_key {'issue': 'вопрос, задача', 'bloom': 'цветение', 'shimmer': 'мерцание', 'treasure': 'сокровище'} issue words определение вопрос, задача остальныеопределения ['цветение', 'мерцание', 'сокровище']
+2023-06-23T00:22:48.745338+0300 DEBUG procces term list вопрос, задача ['цветение', 'мерцание', 'сокровище']
+2023-06-23T00:24:44.601534+0300 INFO Запускаем бота
+2023-06-23T00:24:47.774268+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:24:52.277302+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='twee' definition='свист'>, <Record term='prejudiced' definition='предвзято'>, <Record term='pursue' definition='гнаться'>] english_word 536806818 
+2023-06-23T00:24:53.837817+0300 INFO Function send_term_and_definitions executed in 0.0 seconds
+2023-06-23T00:24:53.838818+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'hi mark': 'baza', 'twee': 'свист', 'prejudiced': 'предвзято', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['pursue', 'prejudiced', 'twee', 'hi mark'], 'definitions': ['baza', 'свист', 'предвзято', 'гнаться'], 'term_key': 'words'} words
+2023-06-23T00:24:53.839818+0300 DEBUG get_words_or_definitions_based_on_term_key {'hi mark': 'baza', 'twee': 'свист', 'prejudiced': 'предвзято', 'pursue': 'гнаться'} pursue words определение гнаться остальныеопределения ['baza', 'свист', 'предвзято']
+2023-06-23T00:24:53.840818+0300 DEBUG procces term list гнаться ['baza', 'свист', 'предвзято']
+2023-06-23T00:26:10.613037+0300 INFO Запускаем бота
+2023-06-23T00:26:11.676588+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:26:15.965767+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='stuck' definition='застрявший'>, <Record term='prejudiced' definition='предвзято'>, <Record term='issue' definition='вопрос, задача'>, <Record term='shimmer' definition='мерцание'>, <Record term='write' definition='писать'>] english_word 536806818 
+2023-06-23T00:26:18.673440+0300 INFO Function send_term_and_definitions executed in 8.999923011288047e-07 seconds
+2023-06-23T00:26:18.675440+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['shimmer', 'stuck', 'write', 'throbbing', 'issue', 'prejudiced'], 'definitions': ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать'], 'term_key': 'words'} words
+2023-06-23T00:26:18.677437+0300 DEBUG get_words_or_definitions_based_on_term_key {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'} shimmer words определение мерцание остальныеопределения ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'писать']
+2023-06-23T00:26:18.678440+0300 DEBUG procces term list мерцание ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'писать']
+2023-06-23T00:26:25.509951+0300 INFO Function send_term_and_definitions executed in 9.00006853044033e-07 seconds
+2023-06-23T00:26:25.510952+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['write', 'issue', 'prejudiced', 'throbbing', 'stuck'], 'definitions': ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать'], 'term_key': 'words', 'chosen_term': 'shimmer', 'correct_answer': 'мерцание'} words
+2023-06-23T00:26:25.511953+0300 DEBUG get_words_or_definitions_based_on_term_key {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'} write words определение писать остальныеопределения ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание']
+2023-06-23T00:26:25.513953+0300 DEBUG procces term list писать ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание']
+2023-06-23T00:26:29.068986+0300 INFO Function send_term_and_definitions executed in 7.00005330145359e-07 seconds
+2023-06-23T00:26:29.070988+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['throbbing', 'stuck', 'prejudiced', 'issue'], 'definitions': ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать'], 'term_key': 'words', 'chosen_term': 'write', 'correct_answer': 'писать'} words
+2023-06-23T00:26:29.071987+0300 DEBUG get_words_or_definitions_based_on_term_key {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'} throbbing words определение пульсация остальныеопределения ['застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать']
+2023-06-23T00:26:29.072987+0300 DEBUG procces term list пульсация ['застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать']
+2023-06-23T00:26:33.014251+0300 INFO Function send_term_and_definitions executed in 1.200009137392044e-06 seconds
+2023-06-23T00:26:33.016250+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['stuck', 'issue', 'prejudiced'], 'definitions': ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать'], 'term_key': 'words', 'chosen_term': 'throbbing', 'correct_answer': 'пульсация'} words
+2023-06-23T00:26:33.017250+0300 DEBUG get_words_or_definitions_based_on_term_key {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'} stuck words определение застрявший остальныеопределения ['пульсация', 'предвзято', 'вопрос, задача', 'мерцание', 'писать']
+2023-06-23T00:26:33.019249+0300 DEBUG procces term list застрявший ['пульсация', 'предвзято', 'вопрос, задача', 'мерцание', 'писать']
+2023-06-23T00:26:39.112803+0300 INFO Function send_term_and_definitions executed in 6.999907782301307e-07 seconds
+2023-06-23T00:26:39.113804+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['issue', 'prejudiced'], 'definitions': ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать'], 'term_key': 'words', 'chosen_term': 'stuck', 'correct_answer': 'застрявший'} words
+2023-06-23T00:26:39.115806+0300 DEBUG get_words_or_definitions_based_on_term_key {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'} issue words определение вопрос, задача остальныеопределения ['пульсация', 'застрявший', 'предвзято', 'мерцание', 'писать']
+2023-06-23T00:26:39.116806+0300 DEBUG procces term list вопрос, задача ['пульсация', 'застрявший', 'предвзято', 'мерцание', 'писать']
+2023-06-23T00:26:44.656174+0300 INFO Function send_term_and_definitions executed in 8.00006091594696e-07 seconds
+2023-06-23T00:26:44.657174+0300 DEBUG get_terms_and_list {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'}, 'current_state': 'first_step', 'words': ['prejudiced'], 'definitions': ['пульсация', 'застрявший', 'предвзято', 'вопрос, задача', 'мерцание', 'писать'], 'term_key': 'words', 'chosen_term': 'issue', 'correct_answer': 'вопрос, задача'} words
+2023-06-23T00:26:44.658175+0300 DEBUG get_words_or_definitions_based_on_term_key {'throbbing': 'пульсация', 'stuck': 'застрявший', 'prejudiced': 'предвзято', 'issue': 'вопрос, задача', 'shimmer': 'мерцание', 'write': 'писать'} prejudiced words определение предвзято остальныеопределения ['пульсация', 'застрявший', 'вопрос, задача', 'мерцание', 'писать']
+2023-06-23T00:26:44.659181+0300 DEBUG procces term list предвзято ['пульсация', 'застрявший', 'вопрос, задача', 'мерцание', 'писать']
+2023-06-23T00:28:11.438262+0300 INFO Запускаем бота
+2023-06-23T00:28:13.332117+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:28:18.825461+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='bizzare' definition='странный'>, <Record term='twee' definition='свист'>, <Record term='shimmer' definition='мерцание'>, <Record term='shed' definition='сарай; проливать'>, <Record term='tainted' definition='испорченный'>, <Record term='write' definition='писать'>, <Record term='pursue' definition='гнаться'>] english_word 536806818 
+2023-06-23T00:28:20.665499+0300 INFO Function send_term_and_definitions executed in 1.4999968698248267e-06 seconds
+2023-06-23T00:28:26.898774+0300 INFO Function send_term_and_definitions executed in 8.00006091594696e-07 seconds
+2023-06-23T00:28:33.223200+0300 INFO Function send_term_and_definitions executed in 7.00005330145359e-07 seconds
+2023-06-23T00:28:35.715208+0300 INFO Function send_term_and_definitions executed in 9.999930625781417e-07 seconds
+2023-06-23T00:28:37.218015+0300 INFO Function send_term_and_definitions executed in 6.999907782301307e-07 seconds
+2023-06-23T00:28:39.668166+0300 INFO Function send_term_and_definitions executed in 6.999907782301307e-07 seconds
+2023-06-23T00:28:41.167505+0300 INFO Function send_term_and_definitions executed in 6.999907782301307e-07 seconds
+2023-06-23T00:28:45.138153+0300 INFO Function send_term_and_definitions executed in 8.00006091594696e-07 seconds
+2023-06-23T00:28:46.768816+0300 INFO Function send_term_and_definitions executed in 9.00006853044033e-07 seconds
+2023-06-23T00:31:18.253047+0300 INFO Запускаем бота
+2023-06-23T00:31:20.756416+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:31:24.955191+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='shed' definition='сарай; проливать'>, <Record term='tainted' definition='испорченный'>, <Record term='write' definition='писать'>] english_word 536806818 
+2023-06-23T00:31:26.854726+0300 INFO Function send_term_and_definitions executed in 0.0751272999914363 seconds
+2023-06-23T00:31:30.319024+0300 INFO Function send_term_and_definitions executed in 0.10028389999934006 seconds
+2023-06-23T00:31:35.132913+0300 INFO Function send_term_and_definitions executed in 0.11511389999941457 seconds
+2023-06-23T00:31:39.461668+0300 INFO Function send_term_and_definitions executed in 0.10254739999072626 seconds
+2023-06-23T00:31:43.147471+0300 INFO Function send_term_and_definitions executed in 0.13849239998671692 seconds
+2023-06-23T00:31:44.842831+0300 INFO Function send_term_and_definitions executed in 0.08662050000566524 seconds
+2023-06-23T00:33:15.088671+0300 INFO Запускаем бота
+2023-06-23T00:34:01.497105+0300 INFO Запускаем бота
+2023-06-23T00:34:04.733767+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:34:09.770895+0300 DEBUG Выбрано 536806818, [<Record term='shimmer' definition='мерцание'>, <Record term='pursue' definition='гнаться'>, <Record term='stuck' definition='застрявший'>, <Record term='bloom' definition='цветение'>, <Record term='heat wave' definition='сильная жара'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-23T00:34:11.431274+0300 INFO Function get_terms_and_list executed in 1.060000795405358e-05 seconds
+2023-06-23T00:34:11.432279+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 2.9999937396496534e-06 seconds
+2023-06-23T00:34:11.433280+0300 INFO Function get_word_and_definitions executed in 0.0008229999948525801 seconds
+2023-06-23T00:34:11.511304+0300 INFO Function send_or_remove_keyboard executed in 0.06199999999080319 seconds
+2023-06-23T00:34:11.512304+0300 INFO Function send_term_and_definitions executed in 0.09399999999732245 seconds
+2023-06-23T00:35:12.727854+0300 INFO Function get_terms_and_list executed in 9.199997293762863e-06 seconds
+2023-06-23T00:35:12.728853+0300 INFO Function get_words_or_definitions_based_on_term_key executed in 4.1000021155923605e-06 seconds
+2023-06-23T00:35:12.730855+0300 INFO Function get_word_and_definitions executed in 0.001439700004993938 seconds
+2023-06-23T00:35:12.817864+0300 INFO Function send_or_remove_keyboard executed in 0.07800000000861473 seconds
+2023-06-23T00:35:12.818864+0300 INFO Function send_term_and_definitions executed in 0.09399999999732245 seconds
+2023-06-23T00:38:05.283805+0300 INFO Запускаем бота
+2023-06-23T00:38:07.540776+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:38:12.680424+0300 DEBUG Выбрано 536806818, [<Record term='write' definition='писать'>, <Record term='twee' definition='свист'>, <Record term='stuck' definition='застрявший'>, <Record term='prejudiced' definition='предвзято'>, <Record term='hi mark' definition='baza'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-23T00:38:16.372246+0300 INFO Function get_terms_and_list executed in 1.2200005585327744e-05 seconds
+2023-06-23T00:38:22.015674+0300 INFO Function get_terms_and_list executed in 1.1100011761300266e-05 seconds
+2023-06-23T00:38:27.632981+0300 INFO Function get_terms_and_list executed in 9.399998816661537e-06 seconds
+2023-06-23T00:38:48.493203+0300 INFO Запускаем бота
+2023-06-23T00:38:49.889841+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:38:54.385186+0300 DEBUG Выбрано 536806818, [<Record term='write' definition='писать'>, <Record term='purr' definition='мурлыкать'>, <Record term='shimmer' definition='мерцание'>, <Record term='twee' definition='свист'>, <Record term='salary' definition='зарплата'>, <Record term='hi mark' definition='baza'>] english_word 536806818 
+2023-06-23T00:38:55.641805+0300 ERROR cannot unpack non-iterable coroutine object, user message: Начать  user_id: 536806818
+2023-06-23T00:40:03.864859+0300 INFO Запускаем бота
+2023-06-23T00:40:11.016102+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:40:33.476994+0300 DEBUG Выбрано 536806818, [<Record term='pursue' definition='гнаться'>, <Record term='undo' definition='отменить'>, <Record term='bizzare' definition='странный'>, <Record term='knitting' definition='вязание'>, <Record term='purr' definition='мурлыкать'>, <Record term='throbbing' definition='пульсация'>] english_word 536806818 
+2023-06-23T00:40:35.369964+0300 ERROR object tuple can't be used in 'await' expression, user message: Начать  user_id: 536806818
+2023-06-23T00:44:20.203077+0300 INFO Запускаем бота
+2023-06-23T00:44:21.582678+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:44:25.307012+0300 DEBUG Выбрано 536806818, [<Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='shed' definition='сарай; проливать'>, <Record term='twee' definition='свист'>, <Record term='hi mark' definition='baza'>, <Record term='salary' definition='зарплата'>, <Record term='tainted' definition='испорченный'>] english_word 536806818 
+2023-06-23T00:44:27.382514+0300 DEBUG get_terms_and_list: {'faking out': 'притворятся ; выводить из себя', 'shed': 'сарай; проливать', 'twee': 'свист', 'hi mark': 'baza', 'salary': 'зарплата', 'tainted': 'испорченный'}, ['faking out', 'shed', 'tainted', 'twee', 'hi mark', 'salary']
+2023-06-23T00:51:14.214634+0300 INFO Запускаем бота
+2023-06-23T00:51:19.595016+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:51:23.452151+0300 DEBUG Выбрано 536806818, [<Record term='salary' definition='зарплата'>, <Record term='knitting' definition='вязание'>, <Record term='bizzare' definition='странный'>, <Record term='throbbing' definition='пульсация'>, <Record term='shimmer' definition='мерцание'>, <Record term='defy' definition='игнорировать'>] english_word 536806818 
+2023-06-23T00:51:24.937853+0300 INFO Synchronous operations executed in 1.0299991117790341e-05 seconds
+2023-06-23T00:51:33.032919+0300 INFO Synchronous operations executed in 8.100003469735384e-06 seconds
+2023-06-23T00:52:32.412614+0300 INFO Запускаем бота
+2023-06-23T00:52:34.617774+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:52:40.336383+0300 DEBUG Выбрано 536806818, [<Record term='knitting' definition='вязание'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='shed' definition='сарай; проливать'>, <Record term='twee' definition='свист'>] english_word 536806818 
+2023-06-23T00:52:41.627504+0300 INFO Synchronous operations executed in 0.0 seconds
+2023-06-23T00:52:46.209387+0300 INFO Synchronous operations executed in 0.0 seconds
+2023-06-23T00:53:20.505041+0300 INFO Запускаем бота
+2023-06-23T00:53:21.908806+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:53:25.919232+0300 DEBUG Выбрано 536806818, [<Record term='pursue' definition='гнаться'>, <Record term='issue' definition='вопрос, задача'>, <Record term='tainted' definition='испорченный'>, <Record term='heat wave' definition='сильная жара'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='throbbing' definition='пульсация'>] english_word 536806818 
+2023-06-23T00:53:27.614783+0300 INFO Synchronous operations executed in 0.0 seconds
+2023-06-23T00:54:08.918982+0300 INFO Запускаем бота
+2023-06-23T00:54:10.994588+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:54:15.073864+0300 DEBUG Выбрано 536806818, [<Record term='issue' definition='вопрос, задача'>, <Record term='prejudiced' definition='предвзято'>, <Record term='write' definition='писать'>, <Record term='bizzare' definition='странный'>, <Record term='defy' definition='игнорировать'>, <Record term='bloom' definition='цветение'>] english_word 536806818 
+2023-06-23T00:54:17.335789+0300 INFO Synchronous operations executed in 1.0099989594891667e-05 seconds
+2023-06-23T00:54:22.877362+0300 INFO Synchronous operations executed in 9.000010322779417e-06 seconds
+2023-06-23T00:54:27.683126+0300 INFO Synchronous operations executed in 8.800008799880743e-06 seconds
+2023-06-23T00:57:07.798305+0300 INFO Запускаем бота
+2023-06-23T00:57:13.161548+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:57:19.375455+0300 DEBUG Выбрано 536806818, [<Record term='bizzare' definition='странный'>, <Record term='stuck' definition='застрявший'>, <Record term='shimmer' definition='мерцание'>, <Record term='tainted' definition='испорченный'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='salary' definition='зарплата'>] english_word 536806818 
+2023-06-23T00:57:22.659150+0300 INFO Time to send term and definitions: 1.2200005585327744e-05
+2023-06-23T00:57:27.090767+0300 INFO Time to send term and definitions: 1.7299986211583018e-05
+2023-06-23T00:57:31.058629+0300 INFO Time to send term and definitions: 1.7699989257380366e-05
+2023-06-23T00:57:34.492046+0300 INFO Time to send term and definitions: 1.7099984688684344e-05
+2023-06-23T00:58:03.224432+0300 INFO Time to send term and definitions: 2.3100001271814108e-05
+2023-06-23T00:58:06.987779+0300 INFO Time to send term and definitions: 1.4499993994832039e-05
+2023-06-23T00:58:53.295528+0300 INFO Запускаем бота
+2023-06-23T00:58:54.858863+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T00:58:59.220145+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='prejudiced' definition='предвзято'>, <Record term='twee' definition='свист'>, <Record term='salary' definition='зарплата'>, <Record term='shed' definition='сарай; проливать'>, <Record term='throbbing' definition='пульсация'>] english_word 536806818 
+2023-06-23T00:59:01.632381+0300 INFO Function send_term_and_definitions executed in 0.062000000005355105 seconds
+2023-06-23T00:59:08.025608+0300 INFO Function send_term_and_definitions executed in 0.0629999999946449 seconds
+2023-06-23T00:59:11.023211+0300 INFO Function send_term_and_definitions executed in 0.10899999999674037 seconds
+2023-06-23T00:59:13.838521+0300 INFO Function send_term_and_definitions executed in 0.062000000005355105 seconds
+2023-06-23T00:59:17.677877+0300 INFO Function send_term_and_definitions executed in 0.07800000000861473 seconds
+2023-06-23T00:59:21.111636+0300 INFO Function send_term_and_definitions executed in 0.09400000001187436 seconds
+2023-06-23T00:59:31.203260+0300 INFO Function send_term_and_definitions executed in 0.10899999999674037 seconds
+2023-06-23T00:59:42.070289+0300 INFO Function send_term_and_definitions executed in 0.10999999998603016 seconds
+2023-06-23T00:59:43.689867+0300 INFO Function send_term_and_definitions executed in 0.0779999999795109 seconds
+2023-06-23T00:59:47.148422+0300 INFO Function send_term_and_definitions executed in 0.1879999999946449 seconds
+2023-06-23T01:00:06.437581+0300 INFO Function send_term_and_definitions executed in 0.09399999998277053 seconds
+2023-06-23T01:24:42.102762+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:24:45.757630+0300 DEBUG Выбрано 536806818, [<Record term='heat wave' definition='сильная жара'>, <Record term='undo' definition='отменить'>, <Record term='pursue' definition='гнаться'>, <Record term='salary' definition='зарплата'>, <Record term='treasure' definition='сокровище'>, <Record term='hi mark' definition='baza'>] english_word 536806818 
+2023-06-23T01:24:47.631143+0300 INFO Function send_term_and_definitions executed in 0.062000000005355105 seconds
+2023-06-23T01:24:51.316781+0300 INFO Function send_term_and_definitions executed in 0.09399999998277053 seconds
+2023-06-23T01:24:55.848011+0300 INFO Function send_term_and_definitions executed in 0.07800000000861473 seconds
+2023-06-23T01:24:58.978996+0300 INFO Function send_term_and_definitions executed in 0.062000000005355105 seconds
+2023-06-23T01:31:49.926471+0300 INFO Запускаем бота
+2023-06-23T01:31:51.863485+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:31:56.901241+0300 DEBUG Выбрано 536806818, [<Record term='pursue' definition='гнаться'>, <Record term='defy' definition='игнорировать'>, <Record term='tainted' definition='испорченный'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='knitting' definition='вязание'>, <Record term='bizzare' definition='странный'>, <Record term='prejudiced' definition='предвзято'>, <Record term='stuck' definition='застрявший'>] english_word 536806818 
+2023-06-23T01:34:15.299462+0300 INFO Запускаем бота
+2023-06-23T01:34:17.286453+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:34:22.798029+0300 DEBUG Выбрано 536806818, [<Record term='drip drop' definition='капля за каплей'>, <Record term='pursue' definition='гнаться'>, <Record term='prejudiced' definition='предвзято'>, <Record term='heat wave' definition='сильная жара'>, <Record term='twee' definition='свист'>, <Record term='stuck' definition='застрявший'>] english_word 536806818 
+2023-06-23T01:37:12.156340+0300 INFO Запускаем бота
+2023-06-23T01:37:14.426674+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:37:19.294170+0300 DEBUG Выбрано 536806818, [<Record term='write' definition='писать'>, <Record term='throbbing' definition='пульсация'>, <Record term='salary' definition='зарплата'>, <Record term='hi mark' definition='baza'>, <Record term='purr' definition='мурлыкать'>, <Record term='pursue' definition='гнаться'>] english_word 536806818 
+2023-06-23T01:37:20.879682+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['hi mark', 'salary', 'purr', 'pursue', 'throbbing', 'write'], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words'}
+2023-06-23T01:37:22.926695+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['salary', 'purr', 'pursue', 'throbbing', 'write'], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words', 'chosen_term': 'hi mark', 'correct_answer': 'baza'}
+2023-06-23T01:37:26.955030+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['purr', 'pursue', 'throbbing', 'write'], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words', 'chosen_term': 'salary', 'correct_answer': 'зарплата'}
+2023-06-23T01:37:30.747984+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['pursue', 'throbbing', 'write'], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words', 'chosen_term': 'purr', 'correct_answer': 'мурлыкать'}
+2023-06-23T01:37:34.200775+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['throbbing', 'write'], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words', 'chosen_term': 'pursue', 'correct_answer': 'гнаться'}
+2023-06-23T01:37:37.012919+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': ['write'], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words', 'chosen_term': 'throbbing', 'correct_answer': 'пульсация'}
+2023-06-23T01:37:38.796402+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'first_step', 'words': [], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'words', 'chosen_term': 'write', 'correct_answer': 'писать'}
+2023-06-23T01:37:39.930161+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': ['мурлыкать', 'гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'definitions', 'chosen_term': 'write', 'correct_answer': 'писать'}
+2023-06-23T01:37:41.692604+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': ['гнаться', 'зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'definitions', 'chosen_term': 'мурлыкать', 'correct_answer': 'purr'}
+2023-06-23T01:37:44.025270+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': ['зарплата', 'пульсация', 'baza', 'писать'], 'term_key': 'definitions', 'chosen_term': 'гнаться', 'correct_answer': 'pursue'}
+2023-06-23T01:37:47.787945+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': ['пульсация', 'baza', 'писать'], 'term_key': 'definitions', 'chosen_term': 'зарплата', 'correct_answer': 'salary'}
+2023-06-23T01:37:50.759516+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': ['baza', 'писать'], 'term_key': 'definitions', 'chosen_term': 'пульсация', 'correct_answer': 'throbbing'}
+2023-06-23T01:37:53.770424+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': ['писать'], 'term_key': 'definitions', 'chosen_term': 'baza', 'correct_answer': 'hi mark'}
+2023-06-23T01:37:55.415125+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'chosen_term': 'писать', 'correct_answer': 'write'}
+2023-06-23T01:37:56.563342+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'write': 'писать', 'throbbing': 'пульсация', 'salary': 'зарплата', 'hi mark': 'baza', 'purr': 'мурлыкать', 'pursue': 'гнаться'}, 'current_state': 'second_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'chosen_term': 'писать', 'correct_answer': 'write'}
+2023-06-23T01:41:38.478465+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:41:42.385020+0300 DEBUG Выбрано 536806818, [<Record term='twee' definition='свист'>, <Record term='shimmer' definition='мерцание'>, <Record term='throbbing' definition='пульсация'>, <Record term='defy' definition='игнорировать'>] english_word 536806818 
+2023-06-23T01:41:43.829254+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['shimmer', 'defy', 'throbbing', 'twee'], 'definitions': ['мерцание', 'свист', 'пульсация', 'игнорировать'], 'term_key': 'words'}
+2023-06-23T01:41:45.906425+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['defy', 'throbbing', 'twee'], 'definitions': ['мерцание', 'свист', 'пульсация', 'игнорировать'], 'term_key': 'words', 'chosen_term': 'shimmer', 'correct_answer': 'мерцание'}
+2023-06-23T01:41:59.737815+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['throbbing', 'twee'], 'definitions': ['мерцание', 'свист', 'пульсация', 'игнорировать'], 'term_key': 'words', 'chosen_term': 'defy', 'correct_answer': 'игнорировать'}
+2023-06-23T01:42:07.164405+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['twee'], 'definitions': ['мерцание', 'свист', 'пульсация', 'игнорировать'], 'term_key': 'words', 'chosen_term': 'throbbing', 'correct_answer': 'пульсация'}
+2023-06-23T01:42:14.117831+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': [], 'definitions': ['мерцание', 'свист', 'пульсация', 'игнорировать'], 'term_key': 'words', 'chosen_term': 'twee', 'correct_answer': 'свист'}
+2023-06-23T01:42:29.509447+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['мерцание', 'свист', 'пульсация', 'игнорировать'], 'term_key': 'definitions', 'chosen_term': 'twee', 'correct_answer': 'свист'}
+2023-06-23T01:42:38.003022+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['свист', 'пульсация', 'игнорировать'], 'term_key': 'definitions', 'chosen_term': 'мерцание', 'correct_answer': 'shimmer'}
+2023-06-23T01:42:43.553598+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['пульсация', 'игнорировать'], 'term_key': 'definitions', 'chosen_term': 'свист', 'correct_answer': 'twee'}
+2023-06-23T01:42:48.133495+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['игнорировать'], 'term_key': 'definitions', 'chosen_term': 'пульсация', 'correct_answer': 'throbbing'}
+2023-06-23T01:42:56.502174+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'shimmer': 'мерцание', 'throbbing': 'пульсация', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'chosen_term': 'игнорировать', 'correct_answer': 'defy'}
+2023-06-23T01:44:59.336809+0300 INFO Запускаем бота
+2023-06-23T01:45:01.026542+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:45:05.638788+0300 DEBUG Выбрано 536806818, [<Record term='twee' definition='свист'>, <Record term='defy' definition='игнорировать'>, <Record term='bloom' definition='цветение'>, <Record term='issue' definition='вопрос, задача'>] english_word 536806818 
+2023-06-23T01:45:07.758918+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'twee': 'свист', 'defy': 'игнорировать', 'bloom': 'цветение', 'issue': 'вопрос, задача'}, 'current_state': 'first_step', 'words': ['defy', 'issue', 'twee', 'bloom'], 'definitions': ['игнорировать', 'вопрос, задача', 'цветение', 'свист'], 'term_key': 'words'}
+2023-06-23T01:45:10.658902+0300 ERROR 'next_state', user message: игнорировать  user_id: 536806818
+2023-06-23T01:48:53.448207+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:48:56.948739+0300 INFO Запускаем бота
+2023-06-23T01:48:58.528843+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:49:03.927444+0300 DEBUG Выбрано 536806818, [<Record term='tainted' definition='испорченный'>, <Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='twee' definition='свист'>, <Record term='defy' definition='игнорировать'>] english_word 536806818 
+2023-06-23T01:49:05.415672+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['twee', 'defy', 'faking out', 'tainted'], 'definitions': ['испорченный', 'игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>}
+2023-06-23T01:49:07.624742+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['defy', 'faking out', 'tainted'], 'definitions': ['испорченный', 'игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'twee', 'correct_answer': 'свист'}
+2023-06-23T01:49:09.195361+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['faking out', 'tainted'], 'definitions': ['испорченный', 'игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'defy', 'correct_answer': 'игнорировать'}
+2023-06-23T01:49:11.624177+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': ['tainted'], 'definitions': ['испорченный', 'игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'faking out', 'correct_answer': 'притворятся ; выводить из себя'}
+2023-06-23T01:49:14.801314+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'first_step', 'words': [], 'definitions': ['испорченный', 'игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'tainted', 'correct_answer': 'испорченный'}
+2023-06-23T01:49:16.029165+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['испорченный', 'игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'tainted', 'correct_answer': 'испорченный'}
+2023-06-23T01:49:19.636936+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['игнорировать', 'притворятся ; выводить из себя', 'свист'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'испорченный', 'correct_answer': 'tainted'}
+2023-06-23T01:49:21.492541+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['притворятся ; выводить из себя', 'свист'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'игнорировать', 'correct_answer': 'defy'}
+2023-06-23T01:49:23.807827+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['свист'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'притворятся ; выводить из себя', 'correct_answer': 'faking out'}
+2023-06-23T01:49:25.447845+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'second_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'свист', 'correct_answer': 'twee'}
+2023-06-23T01:49:27.141081+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'faking out': 'притворятся ; выводить из себя', 'twee': 'свист', 'defy': 'игнорировать'}, 'current_state': 'third_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'свист', 'correct_answer': 'twee'}
+2023-06-23T01:57:43.159072+0300 INFO Запускаем бота
+2023-06-23T01:57:45.187147+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T01:57:48.711011+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='pursue' definition='гнаться'>, <Record term='bloom' definition='цветение'>, <Record term='treasure' definition='сокровище'>] english_word 536806818 
+2023-06-23T01:57:49.896988+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'first_step', 'words': ['treasure', 'bloom', 'throbbing', 'pursue'], 'definitions': ['пульсация', 'гнаться', 'цветение', 'сокровище'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>}
+2023-06-23T01:57:53.774551+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'first_step', 'words': ['bloom', 'throbbing', 'pursue'], 'definitions': ['пульсация', 'гнаться', 'цветение', 'сокровище'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'treasure', 'correct_answer': 'сокровище'}
+2023-06-23T01:57:55.963141+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'first_step', 'words': ['throbbing', 'pursue'], 'definitions': ['пульсация', 'гнаться', 'цветение', 'сокровище'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'bloom', 'correct_answer': 'цветение'}
+2023-06-23T01:57:57.378434+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'first_step', 'words': ['pursue'], 'definitions': ['пульсация', 'гнаться', 'цветение', 'сокровище'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'throbbing', 'correct_answer': 'пульсация'}
+2023-06-23T01:57:59.565317+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'first_step', 'words': [], 'definitions': ['пульсация', 'гнаться', 'цветение', 'сокровище'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'pursue', 'correct_answer': 'гнаться'}
+2023-06-23T01:58:00.583130+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'second_step', 'words': [], 'definitions': ['пульсация', 'гнаться', 'цветение', 'сокровище'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'pursue', 'correct_answer': 'гнаться'}
+2023-06-23T01:58:03.143875+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'second_step', 'words': [], 'definitions': ['гнаться', 'цветение', 'сокровище'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'пульсация', 'correct_answer': 'throbbing'}
+2023-06-23T01:58:05.659445+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'second_step', 'words': [], 'definitions': ['цветение', 'сокровище'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'гнаться', 'correct_answer': 'pursue'}
+2023-06-23T01:58:08.790272+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'second_step', 'words': [], 'definitions': ['сокровище'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'цветение', 'correct_answer': 'bloom'}
+2023-06-23T01:58:43.318223+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'second_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'сокровище', 'correct_answer': 'treasure'}
+2023-06-23T01:58:44.777934+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'third_step', 'words': [], 'definitions': ['гнаться', 'цветение', 'сокровище', 'пульсация'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'сокровище', 'correct_answer': 'treasure'}
+2023-06-23T01:59:10.148706+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'third_step', 'words': [], 'definitions': ['цветение', 'сокровище', 'пульсация'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'гнаться', 'correct_answer': 'pursue'}
+2023-06-23T01:59:12.468062+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'third_step', 'words': [], 'definitions': ['сокровище', 'пульсация'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'цветение', 'correct_answer': 'bloom'}
+2023-06-23T01:59:15.359601+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'third_step', 'words': [], 'definitions': ['пульсация'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'сокровище', 'correct_answer': 'treasure'}
+2023-06-23T01:59:19.502717+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'throbbing': 'пульсация', 'pursue': 'гнаться', 'bloom': 'цветение', 'treasure': 'сокровище'}, 'current_state': 'third_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'пульсация', 'correct_answer': 'throbbing'}
+2023-06-23T02:00:27.921125+0300 INFO Запускаем бота
+2023-06-23T02:00:29.457991+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T02:00:33.112708+0300 DEBUG Выбрано 536806818, [<Record term='tainted' definition='испорченный'>, <Record term='bloom' definition='цветение'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='shed' definition='сарай; проливать'>] english_word 536806818 
+2023-06-23T02:00:34.646729+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'first_step', 'words': ['shed', 'tainted', 'bloom', 'drip drop'], 'definitions': ['испорченный', 'цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>}
+2023-06-23T02:00:36.445908+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'first_step', 'words': ['tainted', 'bloom', 'drip drop'], 'definitions': ['испорченный', 'цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'shed', 'correct_answer': 'сарай; проливать'}
+2023-06-23T02:00:39.068090+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'first_step', 'words': ['bloom', 'drip drop'], 'definitions': ['испорченный', 'цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'tainted', 'correct_answer': 'испорченный'}
+2023-06-23T02:00:41.412259+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'first_step', 'words': ['drip drop'], 'definitions': ['испорченный', 'цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'bloom', 'correct_answer': 'цветение'}
+2023-06-23T02:00:43.586957+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'first_step', 'words': [], 'definitions': ['испорченный', 'цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'words', 'next_state': <State 'RepeatWords:second_step'>, 'chosen_term': 'drip drop', 'correct_answer': 'капля за каплей'}
+2023-06-23T02:00:44.640444+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['испорченный', 'цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'drip drop', 'correct_answer': 'капля за каплей'}
+2023-06-23T02:00:47.036146+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['цветение', 'сарай; проливать', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'испорченный', 'correct_answer': 'tainted'}
+2023-06-23T02:01:05.106990+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['сарай; проливать', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'цветение', 'correct_answer': 'bloom'}
+2023-06-23T02:01:07.167728+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'second_step', 'words': [], 'definitions': ['капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'сарай; проливать', 'correct_answer': 'shed'}
+2023-06-23T02:01:08.986347+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'second_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:third_step'>, 'chosen_term': 'капля за каплей', 'correct_answer': 'drip drop'}
+2023-06-23T02:01:10.001030+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': ['испорченный', 'сарай; проливать', 'цветение', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'капля за каплей', 'correct_answer': 'drip drop'}
+2023-06-23T02:01:16.542432+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': ['сарай; проливать', 'цветение', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'испорченный', 'correct_answer': 'tainted'}
+2023-06-23T02:01:18.601725+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': ['цветение', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'сарай; проливать', 'correct_answer': 'shed'}
+2023-06-23T02:01:23.284034+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': ['капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'цветение', 'correct_answer': 'bloom'}
+2023-06-23T02:01:26.391454+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'капля за каплей', 'correct_answer': 'drip drop'}

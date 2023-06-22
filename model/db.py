@@ -192,7 +192,7 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def get_count_repeat_terms(self, telegram_id: str, learning: str) -> dict | str:
+    async def get_count_repeat_words(self, telegram_id: str, learning: str) -> dict :
         try:
 
             terms_count = await self._fetch(
@@ -204,9 +204,6 @@ class DB:
                 """,
                 telegram_id, learning
             )
-            logger.debug(f'{terms_count}  {telegram_id}')
-
-            # Обновление словаря данными из запроса
 
             return terms_count
 
@@ -214,7 +211,7 @@ class DB:
             logger.error(f'Ошибчока {e}')
             return f'{e}'
 
-    async def get_count_repeat_terms_types(self, telegram_id: str, term_type: str, ) -> dict | str:
+    async def get_count_repeat_words_types(self, telegram_id: str, term_type: str, ) -> dict | str:
         try:
 
             terms_type_count = await self._fetch(
@@ -226,9 +223,6 @@ class DB:
                 """,
                 telegram_id, term_type
             )
-            logger.debug(f'{terms_type_count}  {telegram_id}')
-
-            # Обновление словаря данными из запроса
 
             return terms_type_count
 
@@ -236,7 +230,7 @@ class DB:
             logger.error(f'Ошибчока {e}')
             return f'{e}'
 
-    async def get_words(self, user_id, type_of_words, number_of_words,  type_of_learning) -> dict | str | tuple:
+    async def get_words(self, user_id, type_of_words, number_of_words,  type_of_learning) -> dict | bool:
         try:
 
             words = await self._fetch(
@@ -259,7 +253,7 @@ class DB:
 
         except Exception as e:
             logger.error(f'Ошибчока {e}')
-            return f'{e}'
+            return False
 
     async def repeat_learned_words(self, telegram_id, terms: list) -> dict | str:
         try:
