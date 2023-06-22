@@ -1,6 +1,6 @@
 from aiogram.utils.keyboard import ReplyKeyboardMarkup, KeyboardButton
 
-basic_buttons = ['/learn_words', '/add_terms', '/check_progress', '/repeat_terms', '/repeat_learn_terms']
+start_buttons = ['/learn_words', '/add_terms', '/check_progress', '/repeat_terms', '/repeat_learn_terms']
 
 def make_row_keyboard(items: list[str]) -> ReplyKeyboardMarkup:
     """

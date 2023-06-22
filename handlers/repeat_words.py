@@ -5,13 +5,11 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message, ErrorEvent
 
-from keyboards.simple_row import make_row_keyboard, basic_buttons
+from keyboards.simple_row import make_row_keyboard, start_buttons
 
 from model.db import DB
 
 from loguru import logger
-import asyncio
-import time
 import random
 import re
 from functools import partial
@@ -42,30 +40,6 @@ class RepeatWords(StatesGroup):
     finish = State()
 
 
-def async_timer_decorator(func):
-    async def wrapper(*args, **kwargs):
-        start_time = asyncio.get_event_loop().time()
-        result = await func(*args, **kwargs)
-        end_time = asyncio.get_event_loop().time()
-        execution_time = end_time - start_time  # время выполнения функции
-        logger.info(f"Function {func.__name__} executed in {execution_time} seconds")  # логирование
-        return result
-
-    return wrapper
-
-
-def timer_decorator(func):
-    def wrapper(*args, **kwargs):
-        start_time = time.perf_counter()
-        result = func(*args, **kwargs)
-        end_time = time.perf_counter()
-        execution_time = end_time - start_time  # время выполнения функции
-        logger.info(f"Function {func.__name__} executed in {execution_time} seconds")  # логирование
-        return result
-
-    return wrapper
-
-
 @router.errors()
 async def error_handler(exception: ErrorEvent):
     error = exception.exception
@@ -73,7 +47,7 @@ async def error_handler(exception: ErrorEvent):
 
     logger.error(f"{error}, user message: {message.text}  user_id: {message.from_user.id}")
     await send_message_with_keyboard(message, text='Что-то пошло не так, попробуйте снова',
-                                     keyboard_options=basic_buttons
+                                     keyboard_options=start_buttons
                                      )
 
 
@@ -292,6 +266,6 @@ async def finish(message: Message, state: FSMContext):
 
     await message.answer(
         text=f"а на этом повторение слов оконченно {answer}",
-        reply_markup=make_row_keyboard(basic_buttons)
+        reply_markup=make_row_keyboard(start_buttons)
     )
     await state.clear()
