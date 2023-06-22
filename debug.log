@@ -7617,3 +7617,19 @@ KeyError: 'correct_answer'
 2023-06-23T02:01:18.601725+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': ['цветение', 'капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'сарай; проливать', 'correct_answer': 'shed'}
 2023-06-23T02:01:23.284034+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': ['капля за каплей'], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'цветение', 'correct_answer': 'bloom'}
 2023-06-23T02:01:26.391454+0300 DEBUG user_data: {'chosen_type': 'english_word', 'terms': {'tainted': 'испорченный', 'bloom': 'цветение', 'drip drop': 'капля за каплей', 'shed': 'сарай; проливать'}, 'current_state': 'third_step', 'words': [], 'definitions': [], 'term_key': 'definitions', 'next_state': <State 'RepeatWords:finish'>, 'chosen_term': 'капля за каплей', 'correct_answer': 'drip drop'}
+2023-06-23T02:28:05.793215+0300 INFO Запускаем бота
+2023-06-23T02:28:09.695383+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T02:28:18.061694+0300 DEBUG Выбрано 536806818, [<Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='twee' definition='свист'>, <Record term='shimmer' definition='мерцание'>, <Record term='knitting' definition='вязание'>] english_word 536806818 
+2023-06-23T02:28:39.111821+0300 ERROR 'definitions', user message: перейти  user_id: 536806818
+2023-06-23T02:30:59.522468+0300 INFO Запускаем бота
+2023-06-23T02:31:01.235886+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T02:31:05.320394+0300 DEBUG Выбрано 536806818, [<Record term='drip drop' definition='капля за каплей'>, <Record term='throbbing' definition='пульсация'>, <Record term='stuck' definition='застрявший'>, <Record term='shed' definition='сарай; проливать'>] english_word 536806818 
+2023-06-23T02:32:49.789125+0300 INFO Запускаем бота
+2023-06-23T02:32:52.296332+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T02:33:06.334727+0300 DEBUG Выбрано 536806818, [<Record term='issue' definition='вопрос, задача'>, <Record term='pursue' definition='гнаться'>, <Record term='knitting' definition='вязание'>, <Record term='defy' definition='игнорировать'>] english_word 536806818 
+2023-06-23T02:35:37.990925+0300 INFO Запускаем бота
+2023-06-23T02:35:40.536889+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T02:35:44.874115+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='shed' definition='сарай; проливать'>, <Record term='hi mark' definition='baza'>, <Record term='heat wave' definition='сильная жара'>] english_word 536806818 
+2023-06-23T02:39:15.161796+0300 INFO Запускаем бота
+2023-06-23T02:39:16.597648+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T02:39:20.732661+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='bloom' definition='цветение'>, <Record term='tainted' definition='испорченный'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 

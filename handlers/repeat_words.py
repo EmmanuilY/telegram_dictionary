@@ -68,7 +68,7 @@ async def choosing_words_type(message: Message, state: FSMContext):
     for type_and_count in types_and_counts:
         text += f"{type_and_count['type']}: {type_and_count['count']}\n"
     await message.answer(text)
-    await send_message_with_keyboard(message, "Выберите тип изучаемых слов:", available_term_types)
+    await send_message_with_keyboard(message, "Выберите тип повторяемых слов:", available_term_types)
     await state.set_state(RepeatWords.choosing_type_object)
 
 
@@ -118,8 +118,9 @@ async def sending_words_with_invisible_definitions(message, words: dict) -> None
             await message.answer(
                 text=f"{word}     \-      ||{definition}||", parse_mode="MarkdownV2"
             )
-        except aiogram_exceptions.TelegramBadRequest as e:
-            logger.error(f'{e}, слово {word} и определение {definition} выдали ошибку при словаре {words}')
+        except aiogram_exceptions.TelegramBadRequest as error:
+            logger.error(f'{error}, слово {word} и определение {definition} выдали ошибку при словаре {words}')
+            raise error
 
 
 @router.message(RepeatWords.choosing_repeat_option, F.text.in_(repeat_count))
@@ -141,7 +142,7 @@ async def get_words(message: Message, state: FSMContext):
         await state.clear()
 
 
-async def send_term_and_definitions(message: Message, state: FSMContext, term_key: str, next_state):
+async def send_term_and_definitions(message: Message, state: FSMContext, term_key: str):
     """ term here is a name of word or definition.
         on first_step term is word, on second and third - term is definition
     """
@@ -149,6 +150,7 @@ async def send_term_and_definitions(message: Message, state: FSMContext, term_ke
     terms_dict, answers_list = get_terms_dict_and_answers(user_data, term_key)
     if not answers_list:
         await message.answer(text="Этап завершен! Вы молодец!", reply_markup=make_row_keyboard(['перейти']))
+        next_state = user_data.get('next_state')
         await state.set_state(next_state)
         return
     current_state = user_data.get('current_state')
@@ -207,53 +209,43 @@ async def check_answer(message: Message, state: FSMContext):
     user_data = await state.get_data()
     term_key = user_data["term_key"]
     next_state = user_data["next_state"]
-    send_term_and_definitions_function = partial(send_term_and_definitions, message, state, term_key,
-                                                 next_state)
+    send_term_and_definitions_function = partial(send_term_and_definitions, message, state, term_key)
     await check_user_answer(message, state, send_term_and_definitions_function)
+
+
+async def shuffle_and_update_state(state: FSMContext, term_key: str, next_state, current_state: str):
+    user_data = await state.get_data()
+    terms = user_data.get("terms", {})
+    words_or_definitions = list(terms.keys()) if term_key == "words" else list(terms.values())
+    random.shuffle(words_or_definitions)
+    user_data["term_key"] = term_key
+    user_data[term_key] = words_or_definitions
+    user_data["next_state"] = next_state
+    user_data["current_state"] = current_state
+    await state.update_data(user_data)
 
 
 @router.message(RepeatWords.first_step, F.text.in_('Начать'))
 async def first_step(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать слово, а ты выбирай определение")
-    user_data = await state.get_data()
-    await state.update_data(current_state='first_step')
-    terms = user_data.get("terms", {})
-    words = list(terms.keys())
-    definitions = list(terms.values())
-    random.shuffle(words)
-    random.shuffle(definitions)
-    user_data["words"] = words
-    user_data["definitions"] = definitions
-    user_data["term_key"] = "words"
-    user_data["next_state"] = RepeatWords.second_step
-    user_data["current_state"] = 'first_step'
-    await state.update_data(user_data)
-    await send_term_and_definitions(message, state, "words", RepeatWords.second_step)
+    await shuffle_and_update_state(state, "words", RepeatWords.second_step, 'first_step')
+    await send_term_and_definitions(message, state, "words")
     await state.set_state(RepeatWords.check_answer)
 
 
 @router.message(RepeatWords.second_step, F.text.in_('перейти'))
 async def second_step(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты выбирай слово")
-    await state.update_data(current_state='second_step')
-    await state.update_data(term_key='definitions')
-    await state.update_data(next_state=RepeatWords.third_step)
-    await send_term_and_definitions(message, state, "definitions", RepeatWords.third_step)
+    await shuffle_and_update_state(state, "definitions", RepeatWords.third_step, 'second_step')
+    await send_term_and_definitions(message, state, "definitions")
     await state.set_state(RepeatWords.check_answer)
 
 
 @router.message(RepeatWords.third_step, F.text.in_('перейти'))
 async def third_step(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты вводи правильное слово")
-    await state.update_data(current_state='third_step')
-    user_data = await state.get_data()
-    terms = user_data.get("terms", {})
-    definitions = list(terms.values())
-    random.shuffle(definitions)
-    user_data["definitions"] = definitions
-    user_data["next_state"] = RepeatWords.finish
-    await state.update_data(user_data)
-    await send_term_and_definitions(message, state, "definitions", RepeatWords.finish)
+    await shuffle_and_update_state(state, "definitions", RepeatWords.finish, 'third_step')
+    await send_term_and_definitions(message, state, "definitions")
     await state.set_state(RepeatWords.check_answer)
 
 
