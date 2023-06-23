@@ -1,18 +1,21 @@
+import random
+import re
+from functools import partial
+
 from aiogram import Router, F
 from aiogram import exceptions as aiogram_exceptions
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message, ErrorEvent
+from loguru import logger
 
 from keyboards.simple_row import make_row_keyboard, start_buttons
 
 from model.db import DB
 
-from loguru import logger
-import random
-import re
-from functools import partial
+
+
 
 db = DB()
 router = Router()
@@ -99,7 +102,7 @@ async def check_len_words(message, words: dict, chosen_number: int) -> bool:
         )
         return False
 
-    elif len(words.keys()) < chosen_number:
+    if len(words.keys()) < chosen_number:
         await send_message_with_keyboard(message, "у вас недостаточно слов, подучите еще",
                                          ['/learn_words', '/add_terms', '/check_progress'])
         return False
@@ -116,7 +119,7 @@ async def sending_words_with_invisible_definitions(message, words: dict) -> None
         definition = escape_special_characters(definition)
         try:
             await message.answer(
-                text=f"{word}     \-      ||{definition}||", parse_mode="MarkdownV2"
+                text=f"{word}  \-  ||{definition}||", parse_mode="MarkdownV2"
             )
         except aiogram_exceptions.TelegramBadRequest as error:
             logger.error(f'{error}, слово {word} и определение {definition} выдали ошибку при словаре {words}')
@@ -144,12 +147,12 @@ async def get_words(message: Message, state: FSMContext):
 
 async def send_term_and_definitions(message: Message, state: FSMContext, term_key: str):
     """ term here is a name of word or definition.
-        on first_step term is word, on second and third - term is definition
+        on first_step term is a word and answer is a definition, on second_step and third_step - term is definition and answer is a word
     """
     user_data = await state.get_data()
     terms_dict, answers_list = get_terms_dict_and_answers(user_data, term_key)
     if not answers_list:
-        await message.answer(text="Этап завершен! Вы молодец!", reply_markup=make_row_keyboard(['перейти']))
+        await send_message_with_keyboard(message, "Этап завершен! Вы молодец!", ['перейти на следующий этап'])
         next_state = user_data.get('next_state')
         await state.set_state(next_state)
         return
@@ -174,16 +177,15 @@ def get_term_and_answers(terms_dict: dict, answers_list: list, term_key: str):
     return term, correct_answer, other_answers
 
 
-def get_words_or_definitions_based_on_term_key(terms_dict: dict, term: str, term_key: str):
+def get_words_or_definitions_based_on_term_key(terms_dict: dict, term: str, term_key: str) -> [str, list]:
     if term_key == "words":
         current_definition = terms_dict[term]
         other_definitions = [definition for word, definition in terms_dict.items() if definition != current_definition]
         return current_definition, other_definitions
 
-    else:
-        current_word = {word: definition for definition, word in terms_dict.items()}[term]
-        other_words = [word for word, definition in terms_dict.items() if word != current_word]
-        return current_word, other_words
+    current_word = {word: definition for definition, word in terms_dict.items()}[term]
+    other_words = [word for word, definition in terms_dict.items() if word != current_word]
+    return current_word, other_words
 
 
 async def send_or_remove_keyboard(message: Message, answers: list, term: str, current_state: str):
@@ -208,12 +210,11 @@ async def check_user_answer(message: Message, state: FSMContext, send_term_and_d
 async def check_answer(message: Message, state: FSMContext):
     user_data = await state.get_data()
     term_key = user_data["term_key"]
-    next_state = user_data["next_state"]
     send_term_and_definitions_function = partial(send_term_and_definitions, message, state, term_key)
     await check_user_answer(message, state, send_term_and_definitions_function)
 
 
-async def shuffle_and_update_state(state: FSMContext, term_key: str, next_state, current_state: str):
+async def shuffle_and_update_state(state: FSMContext, term_key: str, next_state: StatesGroup, current_state: str):
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
     words_or_definitions = list(terms.keys()) if term_key == "words" else list(terms.values())
@@ -225,7 +226,7 @@ async def shuffle_and_update_state(state: FSMContext, term_key: str, next_state,
     await state.update_data(user_data)
 
 
-@router.message(RepeatWords.first_step, F.text.in_('Начать'))
+@router.message(RepeatWords.first_step, Command('Начать'))
 async def first_step(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать слово, а ты выбирай определение")
     await shuffle_and_update_state(state, "words", RepeatWords.second_step, 'first_step')
@@ -233,7 +234,7 @@ async def first_step(message: Message, state: FSMContext):
     await state.set_state(RepeatWords.check_answer)
 
 
-@router.message(RepeatWords.second_step, F.text.in_('перейти'))
+@router.message(RepeatWords.second_step, Command("перейти на следующий этап"))
 async def second_step(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты выбирай слово")
     await shuffle_and_update_state(state, "definitions", RepeatWords.third_step, 'second_step')
@@ -241,7 +242,7 @@ async def second_step(message: Message, state: FSMContext):
     await state.set_state(RepeatWords.check_answer)
 
 
-@router.message(RepeatWords.third_step, F.text.in_('перейти'))
+@router.message(RepeatWords.third_step, Command("перейти на следующий этап"))
 async def third_step(message: Message, state: FSMContext):
     await message.answer(text="Сейчас я буду тебе присылать определение, а ты вводи правильное слово")
     await shuffle_and_update_state(state, "definitions", RepeatWords.finish, 'third_step')
@@ -249,7 +250,7 @@ async def third_step(message: Message, state: FSMContext):
     await state.set_state(RepeatWords.check_answer)
 
 
-@router.message(RepeatWords.finish, F.text.in_('перейти'))
+@router.message(RepeatWords.finish, Command("перейти на следующий этап"))
 async def finish(message: Message, state: FSMContext):
     user_data = await state.get_data()
     terms = user_data.get("terms", {})
