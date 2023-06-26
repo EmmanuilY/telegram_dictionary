@@ -7633,3 +7633,696 @@ KeyError: 'correct_answer'
 2023-06-23T02:39:15.161796+0300 INFO Запускаем бота
 2023-06-23T02:39:16.597648+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
 2023-06-23T02:39:20.732661+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='bloom' definition='цветение'>, <Record term='tainted' definition='испорченный'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-23T04:41:13.999097+0300 INFO Запускаем бота
+2023-06-23T04:41:27.408869+0300 DEBUG [<Record learning='learning' count=10>, <Record learning='repeat' count=46>, <Record learning='learned' count=8>]
+2023-06-23T04:41:27.409869+0300 DEBUG {'learning': 10, 'repeat': 46, 'learned': 8}
+2023-06-23T04:41:27.410870+0300 DEBUG {'learning': 10, 'repeat': 46, 'learned': 8}
+2023-06-23T04:41:29.728302+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T04:42:58.419598+0300 INFO Запускаем бота
+2023-06-23T04:49:03.911486+0300 INFO Запускаем бота
+2023-06-23T04:49:07.035183+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T04:51:38.217608+0300 INFO Запускаем бота
+2023-06-23T04:51:41.589969+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T04:56:02.303633+0300 INFO Запускаем бота
+2023-06-23T04:56:08.575466+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T04:57:48.860794+0300 INFO Запускаем бота
+2023-06-23T04:57:51.865347+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T04:58:21.689133+0300 INFO Запускаем бота
+2023-06-23T04:58:23.704898+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:01:47.402259+0300 INFO Запускаем бота
+2023-06-23T05:01:50.083871+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:02:39.219757+0300 INFO Запускаем бота
+2023-06-23T05:02:42.668520+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:04:02.396771+0300 INFO Запускаем бота
+2023-06-23T05:04:04.965290+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:04:52.487354+0300 INFO Запускаем бота
+2023-06-23T05:04:53.939763+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:05:51.082079+0300 INFO Запускаем бота
+2023-06-23T05:05:52.879625+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:06:32.968667+0300 INFO Запускаем бота
+2023-06-23T05:27:01.111346+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:28:18.512554+0300 INFO Запускаем бота
+2023-06-23T05:28:19.777817+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:29:33.281976+0300 INFO Запускаем бота
+2023-06-23T05:29:36.471896+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:30:17.617419+0300 INFO Запускаем бота
+2023-06-23T05:30:19.702547+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T05:34:05.146049+0300 INFO Запускаем бота
+2023-06-23T05:34:09.120476+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T17:28:21.512598+0300 INFO Запускаем бота
+2023-06-23T17:28:27.400274+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T17:30:29.169658+0300 INFO Запускаем бота
+2023-06-23T17:30:30.602567+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T17:30:31.836866+0300 ERROR An error has been caught in function 'call', process 'MainProcess' (5584), thread 'MainThread' (15892):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 26, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000025BA244D630>
+    │       └ <function run at 0x0000025B9DFC0670>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x0000025BA2412570>
+           │    └ <function BaseEventLoop.run_until_complete at 0x0000025BA003F9A0>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000025BA01100D0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000025BA0051480>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000025B9FFC0280>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65057240, message=Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime....
+                     │    │           └ <aiogram.client.bot.Bot object at 0x0000025BA2408310>
+                     │    └ <function Dispatcher.feed_update at 0x0000025BA2196050>
+                     └ <Dispatcher '0x25ba2417eb0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000025BA2194B80>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000025BA2414190>
+                     └ <Dispatcher '0x25ba2417eb0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65057240, message=Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime....
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x0000025BA2408100>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65057240, message=Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime....
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x0000025BA2408130>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65057240, message=Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime....
+                 └ <function TelegramEventObserver.trigger at 0x0000025BA244F640>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65057240, message=Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime....
+                 └ <function CallableMixin.call at 0x0000025BA244F2E0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x25ba2417eb0'>>, Update(update_id=65057240, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x0000025BA21956C0>
+                 └ <Dispatcher '0x25ba2417eb0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000025BA244FF40>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000025BA2194B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000025BA2417E50>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000025BA2195750>
+                 └ <Dispatcher '0x25ba2417eb0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x0000025BA21956C0>
+                     └ <Router '0x25ba2423730'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x0000025BA24C80D0>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x0000025BA2194B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000025BA2423790>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x0000025BA2195750>
+                 └ <Router '0x25ba2423730'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                     │        └ <function TelegramEventObserver.trigger at 0x0000025BA2194C10>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x0000025BA2423790>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x0000025BA2408310>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=10633, date=datetime.datetime(2023, 6, 23, 14, 30, 31, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 └ <function CallableMixin.call at 0x0000025BA24C8790>
+
+> File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method BaseTrainings.choosing_words_type of <handlers.test_repeat.Repeat object at 0x0000025BA2421F6...
+
+TypeError: BaseTrainings.choosing_words_type() got multiple values for argument 'state'
+2023-06-23T17:34:56.159648+0300 INFO Запускаем бота
+2023-06-23T17:35:27.465970+0300 INFO Запускаем бота
+2023-06-23T17:35:37.209764+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T17:38:38.644770+0300 INFO Запускаем бота
+2023-06-23T17:38:41.903843+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T17:38:44.981090+0300 ERROR An error has been caught in function 'call', process 'MainProcess' (24504), thread 'MainThread' (24892):
+Traceback (most recent call last):
+
+  File "C:\Users\Mr. Monitoro\PycharmProjects\telega_test\bot.py", line 26, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001ED3C136290>
+    │       └ <function run at 0x000001ED37D20670>
+    └ <module 'asyncio' from 'C:\\Users\\Mr. Monitoro\\AppData\\Local\\Programs\\Python\\Python310\\lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object main at 0x000001ED3C138CF0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x000001ED39D4F9A0>
+           └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001ED39E100D0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001ED39D61480>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001ED39CD0280>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=False>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=False>)>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+                     │    │           │    │         └ {}
+                     │    │           │    └ Update(update_id=65057243, message=Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime....
+                     │    │           └ <aiogram.client.bot.Bot object at 0x000001ED3C117700>
+                     │    └ <function Dispatcher.feed_update at 0x000001ED3BE96050>
+                     └ <Dispatcher '0x1ed3c1161d0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+                     │    │      └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001ED3BE94B80>
+                     │    └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001ED3C117B50>
+                     └ <Dispatcher '0x1ed3c1161d0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65057243, message=Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime....
+                 └ functools.partial(<aiogram.dispatcher.middlewares.user_context.UserContextMiddleware object at 0x000001ED3C117910>, functools...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 23, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65057243, message=Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime....
+                 └ functools.partial(<aiogram.fsm.middleware.FSMContextMiddleware object at 0x000001ED3C1178E0>, <function TelegramEventObserver...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+                 │       │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │       └ Update(update_id=65057243, message=Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime....
+                 └ <function TelegramEventObserver.trigger at 0x000001ED3C17C430>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Update(update_id=65057243, message=Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime....
+                 └ <function CallableMixin.call at 0x000001ED3C17C310>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method Dispatcher._listen_update of <Dispatcher '0x1ed3c1161d0'>>, Update(update_id=65057243, messag...
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+                 │    │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │    │                           │                  └ Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 │    │                           └ 'message'
+                 │    └ <function Router.propagate_event at 0x000001ED3BE956C0>
+                 └ <Dispatcher '0x1ed3c1161d0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001ED3C17CC10>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001ED3BE94B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001ED3C116230>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001ED3BE95750>
+                 └ <Dispatcher '0x1ed3c1161d0'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+                     │      │                           │                  │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │      │                           │                  └ Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                     │      │                           └ 'message'
+                     │      └ <function Router.propagate_event at 0x000001ED3BE956C0>
+                     └ <Router '0x1ed3c123790'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+                 │        │                     │               │           └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │        │                     │               └ Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 │        │                     └ <function Router.propagate_event.<locals>._wrapped at 0x000001ED3C17CD30>
+                 │        └ <function TelegramEventObserver.wrap_outer_middleware at 0x000001ED3BE94B80>
+                 └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001ED3C1237C0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+                 │    └ <function Router._propagate_event at 0x000001ED3BE95750>
+                 └ <Router '0x1ed3c123790'>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+                     │        │       │        └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                     │        │       └ Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                     │        └ <function TelegramEventObserver.trigger at 0x000001ED3BE94C10>
+                     └ <aiogram.dispatcher.event.telegram.TelegramEventObserver object at 0x000001ED3C1237C0>
+
+  File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+                 │             │      └ {'bot': <aiogram.client.bot.Bot object at 0x000001ED3C117700>, 'event_from_user': User(id=536806818, is_bot=False, first_name...
+                 │             └ Message(message_id=10638, date=datetime.datetime(2023, 6, 23, 14, 38, 44, tzinfo=datetime.timezone.utc), chat=Chat(id=5368068...
+                 └ <function CallableMixin.call at 0x000001ED3C17D360>
+
+> File "C:\Users\Mr. Monitoro\AppData\Local\pypoetry\Cache\virtualenvs\telega-test-iMMhLkrK-py3.10\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+                 └ functools.partial(<bound method BaseTrainings.choosing_words_type of <handlers.test_repeat.Repeat object at 0x000001ED3C121F6...
+
+TypeError: BaseTrainings.choosing_words_type() got multiple values for argument 'state'
+2023-06-23T17:43:46.360613+0300 INFO Запускаем бота
+2023-06-23T17:43:49.063226+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T17:44:26.794289+0300 INFO Запускаем бота
+2023-06-23T17:44:28.735332+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:40:09.220559+0300 INFO Запускаем бота
+2023-06-23T18:40:18.717197+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:40:20.527652+0300 ERROR BaseTrainings.send_message_with_keyboard() takes 3 positional arguments but 4 were given, user message: /repeat_terms  user_id: 536806818
+2023-06-23T18:43:51.189028+0300 INFO Запускаем бота
+2023-06-23T18:43:53.187526+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:43:58.246318+0300 DEBUG Выбрано 536806818, [<Record term='privet' definition='poka'>, <Record term='паллиативный' definition='временно облегчающий, но не излечивающий болезнь'>, <Record term='пароксизм' definition='сильный приступ, припадок; внезапное обострение какой-либо болезни'>, <Record term='полиморфизм' definition='использование объектов с одинаковым интерфейсом без информации о типе и внутренней структуре объекта'>] term 536806818 
+2023-06-23T18:47:57.878974+0300 INFO Запускаем бота
+2023-06-23T18:48:02.307134+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:48:06.780507+0300 DEBUG Выбрано 536806818, [<Record term='knitting' definition='вязание'>, <Record term='treasure' definition='сокровище'>, <Record term='shimmer' definition='мерцание'>, <Record term='twee' definition='свист'>] english_word 536806818 
+2023-06-23T18:48:06.782507+0300 ERROR BaseTrainings.check_len_words() missing 1 required positional argument: 'chosen_number', user message: 4  user_id: 536806818
+2023-06-23T18:52:12.036839+0300 INFO Запускаем бота
+2023-06-23T18:52:15.128697+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:52:20.437054+0300 DEBUG Выбрано 536806818, [<Record term='пейоратив' definition='слово или словосочетание, выражающие негативную оценку чего-либо или кого-либо, неодобрение, порицание, иронию или презрение'>, <Record term='импозантный' definition='производящий впечатление, внушительный, представительный'>, <Record term='эргодический' definition='случайный'>, <Record term='бонбоньерка' definition='красиво украшенная коробка для конфет'>] term 536806818 
+2023-06-23T18:52:28.332781+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:52:32.164916+0300 DEBUG Выбрано 536806818, [<Record term='purr' definition='мурлыкать'>, <Record term='pursue' definition='гнаться'>, <Record term='hi mark' definition='baza'>, <Record term='tainted' definition='испорченный'>] english_word 536806818 
+2023-06-23T18:53:19.302289+0300 INFO Запускаем бота
+2023-06-23T18:53:21.207652+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:53:24.773380+0300 DEBUG Выбрано 536806818, [<Record term='treasure' definition='сокровище'>, <Record term='heat wave' definition='сильная жара'>, <Record term='shimmer' definition='мерцание'>, <Record term='hi mark' definition='baza'>] english_word 536806818 
+2023-06-23T18:53:43.556875+0300 INFO Запускаем бота
+2023-06-23T18:53:45.351530+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:53:48.556553+0300 DEBUG Выбрано 536806818, [<Record term='жуир' definition='весело и беззаботно живущий человек, ищущий в жизни только удовольствий'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='пейоратив' definition='слово или словосочетание, выражающие негативную оценку чего-либо или кого-либо, неодобрение, порицание, иронию или презрение'>] term 536806818 
+2023-06-23T18:53:48.557553+0300 ERROR BaseTrainings.check_len_words() missing 1 required positional argument: 'chosen_number', user message: 4  user_id: 536806818
+2023-06-23T18:54:15.341080+0300 INFO Запускаем бота
+2023-06-23T18:54:21.165434+0300 DEBUG Выбрано 536806818, [<Record term='heat wave' definition='сильная жара'>, <Record term='twee' definition='свист'>, <Record term='throbbing' definition='пульсация'>, <Record term='knitting' definition='вязание'>] english_word 536806818 
+2023-06-23T18:56:55.323413+0300 INFO Запускаем бота
+2023-06-23T18:57:43.328461+0300 INFO Запускаем бота
+2023-06-23T18:57:45.663960+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T18:57:51.911341+0300 DEBUG Выбрано 536806818, [<Record term='treasure' definition='сокровище'>, <Record term='undo' definition='отменить'>, <Record term='salary' definition='зарплата'>, <Record term='drip drop' definition='капля за каплей'>] english_word 536806818 
+2023-06-23T18:58:45.412424+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T19:00:56.704525+0300 DEBUG Выбрано 536806818, [<Record term='tainted' definition='испорченный'>, <Record term='issue' definition='вопрос, задача'>, <Record term='treasure' definition='сокровище'>, <Record term='shed' definition='сарай; проливать'>, <Record term='bizzare' definition='странный'>, <Record term='prejudiced' definition='предвзято'>] english_word 536806818 
+2023-06-23T19:08:19.315522+0300 ERROR 'Repeat' object has no attribute '_send_message_with_keyboard', user message: странный  user_id: 536806818
+2023-06-23T19:10:00.416368+0300 INFO Запускаем бота
+2023-06-23T19:10:04.019918+0300 DEBUG Выбрано 536806818, [<Record term='write' definition='писать'>, <Record term='bizzare' definition='странный'>, <Record term='shed' definition='сарай; проливать'>, <Record term='pursue' definition='гнаться'>] english_word 536806818 
+2023-06-23T19:11:25.941617+0300 INFO Запускаем бота
+2023-06-23T19:11:28.075985+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T19:11:33.817070+0300 DEBUG Выбрано 536806818, [<Record term='knitting' definition='вязание'>, <Record term='defy' definition='игнорировать'>, <Record term='purr' definition='мурлыкать'>, <Record term='treasure' definition='сокровище'>] english_word 536806818 
+2023-06-23T19:12:56.113918+0300 INFO Запускаем бота
+2023-06-23T19:12:57.911447+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T19:13:03.977294+0300 DEBUG Выбрано 536806818, [<Record term='tainted' definition='испорченный'>, <Record term='shimmer' definition='мерцание'>, <Record term='salary' definition='зарплата'>, <Record term='heat wave' definition='сильная жара'>] english_word 536806818 
+2023-06-23T19:15:01.515897+0300 INFO Запускаем бота
+2023-06-23T19:15:11.120125+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T19:15:15.381836+0300 DEBUG Выбрано 536806818, [<Record term='heat wave' definition='сильная жара'>, <Record term='knitting' definition='вязание'>, <Record term='undo' definition='отменить'>, <Record term='purr' definition='мурлыкать'>] english_word 536806818 
+2023-06-23T22:47:16.094935+0300 INFO Запускаем бота
+2023-06-23T22:56:04.456500+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-23T22:56:30.426136+0300 DEBUG Выбрано 536806818, [<Record term='traceback' definition='выслеживать'>, <Record term='underneath' definition='под'>, <Record term='ransom' definition='выкуп'>, <Record term='purchase' definition='покупка'>] english_word 536806818 
+2023-06-23T22:56:30.427135+0300 INFO {'traceback': 'выслеживать', 'underneath': 'под', 'ransom': 'выкуп', 'purchase': 'покупка'} - 536806818 - SPB_Emmanuil_Yankelevich
+2023-06-23T22:56:32.798813+0300 INFO {'traceback': 'выслеживать', 'underneath': 'под', 'ransom': 'выкуп', 'purchase': 'покупка'} 536806818
+2023-06-23T22:56:36.386985+0300 DEBUG ['underneath', 'traceback', 'purchase', 'ransom'] words definitions
+2023-06-23T22:56:36.387985+0300 DEBUG под правильный ответ, ['под', 'покупка', 'выкуп', 'выслеживать']
+2023-06-23T22:56:38.309173+0300 DEBUG ['ransom', 'traceback', 'purchase'] words definitions
+2023-06-23T22:56:38.311174+0300 DEBUG выкуп правильный ответ, ['выкуп', 'выслеживать', 'покупка', 'под']
+2023-06-23T22:56:41.140150+0300 DEBUG ['purchase', 'traceback'] words definitions
+2023-06-23T22:56:41.141148+0300 DEBUG покупка правильный ответ, ['покупка', 'выслеживать', 'под', 'выкуп']
+2023-06-23T22:56:49.445096+0300 DEBUG ['traceback'] words definitions
+2023-06-23T22:56:49.446098+0300 DEBUG выслеживать правильный ответ, ['выслеживать', 'покупка', 'под', 'выкуп']
+2023-06-23T22:56:52.789973+0300 DEBUG [] words definitions
+2023-06-23T22:56:54.608927+0300 DEBUG ['под', 'покупка', 'выкуп', 'выслеживать'] definitions words
+2023-06-23T22:56:54.610927+0300 DEBUG underneath правильный ответ, ['underneath', 'ransom', 'traceback', 'purchase']
+2023-06-23T22:56:56.821023+0300 DEBUG ['выкуп', 'выслеживать', 'покупка'] definitions words
+2023-06-23T22:56:56.822023+0300 DEBUG ransom правильный ответ, ['ransom', 'traceback', 'underneath', 'purchase']
+2023-06-23T22:56:58.949407+0300 DEBUG ['выслеживать', 'покупка'] definitions words
+2023-06-23T22:56:58.950408+0300 DEBUG traceback правильный ответ, ['traceback', 'ransom', 'underneath', 'purchase']
+2023-06-23T22:57:16.606954+0300 DEBUG ['покупка'] definitions words
+2023-06-23T22:57:16.608224+0300 DEBUG purchase правильный ответ, ['purchase', 'underneath', 'traceback', 'ransom']
+2023-06-23T22:57:20.447371+0300 DEBUG [] definitions words
+2023-06-23T22:57:21.841879+0300 DEBUG ['под', 'выкуп', 'покупка', 'выслеживать'] definitions words
+2023-06-23T22:57:21.842879+0300 DEBUG underneath правильный ответ, ['underneath', 'ransom', 'traceback', 'purchase']
+2023-06-23T22:57:22.000351+0300 DEBUG <State 'LearnWords:finish'> под
+2023-06-23T22:57:34.266243+0300 DEBUG ['покупка', 'выкуп', 'выслеживать'] definitions words
+2023-06-23T22:57:34.267243+0300 DEBUG purchase правильный ответ, ['purchase', 'underneath', 'ransom', 'traceback']
+2023-06-23T22:57:34.383021+0300 DEBUG <State 'LearnWords:finish'> покупка
+2023-06-23T22:57:38.205313+0300 DEBUG ['выслеживать', 'выкуп'] definitions words
+2023-06-23T22:57:38.206303+0300 DEBUG traceback правильный ответ, ['traceback', 'underneath', 'purchase', 'ransom']
+2023-06-23T22:57:38.302187+0300 DEBUG <State 'LearnWords:finish'> выслеживать
+2023-06-23T22:57:42.956586+0300 DEBUG ['выкуп'] definitions words
+2023-06-23T22:57:42.957586+0300 DEBUG ransom правильный ответ, ['ransom', 'underneath', 'traceback', 'purchase']
+2023-06-23T22:57:43.053573+0300 DEBUG <State 'LearnWords:finish'> выкуп
+2023-06-23T22:57:46.892999+0300 DEBUG [] definitions words
+2023-06-23T22:57:49.957963+0300 ERROR DB.change_learn_type() got an unexpected keyword argument 'words', user message: перейти  user_id: 536806818
+2023-06-24T00:45:07.361286+0300 INFO Запускаем бота
+2023-06-24T00:46:02.337836+0300 INFO Запускаем бота
+2023-06-24T00:46:24.185478+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T00:47:23.233000+0300 INFO Запускаем бота
+2023-06-24T00:48:07.176043+0300 INFO Запускаем бота
+2023-06-24T00:48:11.273136+0300 ERROR type object 'RepeatState' has no attribute 'get_words', user message: english_word  user_id: 536806818
+2023-06-24T00:49:21.255311+0300 INFO Запускаем бота
+2023-06-24T00:49:24.774571+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T00:49:43.765079+0300 ERROR type object 'RepeatState' has no attribute 'get_words', user message: english_word  user_id: 536806818
+2023-06-24T00:51:44.968727+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T00:51:47.872958+0300 ERROR Ошибчока неверное значение для перечисления step_of_learning: "repeat "
+2023-06-24T00:51:47.873959+0300 ERROR string indices must be integers, user message: /repeat_terms  user_id: 536806818
+2023-06-24T00:53:58.160098+0300 INFO Запускаем бота
+2023-06-24T00:54:01.345100+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T00:54:57.695031+0300 ERROR type object 'RepeatState' has no attribute 'get_words', user message: english_word  user_id: 536806818
+2023-06-24T01:00:44.582049+0300 INFO Запускаем бота
+2023-06-24T01:00:50.876297+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:01:21.629533+0300 DEBUG Выбрано 536806818, [<Record term='bloom' definition='цветение'>, <Record term='knitting' definition='вязание'>, <Record term='pursue' definition='гнаться'>, <Record term='hi mark' definition='baza'>] english_word 536806818 
+2023-06-24T01:06:38.857143+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:06:41.964863+0300 ERROR Ошибчока неверное значение для перечисления step_of_learning: "repeat "
+2023-06-24T01:06:41.966863+0300 ERROR string indices must be integers, user message: /repeat_terms  user_id: 536806818
+2023-06-24T01:10:44.694316+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:11:16.563039+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:11:18.234383+0300 ERROR Ошибчока неверное значение для перечисления step_of_learning: "repeat "
+2023-06-24T01:11:18.235398+0300 ERROR string indices must be integers, user message: /repeat_terms  user_id: 536806818
+2023-06-24T01:11:26.860978+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:11:29.818973+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:11:31.802087+0300 DEBUG [<Record learning='learning' count=10>, <Record learning='repeat' count=46>, <Record learning='learned' count=8>]
+2023-06-24T01:11:31.803089+0300 DEBUG {'learning': 10, 'repeat': 46, 'learned': 8}
+2023-06-24T01:11:31.804088+0300 DEBUG {'learning': 10, 'repeat': 46, 'learned': 8}
+2023-06-24T01:11:33.496122+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:11:37.244789+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:11:39.168116+0300 ERROR Ошибчока неверное значение для перечисления step_of_learning: "repeat "
+2023-06-24T01:11:39.169116+0300 ERROR string indices must be integers, user message: /repeat_terms  user_id: 536806818
+2023-06-24T01:19:10.711930+0300 INFO Запускаем бота
+2023-06-24T01:19:36.814018+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:20:24.229132+0300 DEBUG Выбрано 536806818, [<Record term='tainted' definition='испорченный'>, <Record term='defy' definition='игнорировать'>, <Record term='heat wave' definition='сильная жара'>, <Record term='knitting' definition='вязание'>] english_word 536806818 
+2023-06-24T01:20:33.478017+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:24:08.481110+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-24T01:24:14.682150+0300 INFO Запускаем бота
+2023-06-24T01:24:25.807236+0300 DEBUG Выбрано 536806818, [<Record term='bizzare' definition='странный'>, <Record term='purr' definition='мурлыкать'>, <Record term='heat wave' definition='сильная жара'>, <Record term='stuck' definition='застрявший'>] english_word 536806818 
+2023-06-24T01:26:13.458387+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:30:31.411552+0300 INFO Запускаем бота
+2023-06-25T16:30:37.355106+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:30:51.198209+0300 DEBUG Выбрано 536806818, [<Record term='heat wave' definition='сильная жара'>, <Record term='hi mark' definition='baza'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-25T16:30:54.137188+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:31:25.838685+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='knitting' definition='вязание'>, <Record term='write' definition='писать'>, <Record term='salary' definition='зарплата'>] english_word 536806818 
+2023-06-25T16:31:29.126653+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:34:01.586945+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:39:32.372271+0300 INFO Запускаем бота
+2023-06-25T16:39:38.495665+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:39:43.972162+0300 DEBUG Выбрано 536806818, [<Record term='ransom' definition='выкуп'>, <Record term='carets' definition='каретки'>, <Record term='purchase' definition='покупка'>, <Record term='headquarters' definition='главное управление'>] english_word 536806818 
+2023-06-25T16:46:52.209814+0300 INFO Запускаем бота
+2023-06-25T16:46:58.286367+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:47:31.518002+0300 DEBUG Выбрано 536806818, [<Record term='drip drop' definition='капля за каплей'>, <Record term='bloom' definition='цветение'>, <Record term='treasure' definition='сокровище'>, <Record term='bizzare' definition='странный'>] english_word 536806818 
+2023-06-25T16:47:48.183150+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:47:59.565843+0300 DEBUG Выбрано 536806818, [<Record term='headquarters' definition='главное управление'>, <Record term='purchase' definition='покупка'>, <Record term='wrapper' definition='обертка'>, <Record term='underneath' definition='под'>] english_word 536806818 
+2023-06-25T16:49:01.797837+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:50:07.573712+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:51:24.738895+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:53:27.748831+0300 INFO Запускаем бота
+2023-06-25T16:53:28.135623+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:57:34.079769+0300 INFO Запускаем бота
+2023-06-25T16:57:35.447555+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:57:44.536906+0300 DEBUG Выбрано 536806818, [<Record term='purr' definition='мурлыкать'>, <Record term='hi mark' definition='baza'>, <Record term='salary' definition='зарплата'>, <Record term='tainted' definition='испорченный'>] english_word 536806818 
+2023-06-25T16:57:50.196058+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T16:58:01.028047+0300 DEBUG Выбрано 536806818, [<Record term='traceback' definition='выслеживать'>, <Record term='carets' definition='каретки'>, <Record term='underneath' definition='под'>, <Record term='headquarters' definition='главное управление'>] english_word 536806818 
+2023-06-25T17:00:04.516117+0300 INFO Запускаем бота
+2023-06-25T17:00:07.006800+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T17:00:12.179073+0300 DEBUG Выбрано 536806818, [<Record term='purchase' definition='покупка'>, <Record term='infamous' definition='позорный'>, <Record term='in rest' definition='в покое'>, <Record term='underneath' definition='под'>] english_word 536806818 
+2023-06-25T17:01:15.001307+0300 INFO Запускаем бота
+2023-06-25T17:01:15.928694+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T17:01:19.739221+0300 DEBUG Выбрано 536806818, [<Record term='ransom' definition='выкуп'>, <Record term='wrapper' definition='обертка'>, <Record term='underneath' definition='под'>, <Record term='traceback' definition='выслеживать'>] english_word 536806818 
+2023-06-25T17:01:23.565535+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T17:01:35.884826+0300 DEBUG Выбрано 536806818, [<Record term='write' definition='писать'>, <Record term='salary' definition='зарплата'>, <Record term='shimmer' definition='мерцание'>, <Record term='knitting' definition='вязание'>] english_word 536806818 
+2023-06-25T17:01:40.066701+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T17:06:56.304324+0300 INFO Запускаем бота
+2023-06-25T17:06:57.770957+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T17:07:04.954584+0300 DEBUG Выбрано 536806818, [<Record term='purchase' definition='покупка'>, <Record term='underneath' definition='под'>, <Record term='traceback' definition='выслеживать'>, <Record term='infamous' definition='позорный'>] english_word 536806818 
+2023-06-25T17:07:09.353486+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T17:07:20.522082+0300 DEBUG Выбрано 536806818, [<Record term='pursue' definition='гнаться'>, <Record term='knitting' definition='вязание'>, <Record term='undo' definition='отменить'>, <Record term='twee' definition='свист'>] english_word 536806818 
+2023-06-25T19:17:13.828171+0300 INFO Запускаем бота
+2023-06-25T19:21:53.930527+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T19:21:56.159857+0300 ERROR 'DB' object has no attribute 'get_count_repeat_terms', user message: /repeat_learn_terms  user_id: 536806818
+2023-06-25T19:22:48.277803+0300 INFO Запускаем бота
+2023-06-25T19:22:50.134305+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T19:22:51.442565+0300 ERROR 'DB' object has no attribute 'get_count_repeat_terms', user message: /repeat_learn_terms  user_id: 536806818
+2023-06-25T19:24:16.550784+0300 INFO Запускаем бота
+2023-06-25T19:24:19.601926+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T19:25:22.068159+0300 INFO Запускаем бота
+2023-06-25T19:25:43.195656+0300 INFO Запускаем бота
+2023-06-25T19:26:27.486252+0300 DEBUG Выбрано 536806818, [<Record term='импозантный' definition='производящий впечатление, внушительный, представительный'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>, <Record term='term' definition='pep'>] term 536806818 
+2023-06-25T19:28:07.246774+0300 INFO Запускаем бота
+2023-06-25T19:28:11.134984+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T19:28:17.950177+0300 DEBUG Выбрано 536806818, [<Record term='антитеза' definition='противопоставление'>, <Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>, <Record term='pop' definition='it'>, <Record term='хлебосольный' definition='радушный, теплый'>] term 536806818 
+2023-06-25T19:28:24.590993+0300 DEBUG set()
+2023-06-25T19:28:48.061234+0300 DEBUG {'радушный, теплый'}
+2023-06-25T19:29:44.138317+0300 INFO Запускаем бота
+2023-06-25T19:29:48.835241+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T19:29:56.753905+0300 DEBUG Выбрано 536806818, [<Record term='эргодический' definition='случайный'>, <Record term='жуир' definition='весело и беззаботно живущий человек, ищущий в жизни только удовольствий'>, <Record term='пейоратив' definition='слово или словосочетание, выражающие негативную оценку чего-либо или кого-либо, неодобрение, порицание, иронию или презрение'>, <Record term='фатум' definition='неотвратимая\xa0судьба,\xa0рок,\xa0доля'>] term 536806818 
+2023-06-25T19:30:29.328067+0300 DEBUG set() весело и беззаботно живущий человек, ищущий в жизни только удовольствий
+2023-06-25T22:34:39.927470+0300 INFO Запускаем бота
+2023-06-25T22:40:19.711073+0300 INFO Запускаем бота
+2023-06-25T23:01:44.438964+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:01:52.438287+0300 DEBUG Выбрано 536806818, [<Record term='term' definition='pep'>, <Record term='Копигольд' definition='форма\xa0феодальной зависимости\xa0крестьян\xa0от\xa0дворян, при которой безземельные крестьяне были вынуждены арендовать наделы для прокорма'>, <Record term='полиморфизм' definition='использование объектов с одинаковым интерфейсом без информации о типе и внутренней структуре объекта'>, <Record term='предиктивный' definition='связанный с прогнозированием будущего поведения кого-, чего-либо;\xa0предсказательный,\xa0предугадывающий,\xa0прогностический'>] term 536806818 
+2023-06-25T23:01:56.711292+0300 ERROR 'копигольд', user message: полиморфизм  user_id: 536806818
+2023-06-25T23:02:53.172068+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:02:59.668344+0300 DEBUG Выбрано 536806818, [<Record term='курить фимиам' definition='льстиво восхвалять кого-либо'>, <Record term='реторта' definition='аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке'>, <Record term='privet' definition='poka'>, <Record term='pop' definition='it'>] term 536806818 
+2023-06-25T23:06:15.350094+0300 DEBUG set() poka
+2023-06-25T23:07:38.603095+0300 INFO Запускаем бота
+2023-06-25T23:07:41.514746+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:07:46.917933+0300 DEBUG Выбрано 536806818, [<Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='shimmer' definition='мерцание'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='shed' definition='сарай; проливать'>] english_word 536806818 
+2023-06-25T23:08:00.611875+0300 DEBUG set() капля за каплей
+2023-06-25T23:08:10.922151+0300 DEBUG {'капля за каплей'} капля за каплей
+2023-06-25T23:10:56.574734+0300 INFO Запускаем бота
+2023-06-25T23:11:05.746922+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:11:10.916725+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='bizzare' definition='странный'>, <Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='treasure' definition='сокровище'>] english_word 536806818 
+2023-06-25T23:11:21.799269+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:11:26.482897+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='salary' definition='зарплата'>, <Record term='prejudiced' definition='предвзято'>] english_word 536806818 
+2023-06-25T23:11:38.304477+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:11:43.149880+0300 DEBUG Выбрано 536806818, [<Record term='wrapper' definition='обертка'>, <Record term='ransom' definition='выкуп'>, <Record term='traceback' definition='выслеживать'>, <Record term='in rest' definition='в покое'>] english_word 536806818 
+2023-06-25T23:12:58.295435+0300 INFO Запускаем бота
+2023-06-25T23:13:00.331799+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:13:05.006246+0300 DEBUG Выбрано 536806818, [<Record term='wrapper' definition='обертка'>, <Record term='in rest' definition='в покое'>, <Record term='clutter' definition='беспорядок'>, <Record term='headquarters' definition='главное управление'>] english_word 536806818 
+2023-06-25T23:16:49.882020+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:16:55.716712+0300 DEBUG Выбрано 536806818, [<Record term='purr' definition='мурлыкать'>, <Record term='undo' definition='отменить'>, <Record term='prejudiced' definition='предвзято'>, <Record term='knitting' definition='вязание'>] english_word 536806818 
+2023-06-25T23:17:00.284980+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:17:07.970755+0300 DEBUG Выбрано 536806818, [<Record term='knitting' definition='вязание'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='undo' definition='отменить'>, <Record term='shed' definition='сарай; проливать'>] english_word 536806818 
+2023-06-25T23:19:48.976504+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:20:44.365136+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:20:50.737915+0300 DEBUG Выбрано 536806818, [<Record term='knitting' definition='вязание'>, <Record term='stuck' definition='застрявший'>, <Record term='write' definition='писать'>, <Record term='pursue' definition='гнаться'>] english_word 536806818 
+2023-06-25T23:37:15.298619+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:37:46.131906+0300 INFO Запускаем бота
+2023-06-25T23:37:53.453333+0300 DEBUG Выбрано 536806818, [<Record term='defy' definition='игнорировать'>, <Record term='shimmer' definition='мерцание'>, <Record term='prejudiced' definition='предвзято'>, <Record term='bizzare' definition='странный'>] english_word 536806818 
+2023-06-25T23:38:03.231720+0300 INFO Запускаем бота
+2023-06-25T23:38:58.566649+0300 INFO Запускаем бота
+2023-06-25T23:39:02.215703+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:39:05.167048+0300 ERROR 'DB' object has no attribute 'get_count_repeat_words', user message: /repeat_terms  user_id: 536806818
+2023-06-25T23:40:18.743426+0300 INFO Запускаем бота
+2023-06-25T23:40:22.367391+0300 ERROR 'DB' object has no attribute 'get_count_repeat_words', user message: /repeat_terms  user_id: 536806818
+2023-06-25T23:41:33.838160+0300 INFO Запускаем бота
+2023-06-25T23:41:36.166278+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:41:37.246211+0300 ERROR 'DB' object has no attribute 'get_count_repeat_words', user message: /repeat_terms  user_id: 536806818
+2023-06-25T23:43:02.517540+0300 INFO Запускаем бота
+2023-06-25T23:43:07.947706+0300 DEBUG Выбрано 536806818, [<Record term='bloom' definition='цветение'>, <Record term='shimmer' definition='мерцание'>, <Record term='undo' definition='отменить'>, <Record term='shed' definition='сарай; проливать'>] english_word 536806818 
+2023-06-25T23:44:26.364231+0300 INFO Запускаем бота
+2023-06-25T23:44:28.080516+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:44:31.908434+0300 DEBUG Выбрано 536806818, [<Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='prejudiced' definition='предвзято'>, <Record term='knitting' definition='вязание'>, <Record term='bizzare' definition='странный'>] english_word 536806818 
+2023-06-25T23:45:22.296101+0300 INFO Запускаем бота
+2023-06-25T23:45:24.393578+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:45:29.598894+0300 DEBUG Выбрано 536806818, [<Record term='hi mark' definition='baza'>, <Record term='purr' definition='мурлыкать'>, <Record term='faking out' definition='притворятся ; выводить из себя'>, <Record term='drip drop' definition='капля за каплей'>] english_word 536806818 
+2023-06-25T23:54:32.469322+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:54:37.768210+0300 DEBUG Выбрано 536806818, [<Record term='wrapper' definition='обертка'>, <Record term='traceback' definition='выслеживать'>, <Record term='clutter' definition='беспорядок'>, <Record term='ransom' definition='выкуп'>] english_word 536806818 
+2023-06-25T23:54:44.097035+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-25T23:54:52.148119+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='stuck' definition='застрявший'>, <Record term='twee' definition='свист'>, <Record term='bizzare' definition='странный'>] english_word 536806818 
+2023-06-26T00:09:07.095058+0300 INFO Запускаем бота
+2023-06-26T00:09:10.190048+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:09:18.317295+0300 DEBUG Выбрано 536806818, [<Record term='throbbing' definition='пульсация'>, <Record term='treasure' definition='сокровище'>, <Record term='prejudiced' definition='предвзято'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-26T00:09:19.765924+0300 DEBUG <State 'RepeatWords:second_step'>, first_step, words ['throbbing', 'treasure', 'prejudiced', 'faking out']
+2023-06-26T00:09:32.160749+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:09:36.645054+0300 DEBUG Выбрано 536806818, [<Record term='clutter' definition='беспорядок'>, <Record term='wrapper' definition='обертка'>, <Record term='in rest' definition='в покое'>, <Record term='traceback' definition='выслеживать'>] english_word 536806818 
+2023-06-26T00:09:40.143452+0300 DEBUG <State 'LearnTrainingState:second_step'>, words, first_step ['обертка', 'в покое', 'выслеживать', 'беспорядок']
+2023-06-26T00:09:40.144451+0300 DEBUG <State 'LearnTrainingState:second_step'>, words, first_step
+2023-06-26T00:10:39.356176+0300 INFO Запускаем бота
+2023-06-26T00:10:42.527016+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:10:49.766537+0300 DEBUG Выбрано 536806818, [<Record term='tainted' definition='испорченный'>, <Record term='drip drop' definition='капля за каплей'>, <Record term='undo' definition='отменить'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-26T00:10:52.993070+0300 DEBUG <State 'RepeatWords:second_step'>, first_step, words ['tainted', 'drip drop', 'undo', 'faking out']
+2023-06-26T00:10:57.414386+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:11:07.127126+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:11:12.040037+0300 DEBUG Выбрано 536806818, [<Record term='infamous' definition='позорный'>, <Record term='underneath' definition='под'>, <Record term='headquarters' definition='главное управление'>, <Record term='ransom' definition='выкуп'>] english_word 536806818 
+2023-06-26T00:11:14.737312+0300 DEBUG <State 'LearnTrainingState:second_step'>, words, first_step ['главное управление', 'позорный', 'под', 'выкуп']
+2023-06-26T00:11:14.738486+0300 DEBUG <State 'LearnTrainingState:second_step'>, words, first_step
+2023-06-26T00:11:21.396707+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:11:25.422895+0300 DEBUG Выбрано 536806818, [<Record term='bizzare' definition='странный'>, <Record term='shed' definition='сарай; проливать'>, <Record term='undo' definition='отменить'>, <Record term='tainted' definition='испорченный'>] english_word 536806818 
+2023-06-26T00:11:27.649793+0300 DEBUG <State 'RepeatWords:second_step'>, first_step, words ['bizzare', 'shed', 'undo', 'tainted']
+2023-06-26T00:16:11.303268+0300 INFO Запускаем бота
+2023-06-26T00:16:14.476307+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:16:18.662660+0300 DEBUG Выбрано 536806818, [<Record term='infamous' definition='позорный'>, <Record term='purchase' definition='покупка'>, <Record term='carets' definition='каретки'>, <Record term='traceback' definition='выслеживать'>] english_word 536806818 
+2023-06-26T00:16:21.592613+0300 DEBUG <State 'LearnTrainingState:second_step'>, first_step, words ['traceback', 'purchase', 'carets', 'infamous']
+2023-06-26T00:16:21.593614+0300 DEBUG <State 'LearnTrainingState:second_step'>, first_step, words
+2023-06-26T00:16:45.435880+0300 INFO Запускаем бота
+2023-06-26T00:16:47.344052+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:16:51.498400+0300 DEBUG Выбрано 536806818, [<Record term='defy' definition='игнорировать'>, <Record term='knitting' definition='вязание'>, <Record term='shed' definition='сарай; проливать'>, <Record term='faking out' definition='притворятся ; выводить из себя'>] english_word 536806818 
+2023-06-26T00:16:52.689725+0300 DEBUG <State 'RepeatState:second_step'>, first_step, words ['shed', 'defy', 'faking out', 'knitting']
+2023-06-26T00:16:52.691240+0300 DEBUG <State 'RepeatState:second_step'>, first_step, words
+2023-06-26T00:17:05.007429+0300 DEBUG <State 'RepeatState:third_step'>, second_step, definitions ['притворятся ; выводить из себя', 'вязание', 'сарай; проливать', 'игнорировать']
+2023-06-26T00:17:23.946972+0300 DEBUG <State 'RepeatState:finish'>, third_step, definitions ['игнорировать', 'вязание', 'притворятся ; выводить из себя', 'сарай; проливать']
+2023-06-26T00:17:37.615556+0300 ERROR DB.change_learn_type() got an unexpected keyword argument 'terms', user message: перейти на следующий этап  user_id: 536806818
+2023-06-26T00:18:26.073160+0300 INFO Запускаем бота
+2023-06-26T00:18:28.017980+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:18:33.713278+0300 DEBUG Выбрано 536806818, [<Record term='infamous' definition='позорный'>, <Record term='in rest' definition='в покое'>, <Record term='headquarters' definition='главное управление'>, <Record term='wrapper' definition='обертка'>] english_word 536806818 
+2023-06-26T00:18:47.613131+0300 DEBUG <State 'LearnTrainingState:second_step'>, first_step, words ['headquarters', 'in rest', 'wrapper', 'infamous']
+2023-06-26T00:18:47.614619+0300 DEBUG <State 'LearnTrainingState:second_step'>, first_step, words
+2023-06-26T00:18:56.669297+0300 DEBUG <State 'LearnTrainingState:third_step'>, second_step, definitions ['в покое', 'позорный', 'обертка', 'главное управление']
+2023-06-26T00:18:56.670302+0300 DEBUG <State 'LearnTrainingState:third_step'>, second_step, definitions
+2023-06-26T00:19:29.348739+0300 DEBUG <State 'LearnTrainingState:finish'>, third_step, definitions ['в покое', 'позорный', 'обертка', 'главное управление']
+2023-06-26T00:19:29.350739+0300 DEBUG <State 'LearnTrainingState:finish'>, third_step, definitions
+2023-06-26T00:22:18.156738+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:22:23.173519+0300 DEBUG Выбрано 536806818, [<Record term='stuck' definition='застрявший'>, <Record term='prejudiced' definition='предвзято'>, <Record term='undo' definition='отменить'>, <Record term='throbbing' definition='пульсация'>] english_word 536806818 
+2023-06-26T00:22:25.540605+0300 DEBUG <State 'RepeatState:second_step'>, first_step, words ['undo', 'stuck', 'throbbing', 'prejudiced']
+2023-06-26T00:22:25.542606+0300 DEBUG <State 'RepeatState:second_step'>, first_step, words
+2023-06-26T00:22:35.810437+0300 DEBUG <State 'RepeatState:third_step'>, second_step, definitions ['пульсация', 'отменить', 'предвзято', 'застрявший']
+2023-06-26T00:22:46.963368+0300 DEBUG <State 'RepeatState:finish'>, third_step, definitions ['отменить', 'застрявший', 'пульсация', 'предвзято']
+2023-06-26T00:24:24.988457+0300 DEBUG Выбрано 536806818, [<Record term='traceback' definition='выслеживать'>, <Record term='wrapper' definition='обертка'>, <Record term='infamous' definition='позорный'>, <Record term='in rest' definition='в покое'>] english_word 536806818 
+2023-06-26T00:24:30.157177+0300 DEBUG <State 'LearnTrainingState:second_step'>, first_step, words ['traceback', 'wrapper', 'infamous', 'in rest']
+2023-06-26T00:24:30.159177+0300 DEBUG <State 'LearnTrainingState:second_step'>, first_step, words
+2023-06-26T00:24:42.907846+0300 DEBUG <State 'LearnTrainingState:third_step'>, second_step, definitions ['в покое', 'обертка', 'выслеживать', 'позорный']
+2023-06-26T00:24:42.908847+0300 DEBUG <State 'LearnTrainingState:third_step'>, second_step, definitions
+2023-06-26T00:24:52.747557+0300 DEBUG <State 'LearnTrainingState:finish'>, third_step, definitions ['позорный', 'обертка', 'в покое', 'выслеживать']
+2023-06-26T00:24:52.749154+0300 DEBUG <State 'LearnTrainingState:finish'>, third_step, definitions
+2023-06-26T00:25:27.928296+0300 DEBUG Выбрано 536806818, [<Record term='реторта' definition='аппарат, служащий в химической лабораторной и  для\xa0перегонки\xa0или (что чаще) для воспроизведения реакций, требующих нагревания и сопровождающихся выделением газообразных или жидких продуктов, которые подвергаются перегонке'>, <Record term='privet' definition='poka'>, <Record term='хлебосольный' definition='радушный, теплый'>, <Record term='пертубация' definition='внезапное, резкое нарушение нормального хода чего-либо, вызывающее замешательство, смятение'>] term 536806818 
+2023-06-26T00:26:38.893922+0300 INFO Запускаем бота
+2023-06-26T00:26:40.335289+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:26:43.751490+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:26:48.393265+0300 DEBUG Выбрано 536806818, [<Record term='nohalk' definition='dc'>, <Record term='pep' definition='pup'>, <Record term='halk' definition='marvel'>, <Record term='p' definition='g'>] term 536806818 
+2023-06-26T00:26:49.929249+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words ['pep', 'p', 'halk', 'nohalk']
+2023-06-26T00:26:49.930250+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words
+2023-06-26T00:27:01.069318+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions ['pup', 'dc', 'g', 'marvel']
+2023-06-26T00:27:14.427247+0300 ERROR local variable 'answer' referenced before assignment, user message: перейти на следующий этап  user_id: 536806818
+2023-06-26T00:30:17.351151+0300 INFO Запускаем бота
+2023-06-26T00:30:20.061551+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:30:26.172979+0300 DEBUG Выбрано 536806818, [<Record term='tangerine' definition='мандарин'>, <Record term='hi' definition='привет'>, <Record term='code' definition='кодить'>] english_word 536806818 
+2023-06-26T00:30:32.308085+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:30:37.270952+0300 DEBUG Выбрано 536806818, [<Record term='p' definition='g'>, <Record term='kuk' definition='что-либо(делающий)'>, <Record term='halk' definition='marvel'>, <Record term='pep' definition='pup'>] term 536806818 
+2023-06-26T00:30:38.699853+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words ['halk', 'kuk', 'p', 'pep']
+2023-06-26T00:30:38.701855+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words
+2023-06-26T00:30:50.096132+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions ['marvel', 'что-либо(делающий)', 'g', 'pup']
+2023-06-26T00:30:50.097136+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions
+2023-06-26T00:30:57.856708+0300 DEBUG set() что-либо(делающий)
+2023-06-26T00:31:08.334790+0300 DEBUG {'что-либо(делающий)'} что-либо(делающий)
+2023-06-26T00:31:22.760668+0300 DEBUG {'что-либо(делающий)'} что-либо(делающий)
+2023-06-26T00:31:23.840513+0300 DEBUG {'что-либо(делающий)'} что-либо(делающий)
+2023-06-26T00:32:10.112076+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:32:16.216973+0300 DEBUG Выбрано 536806818, [<Record term='p' definition='g'>, <Record term='nohalk' definition='dc'>, <Record term='kuk' definition='что-либо(делающий)'>, <Record term='halk' definition='marvel'>] term 536806818 
+2023-06-26T00:32:17.496322+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words ['p', 'halk', 'kuk', 'nohalk']
+2023-06-26T00:32:17.497322+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words
+2023-06-26T00:32:24.457426+0300 DEBUG set() p
+2023-06-26T00:44:27.048851+0300 INFO Запускаем бота
+2023-06-26T00:44:28.803077+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:44:32.255207+0300 DEBUG Выбрано 536806818, [<Record term='hi' definition='привет'>, <Record term='tangerine' definition='мандарин'>, <Record term='code' definition='кодить'>] english_word 536806818 
+2023-06-26T00:44:35.523771+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:44:40.507671+0300 DEBUG Выбрано 536806818, [<Record term='nohalk' definition='dc'>, <Record term='pep' definition='pup'>, <Record term='kuk' definition='что-либо(делающий)'>, <Record term='p' definition='g'>] term 536806818 
+2023-06-26T00:44:41.693543+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words ['kuk', 'p', 'nohalk', 'pep']
+2023-06-26T00:44:41.694545+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words
+2023-06-26T00:44:43.423854+0300 DEBUG set() kuk
+2023-06-26T00:44:54.575563+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions ['dc', 'что-либо(делающий)', 'g', 'pup']
+2023-06-26T00:44:54.576564+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions
+2023-06-26T00:44:56.397970+0300 DEBUG {'kuk'} []
+2023-06-26T00:44:56.398951+0300 ERROR unhashable type: 'list', user message: pep  user_id: 536806818
+2023-06-26T00:49:06.644003+0300 INFO Запускаем бота
+2023-06-26T00:49:11.014016+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:49:14.933789+0300 DEBUG Выбрано 536806818, [<Record term='kuk' definition='что-либо(делающий)'>, <Record term='p' definition='g'>, <Record term='nohalk' definition='dc'>, <Record term='pep' definition='pup'>] term 536806818 
+2023-06-26T00:49:16.111799+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words ['kuk', 'nohalk', 'pep', 'p']
+2023-06-26T00:49:16.113801+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words
+2023-06-26T00:49:18.411093+0300 DEBUG set() kuk
+2023-06-26T00:49:24.205814+0300 DEBUG {'kuk'} pep
+2023-06-26T00:49:37.174775+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions ['что-либо(делающий)', 'pup', 'dc', 'g']
+2023-06-26T00:49:37.176778+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions
+2023-06-26T00:49:38.876130+0300 DEBUG {'kuk': 'что-либо(делающий)', 'p': 'g', 'nohalk': 'dc', 'pep': 'pup'} kuk definitions
+2023-06-26T00:49:38.878134+0300 DEBUG {'pep', 'kuk'} []
+2023-06-26T00:49:38.879135+0300 ERROR unhashable type: 'list', user message: p  user_id: 536806818
+2023-06-26T00:52:30.845276+0300 INFO Запускаем бота
+2023-06-26T00:52:32.156505+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T00:52:35.877661+0300 DEBUG Выбрано 536806818, [<Record term='halk' definition='marvel'>, <Record term='p' definition='g'>, <Record term='pep' definition='pup'>, <Record term='nohalk' definition='dc'>] term 536806818 
+2023-06-26T00:52:37.255069+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words ['pep', 'nohalk', 'halk', 'p']
+2023-06-26T00:52:37.257069+0300 DEBUG <State 'RepeatLeranedWordsState:second_step'>, first_step, words
+2023-06-26T00:52:42.329175+0300 DEBUG set() halk
+2023-06-26T00:52:46.929131+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions ['marvel', 'dc', 'pup', 'g']
+2023-06-26T00:52:46.931131+0300 DEBUG <State 'RepeatLeranedWordsState:finish'>, second_step, definitions
+2023-06-26T00:52:50.077105+0300 DEBUG  nohalk definitions
+2023-06-26T00:52:50.078106+0300 DEBUG {'halk'} nohalk
+2023-06-26T00:52:56.627928+0300 DEBUG  nohalk definitions
+2023-06-26T00:52:56.628491+0300 DEBUG {'nohalk', 'halk'} nohalk
+2023-06-26T01:09:01.667494+0300 DEBUG  nohalk definitions
+2023-06-26T01:09:01.669492+0300 DEBUG {'nohalk', 'halk'} nohalk
+2023-06-26T01:09:15.242946+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich
+2023-06-26T01:09:19.387228+0300 INFO Мне написали : 536806818 SPB_Emmanuil_Yankelevich

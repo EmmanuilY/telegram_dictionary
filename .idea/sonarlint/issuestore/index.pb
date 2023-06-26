@@ -23,3 +23,13 @@ F
 Wmodel/database_migrations/alembic/versions/f99faacc1ee0_create_user_and_terms_tables.py,5\e\5e42c2140e67e754e64330bc413a762c14b61dbb
 <
 bot_logs.log,7\a\7a3d7465debe9c8ecab8acc69a03abf41a454a55
+G
+keyboards/simple_row.py,0\a\0a8467918fe8753a20145858fdef4478531a0223
+N
+handlers/base_learn_handler.py,6\5\6545859e1afe4dd4cbb0b65c92f75cfa48f49081
+?
+state/states.py,0\4\0441054b80df7f5ffe075b272869b265827125ad
+9
+	debug.log,a\2\a29fab13139e329b70356dce2ac2a179d69d4c23
+G
+handlers/learn_words.py,f\9\f900b5af6ff6e745d54be1b127dbe5c32714414b

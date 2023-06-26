@@ -2,10 +2,10 @@ from aiogram import Router
 from aiogram.filters.command import Command
 from aiogram.filters.text import Text
 from aiogram.fsm.context import FSMContext
-from aiogram.types import Message, ReplyKeyboardRemove
+from aiogram.types import Message, ReplyKeyboardRemove, ErrorEvent
 from loguru import logger
 
-from keyboards.simple_row import make_row_keyboard
+from keyboards.simple_row import make_row_keyboard, start_buttons
 from model.db import DB
 
 router = Router()
@@ -44,4 +44,17 @@ async def cmd_cancel(message: Message, state: FSMContext):
     await message.answer(
         text="Действие отменено",
         reply_markup=ReplyKeyboardRemove()
+    )
+
+
+@router.errors()
+async def error_handler(exception: ErrorEvent):
+    error = exception.exception
+    message = exception.update.message
+    logger.error(
+        f"{error}, user message: {message.text}  user_id: {message.from_user.id}"
+    )
+    await message.answer(
+        text="Что-то пошло не так, попробуйте снова",
+        keyboard_options=start_buttons,
     )

@@ -120,9 +120,9 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def change_learn_type(self, telegram_id, terms: list) -> dict | str:
+    async def change_learn_type(self, telegram_id, words: list) -> dict | str:
         try:
-            terms = await self._execute(
+            words = await self._execute(
                 """
                UPDATE user_terms_progress
                 SET number_of_repetitions = number_of_repetitions + 1, learning = CASE
@@ -135,11 +135,11 @@ class DB:
                 AND users.telegram_id = $1
                 AND terms.term = ANY($2::varchar[])
                 """,
-                telegram_id, terms
+                telegram_id, words
             )
 
             # Преобразование списка кортежей в словарь
-            return f' top {terms}'
+            return f' top {words}'
 
         except Exception as e:
             return f'{e}'
@@ -192,7 +192,7 @@ class DB:
         except Exception as e:
             return f'{e}'
 
-    async def get_count_repeat_words(self, telegram_id: str, learning: str) -> dict :
+    async def get_count_user_words(self, telegram_id: str, learning: str) -> dict :
         try:
 
             terms_count = await self._fetch(
