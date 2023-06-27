@@ -6,19 +6,18 @@ from aiogram.types import Message, ReplyKeyboardRemove, ErrorEvent
 from loguru import logger
 
 from keyboards.simple_row import make_row_keyboard, start_buttons
-from model.db import DB
+from db.db import db
 
 router = Router()
-db = DB()
+
+
 
 @router.message(Command("start"))
 async def cmd_start(message: Message, state: FSMContext):
     await state.clear()
-
-    logger.info(f"Мне написали : {message.from_user.id} {message.from_user.username}")
     registration = await db.add_user(str(message.from_user.id), str(message.from_user.first_name))
     match registration:
-        case 'ok':
+        case 'register_user':
             await message.answer(
                 text=f"Воу, вы только что зарегались! {message.from_user.first_name}\n"
                      "Что вы хотите делать \n?"
@@ -28,13 +27,13 @@ async def cmd_start(message: Message, state: FSMContext):
             )
 
         case 'exists':
-                await message.answer(
-                    text="Мы уже вас знаем ! \n"
-                         "Что вы хотите делать? \n"
-                         "учить слова или добавить слова .",
+            await message.answer(
+                text="Мы уже вас знаем ! \n"
+                     "Что вы хотите делать? \n"
+                     "учить слова или добавить слова .",
 
-                    reply_markup=make_row_keyboard(['/learn_words', '/add_terms', '/check_progress', '/repeat_terms', '/repeat_learn_terms'])
-                )
+                reply_markup=make_row_keyboard(start_buttons)
+            )
 
 
 @router.message(Command("cancel"))
@@ -47,14 +46,14 @@ async def cmd_cancel(message: Message, state: FSMContext):
     )
 
 
-@router.errors()
-async def error_handler(exception: ErrorEvent):
-    error = exception.exception
-    message = exception.update.message
-    logger.error(
-        f"{error}, user message: {message.text}  user_id: {message.from_user.id}"
-    )
-    await message.answer(
-        text="Что-то пошло не так, попробуйте снова",
-        keyboard_options=start_buttons,
-    )
+# @router.errors()
+# async def error_handler(exception: ErrorEvent):
+#     error = exception.exception
+#     message = exception.update.message
+#     logger.error(
+#         f"{error}, user message: {message.text}  user_id: {message.from_user.id}"
+#     )
+#     await message.answer(
+#         text="Что-то пошло не так, попробуйте снова",
+#         keyboard_options=start_buttons,
+#     )

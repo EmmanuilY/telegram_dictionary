@@ -1,50 +1,16 @@
-import random
-import re
-from functools import partial
-
+from enum import Enum
 from aiogram import Router, F
-from aiogram import exceptions as aiogram_exceptions
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
-from aiogram.types import Message, ErrorEvent
-from loguru import logger
+from aiogram.types import Message
 
-from keyboards.simple_row import make_row_keyboard, start_buttons
-
-from models.models import BaseTrainings
+from models.models import RepeatTraining
+from state.states import RepeatState
 
 router = Router()
 
-
-class RepeatState(StatesGroup):
-    chosen_type_object = State()
-    get_words_state = State()
-    first_step = State()
-    check_answer = State()
-    second_step = State()
-    third_step = State()
-    finish = State()
-
-
-class Repeat(BaseTrainings):
-    async def choosing_count_words(self, text: str,  message, state):
-        chosen_type = message.text
-        await state.update_data(chosen_type=chosen_type)
-        records = await self.db.get_count_repeat_words_types(
-            telegram_id=str(message.from_user.id), term_type=chosen_type
-        )
-        for record in records:
-            text += f"{self.answer_slovarik[record['number_of_repetitions']]} повторение  :  {record['count']} слов\n"
-        await message.answer(text=text)
-        await self.send_message_with_keyboard(
-            message, 'Выбирете, сколько слов будем повторять:', self.number_of_words
-        )
-
-        await state.set_state(self.training_state.get_words_state)
-
-
-RepeatTraining = Repeat(RepeatState)
+RepeatTraining = RepeatTraining(RepeatState)
 
 
 @router.message(Command("repeat_terms"))
@@ -111,15 +77,4 @@ async def third_step(message: Message, state: FSMContext):
 
 @router.message(RepeatState.finish, F.text.in_("перейти на следующий этап"))
 async def finish(message: Message, state: FSMContext):
-    user_data = await state.get_data()
-    terms = user_data.get("terms", {})
-    repeated_terms = list(terms.keys())
-    answer = await RepeatTraining.db.change_learn_type(
-        telegram_id=str(message.from_user.id), words=repeated_terms
-    )
-
-    await message.answer(
-        text=f"а на этом повторение слов оконченно {answer}",
-        reply_markup=make_row_keyboard(start_buttons),
-    )
-    await state.clear()
+    await RepeatTraining.finish(message, state)
